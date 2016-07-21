@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  08/07/2016 11:21:11                      */
+/* Date de création :  21/07/2016 10:13:08                      */
 /*==============================================================*/
 
 
@@ -767,7 +767,7 @@ create table OM_SAMPLE_SERIES (
 /*==============================================================*/
 create table OM_SERIES (
    ID_SERIES            VARCHAR(20)          not null,
-   TITLE                VARCHAR(100)         not null,
+   TITLE                VARCHAR(500)         not null,
    RELEASE_DATE         DATE                 null,
    LAST_UPDATE          DATE                 null,
    COMMENT              VARCHAR(500)         null,
