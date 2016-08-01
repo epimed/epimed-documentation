@@ -1,12 +1,14 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  21/07/2016 10:13:08                      */
+/* Date de création :  01/08/2016 13:39:57                      */
 /*==============================================================*/
 
 
 drop table CL_BIOPATHO;
 
 drop table CL_CELL_LINE;
+
+drop table CL_CELL_LINE_ALIAS;
 
 drop table CL_COLLECTION_METHOD;
 
@@ -161,6 +163,15 @@ create table CL_CELL_LINE (
 );
 
 /*==============================================================*/
+/* Table : CL_CELL_LINE_ALIAS                                   */
+/*==============================================================*/
+create table CL_CELL_LINE_ALIAS (
+   ID_CELL_LINE_ALIAS   VARCHAR(20)          not null,
+   ID_CELL_LINE         VARCHAR(20)          not null,
+   constraint PK_CL_CELL_LINE_ALIAS primary key (ID_CELL_LINE_ALIAS)
+);
+
+/*==============================================================*/
 /* Table : CL_COLLECTION_METHOD                                 */
 /*==============================================================*/
 create table CL_COLLECTION_METHOD (
@@ -272,7 +283,7 @@ MT - mutated';
 create table CL_HISTOLOGY_DETAIL (
    ID_BIOPATHO          INT4                 not null,
    ID_PARAMETER         INT4                 not null,
-   VALUE                VARCHAR(20)          null,
+   VALUE                VARCHAR(255)         null,
    COMMENT              VARCHAR(255)         null,
    constraint PK_CL_HISTOLOGY_DETAIL primary key (ID_BIOPATHO, ID_PARAMETER)
 );
@@ -880,6 +891,11 @@ alter table CL_CELL_LINE
 alter table CL_CELL_LINE
    add constraint fk_cell_line_morpho foreign key (ID_MORPHOLOGY)
       references CL_MORPHOLOGY (ID_MORPHOLOGY)
+      on delete restrict on update restrict;
+
+alter table CL_CELL_LINE_ALIAS
+   add constraint fk_cl_alias_cl foreign key (ID_CELL_LINE)
+      references CL_CELL_LINE (ID_CELL_LINE)
       on delete restrict on update restrict;
 
 alter table CL_EVENT
