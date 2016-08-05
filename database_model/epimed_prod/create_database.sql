@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  01/08/2016 13:39:57                      */
+/* Date de création :  03/08/2016 15:06:02                      */
 /*==============================================================*/
 
 
@@ -38,10 +38,6 @@ drop table CL_MUTATION_DETAIL;
 
 drop table CL_MUTATION_PARAMETER;
 
-drop table CL_M_STAGE;
-
-drop table CL_N_STAGE;
-
 drop table CL_ONTOLOGY_CATEGORY;
 
 drop table CL_ONTOLOGY_DICTIONARY;
@@ -73,8 +69,6 @@ drop table CL_TREATMENT;
 drop table CL_TREATMENT_METHOD;
 
 drop table CL_TREATMENT_TYPE;
-
-drop table CL_T_STAGE;
 
 drop table OM_GENE;
 
@@ -139,7 +133,7 @@ create table CL_BIOPATHO (
    ID_MORPHOLOGY        VARCHAR(20)          null,
    ID_TISSUE_STAGE      INT4                 not null,
    ID_TISSUE_STATUS     INT4                 not null,
-   ID_PATHOLOGY         INT4                 null,
+   ID_PATHOLOGY         VARCHAR(20)          null,
    ID_SURVIVAL          INT4                 null,
    COMMENT              VARCHAR(255)         null,
    constraint PK_CL_BIOPATHO primary key (ID_BIOPATHO)
@@ -221,10 +215,10 @@ create table CL_EXPOSURE (
    ID_PATIENT           INT4                 not null,
    ID_SUBSTANCE         VARCHAR(100)         not null,
    EXPOSED              boolean              null,
-   ID_EXPOSURE_TYPE     VARCHAR(100)         not null,
+   ID_EXPOSURE_TYPE     VARCHAR(100)         null,
    VALUE                VARCHAR(255)         null,
    COMMENT              VARCHAR(255)         null,
-   constraint PK_CL_EXPOSURE primary key (ID_PATIENT, ID_SUBSTANCE, ID_EXPOSURE_TYPE)
+   constraint PK_CL_EXPOSURE primary key (ID_PATIENT, ID_SUBSTANCE)
 );
 
 /*==============================================================*/
@@ -337,30 +331,6 @@ create table CL_MUTATION_PARAMETER (
 );
 
 /*==============================================================*/
-/* Table : CL_M_STAGE                                           */
-/*==============================================================*/
-create table CL_M_STAGE (
-   M                    VARCHAR(10)          not null,
-   DESCRIPTION          VARCHAR(100)         null,
-   constraint PK_CL_M_STAGE primary key (M)
-);
-
-comment on table CL_M_STAGE is
-'Distant metastasis';
-
-/*==============================================================*/
-/* Table : CL_N_STAGE                                           */
-/*==============================================================*/
-create table CL_N_STAGE (
-   N                    VARCHAR(10)          not null,
-   DESCRIPTION          VARCHAR(100)         null,
-   constraint PK_CL_N_STAGE primary key (N)
-);
-
-comment on table CL_N_STAGE is
-'Regional lymph nodes';
-
-/*==============================================================*/
 /* Table : CL_ONTOLOGY_CATEGORY                                 */
 /*==============================================================*/
 create table CL_ONTOLOGY_CATEGORY (
@@ -419,7 +389,7 @@ IHC % Ki 67';
 /* Table : CL_PATHOLOGY                                         */
 /*==============================================================*/
 create table CL_PATHOLOGY (
-   ID_PATHOLOGY         INT4                 not null,
+   ID_PATHOLOGY         VARCHAR(20)          not null,
    CODE                 VARCHAR(20)          null,
    NAME                 VARCHAR(200)         not null,
    constraint PK_CL_PATHOLOGY primary key (ID_PATHOLOGY)
@@ -500,12 +470,8 @@ comment on table CL_TISSUE_STATUS is
 create table CL_TNM (
    ID_BIOPATHO          INT4                 not null,
    T                    VARCHAR(10)          not null,
-   T_SUB                VARCHAR(10)          null,
    N                    VARCHAR(10)          not null,
-   N_SUB                VARCHAR(10)          null,
    M                    VARCHAR(10)          not null,
-   M_SUB                VARCHAR(10)          null,
-   METASTATIC_SITES     VARCHAR(255)         null,
    GRADE                VARCHAR(10)          null,
    STAGE                VARCHAR(10)          null,
    constraint PK_CL_TNM primary key (ID_BIOPATHO, T, N, M)
@@ -574,18 +540,6 @@ create table CL_TREATMENT_TYPE (
 
 comment on table CL_TREATMENT_TYPE is
 'adjuvent, neoadjuvent, curative';
-
-/*==============================================================*/
-/* Table : CL_T_STAGE                                           */
-/*==============================================================*/
-create table CL_T_STAGE (
-   T                    VARCHAR(10)          not null,
-   DESCRIPTION          VARCHAR(100)         null,
-   constraint PK_CL_T_STAGE primary key (T)
-);
-
-comment on table CL_T_STAGE is
-'Primary tumor';
 
 /*==============================================================*/
 /* Table : OM_GENE                                              */
@@ -981,21 +935,6 @@ alter table CL_ONTOLOGY_DICTIONARY
 alter table CL_ONTOLOGY_KEYWORD
    add constraint fk_keyword_category foreign key (ID_CATEGORY)
       references CL_ONTOLOGY_CATEGORY (ID_CATEGORY)
-      on delete restrict on update restrict;
-
-alter table CL_TNM
-   add constraint fk_tnm_t_stage foreign key (T)
-      references CL_T_STAGE (T)
-      on delete restrict on update restrict;
-
-alter table CL_TNM
-   add constraint fk_tnm_n_stage foreign key (N)
-      references CL_N_STAGE (N)
-      on delete restrict on update restrict;
-
-alter table CL_TNM
-   add constraint fk_tnm_m_stage foreign key (M)
-      references CL_M_STAGE (M)
       on delete restrict on update restrict;
 
 alter table CL_TNM
