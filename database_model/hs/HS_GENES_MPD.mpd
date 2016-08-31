@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{DC567F39-874D-4A29-92D6-10F027618682}" Label="" LastModificationDate="1472630150" Name="HS_GENES_MPD" Objects="80" Symbols="16" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{DC567F39-874D-4A29-92D6-10F027618682}" Label="" LastModificationDate="1472635065" Name="HS_GENES_MPD" Objects="86" Symbols="17" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>HS_GENES_MPD</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1472630150</a:ModificationDate>
+<a:ModificationDate>1472634865</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -2465,7 +2465,7 @@ PhysOpts=</a:ModelOptionsText>
 <a:Code>HS_GENES_MPD</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1472630128</a:ModificationDate>
+<a:ModificationDate>1472635065</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -2873,7 +2873,7 @@ Pen=1 0 0 0 255
 Shadow color=192 192 192
 Shadow=0</a:DisplayPreferences>
 <a:PaperSize>(8268, 11693)</a:PaperSize>
-<a:PageMargins>((433,354), (315,354))</a:PageMargins>
+<a:PageMargins>((354,433), (354,315))</a:PageMargins>
 <a:PageOrientation>1</a:PageOrientation>
 <a:PaperSource>15</a:PaperSource>
 <a:PageFooterTemplate/>
@@ -3256,6 +3256,31 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o36"/>
 </c:Object>
 </o:TableSymbol>
+<o:TableSymbol Id="o37">
+<a:CreationDate>1472634865</a:CreationDate>
+<a:ModificationDate>1472634957</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((1810,6715), (18364,12183))</a:Rect>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 Arial,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o38"/>
+</c:Object>
+</o:TableSymbol>
 </c:Symbols>
 </o:PhysicalDiagram>
 </c:PhysicalDiagrams>
@@ -3273,7 +3298,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o37">
+<o:Column Id="o39">
 <a:ObjectID>4E96D5F0-420A-4ED0-92C1-2E5415698879</a:ObjectID>
 <a:Name>id_gene</a:Name>
 <a:Code>ID_GENE</a:Code>
@@ -3285,7 +3310,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o38">
+<o:Column Id="o40">
 <a:ObjectID>466AB45B-8E79-498A-AD44-2C683D355B26</a:ObjectID>
 <a:Name>gene_symbol</a:Name>
 <a:Code>GENE_SYMBOL</a:Code>
@@ -3296,7 +3321,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(50)</a:DataType>
 <a:Length>50</a:Length>
 </o:Column>
-<o:Column Id="o39">
+<o:Column Id="o41">
 <a:ObjectID>71884D8C-D77C-4C7B-8C84-75F4F7BEE0E4</a:ObjectID>
 <a:Name>title</a:Name>
 <a:Code>TITLE</a:Code>
@@ -3307,7 +3332,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(255)</a:DataType>
 <a:Length>255</a:Length>
 </o:Column>
-<o:Column Id="o40">
+<o:Column Id="o42">
 <a:ObjectID>B0B289BA-0E95-4105-ABEA-A81672B4264F</a:ObjectID>
 <a:Name>location</a:Name>
 <a:Code>LOCATION</a:Code>
@@ -3318,7 +3343,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(100)</a:DataType>
 <a:Length>100</a:Length>
 </o:Column>
-<o:Column Id="o41">
+<o:Column Id="o43">
 <a:ObjectID>077CB4A1-F877-44DC-BD82-B64568BCB930</a:ObjectID>
 <a:Name>status</a:Name>
 <a:Code>STATUS</a:Code>
@@ -3329,7 +3354,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(100)</a:DataType>
 <a:Length>100</a:Length>
 </o:Column>
-<o:Column Id="o42">
+<o:Column Id="o44">
 <a:ObjectID>CC7512B0-0ACC-47D0-A93A-2613E8217BC5</a:ObjectID>
 <a:Name>type</a:Name>
 <a:Code>TYPE</a:Code>
@@ -3340,7 +3365,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(100)</a:DataType>
 <a:Length>100</a:Length>
 </o:Column>
-<o:Column Id="o43">
+<o:Column Id="o45">
 <a:ObjectID>61EEC7CB-032D-4579-A6B8-EFF0A333071E</a:ObjectID>
 <a:Name>date_modified</a:Name>
 <a:Code>DATE_MODIFIED</a:Code>
@@ -3350,7 +3375,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>DATE</a:DataType>
 </o:Column>
-<o:Column Id="o44">
+<o:Column Id="o46">
 <a:ObjectID>0F977815-C800-494C-8551-778ECBB7C144</a:ObjectID>
 <a:Name>last_update</a:Name>
 <a:Code>LAST_UPDATE</a:Code>
@@ -3363,7 +3388,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o45">
+<o:Key Id="o47">
 <a:ObjectID>BBCA4E8E-6BC0-43C9-BF95-393ABE5C9B9B</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3372,12 +3397,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1470658674</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o37"/>
+<o:Column Ref="o39"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o45"/>
+<o:Key Ref="o47"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o30">
@@ -3390,7 +3415,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o46">
+<o:Column Id="o48">
 <a:ObjectID>A30A1A61-D965-4ABE-BD50-A34E4CF7F49F</a:ObjectID>
 <a:Name>id_gene</a:Name>
 <a:Code>ID_GENE</a:Code>
@@ -3402,7 +3427,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o47">
+<o:Column Id="o49">
 <a:ObjectID>F768073A-F953-46C7-A8AC-B1366396232E</a:ObjectID>
 <a:Name>alias</a:Name>
 <a:Code>ALIAS</a:Code>
@@ -3414,7 +3439,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>50</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o48">
+<o:Column Id="o50">
 <a:ObjectID>12022F2F-8295-45A9-899A-207BC2098D2E</a:ObjectID>
 <a:Name>database</a:Name>
 <a:Code>DATABASE</a:Code>
@@ -3428,7 +3453,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o49">
+<o:Key Id="o51">
 <a:ObjectID>656736A8-F7EC-47FA-B32D-6A5C17848F6F</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3437,13 +3462,13 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1470658472</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o46"/>
-<o:Column Ref="o47"/>
+<o:Column Ref="o48"/>
+<o:Column Ref="o49"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o49"/>
+<o:Key Ref="o51"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o31">
@@ -3456,7 +3481,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o50">
+<o:Column Id="o52">
 <a:ObjectID>0BB55570-F97B-4739-ACC3-2CCCD9511A90</a:ObjectID>
 <a:Name>id_protein</a:Name>
 <a:Code>ID_PROTEIN</a:Code>
@@ -3468,7 +3493,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>50</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o51">
+<o:Column Id="o53">
 <a:ObjectID>61B11321-3E74-45D7-A9EF-10F49A0009E6</a:ObjectID>
 <a:Name>id_gene</a:Name>
 <a:Code>ID_GENE</a:Code>
@@ -3481,7 +3506,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o52">
+<o:Key Id="o54">
 <a:ObjectID>B9A9B0BF-7A98-4939-9C7E-3B7EE5470BE5</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3490,12 +3515,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1459759597</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o50"/>
+<o:Column Ref="o52"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o52"/>
+<o:Key Ref="o54"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o32">
@@ -3508,7 +3533,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o53">
+<o:Column Id="o55">
 <a:ObjectID>A5A6E18F-7AA2-4F5E-BE70-781DD447002A</a:ObjectID>
 <a:Name>id_sequence</a:Name>
 <a:Code>ID_SEQUENCE</a:Code>
@@ -3520,7 +3545,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>50</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o54">
+<o:Column Id="o56">
 <a:ObjectID>73CD2437-E8BA-4CB8-8C38-B8A7B42E478C</a:ObjectID>
 <a:Name>id_protein</a:Name>
 <a:Code>ID_PROTEIN</a:Code>
@@ -3532,7 +3557,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>50</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o55">
+<o:Column Id="o57">
 <a:ObjectID>D41287EF-1941-4E2A-BB34-662BB4C4D497</a:ObjectID>
 <a:Name>meta</a:Name>
 <a:Code>META</a:Code>
@@ -3543,7 +3568,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>TEXT</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o56">
+<o:Column Id="o58">
 <a:ObjectID>EC55CBE2-3D0B-4B44-A26B-8E9379924809</a:ObjectID>
 <a:Name>length</a:Name>
 <a:Code>LENGTH</a:Code>
@@ -3555,7 +3580,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o57">
+<o:Column Id="o59">
 <a:ObjectID>762390D4-ED0E-4C29-AE08-40C901815BDD</a:ObjectID>
 <a:Name>pi</a:Name>
 <a:Code>PI</a:Code>
@@ -3566,7 +3591,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>FLOAT8</a:DataType>
 <a:Length>8</a:Length>
 </o:Column>
-<o:Column Id="o58">
+<o:Column Id="o60">
 <a:ObjectID>DFC9BD02-3820-437A-A48A-DD48807C6FC5</a:ObjectID>
 <a:Name>average_mass</a:Name>
 <a:Code>AVERAGE_MASS</a:Code>
@@ -3577,7 +3602,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>FLOAT8</a:DataType>
 <a:Length>8</a:Length>
 </o:Column>
-<o:Column Id="o59">
+<o:Column Id="o61">
 <a:ObjectID>8AB1489B-B328-4AAA-B00A-37DF1E5D87B5</a:ObjectID>
 <a:Name>monoisotopic_mass</a:Name>
 <a:Code>MONOISOTOPIC_MASS</a:Code>
@@ -3588,7 +3613,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>FLOAT8</a:DataType>
 <a:Length>8</a:Length>
 </o:Column>
-<o:Column Id="o60">
+<o:Column Id="o62">
 <a:ObjectID>A7C14D7C-4F65-4EF6-8F7E-057B9BCFCD6E</a:ObjectID>
 <a:Name>canonical</a:Name>
 <a:Code>CANONICAL</a:Code>
@@ -3599,7 +3624,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>boolean</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o61">
+<o:Column Id="o63">
 <a:ObjectID>5A04C6E0-6492-46AD-8D85-7B64857B441C</a:ObjectID>
 <a:Name>sequence</a:Name>
 <a:Code>SEQUENCE</a:Code>
@@ -3610,7 +3635,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>TEXT</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o62">
+<o:Column Id="o64">
 <a:ObjectID>4CD29DEC-C658-4C77-9635-57C288E96A9A</a:ObjectID>
 <a:Name>last_update</a:Name>
 <a:Code>LAST_UPDATE</a:Code>
@@ -3623,7 +3648,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o63">
+<o:Key Id="o65">
 <a:ObjectID>4A75BCF8-90ED-4999-B7BB-EDCED201ACE5</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3632,12 +3657,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1459928739</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o53"/>
+<o:Column Ref="o55"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o63"/>
+<o:Key Ref="o65"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o33">
@@ -3650,7 +3675,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o64">
+<o:Column Id="o66">
 <a:ObjectID>9457A3DC-CF1E-43BE-8AAD-16F12E169C02</a:ObjectID>
 <a:Name>id_assembly</a:Name>
 <a:Code>ID_ASSEMBLY</a:Code>
@@ -3662,7 +3687,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>50</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o65">
+<o:Column Id="o67">
 <a:ObjectID>33EBEE4F-1676-4F77-9BC2-04FD465F8A03</a:ObjectID>
 <a:Name>id_organism</a:Name>
 <a:Code>ID_ORGANISM</a:Code>
@@ -3674,7 +3699,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o66">
+<o:Column Id="o68">
 <a:ObjectID>AC9D565A-9EAE-475C-A7A6-E614C770EF9F</a:ObjectID>
 <a:Name>ucsc_code</a:Name>
 <a:Code>UCSC_CODE</a:Code>
@@ -3686,7 +3711,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>20</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o67">
+<o:Column Id="o69">
 <a:ObjectID>7C7677A7-E657-4201-A70D-E2D67FF79123</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>NAME</a:Code>
@@ -3699,7 +3724,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o68">
+<o:Key Id="o70">
 <a:ObjectID>695AFC1E-ED8E-4DFC-96AD-5FD20AC1EAEB</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3708,12 +3733,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1470650654</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o64"/>
+<o:Column Ref="o66"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o68"/>
+<o:Key Ref="o70"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o34">
@@ -3726,7 +3751,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o69">
+<o:Column Id="o71">
 <a:ObjectID>B3A062D1-DD4D-4793-B6E6-DE201BE3F6EC</a:ObjectID>
 <a:Name>id_organism</a:Name>
 <a:Code>ID_ORGANISM</a:Code>
@@ -3738,7 +3763,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o70">
+<o:Column Id="o72">
 <a:ObjectID>5AFE00D2-06F6-48D0-9610-B7C0086C4F44</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>NAME</a:Code>
@@ -3752,7 +3777,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o71">
+<o:Key Id="o73">
 <a:ObjectID>9E2AC757-9507-454F-B9B7-DDD447E98C14</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3761,12 +3786,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1470650615</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o69"/>
+<o:Column Ref="o71"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o71"/>
+<o:Key Ref="o73"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o35">
@@ -3779,7 +3804,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o72">
+<o:Column Id="o74">
 <a:ObjectID>EA170FCC-BCF1-4934-8933-F61F02C276C4</a:ObjectID>
 <a:Name>id_position</a:Name>
 <a:Code>ID_POSITION</a:Code>
@@ -3791,7 +3816,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o73">
+<o:Column Id="o75">
 <a:ObjectID>63AB5D37-8D9F-4F59-8617-906F096BCF0F</a:ObjectID>
 <a:Name>id_ucsc</a:Name>
 <a:Code>ID_UCSC</a:Code>
@@ -3802,7 +3827,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(20)</a:DataType>
 <a:Length>20</a:Length>
 </o:Column>
-<o:Column Id="o74">
+<o:Column Id="o76">
 <a:ObjectID>6264B75F-A08F-4713-B368-3473E436C3AF</a:ObjectID>
 <a:Name>id_ensembl</a:Name>
 <a:Code>ID_ENSEMBL</a:Code>
@@ -3813,7 +3838,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(50)</a:DataType>
 <a:Length>50</a:Length>
 </o:Column>
-<o:Column Id="o75">
+<o:Column Id="o77">
 <a:ObjectID>5C47B89A-280C-4DC2-8CD0-BEAA813629EB</a:ObjectID>
 <a:Name>id_assembly</a:Name>
 <a:Code>ID_ASSEMBLY</a:Code>
@@ -3825,7 +3850,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>50</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o76">
+<o:Column Id="o78">
 <a:ObjectID>8EB84F4E-FB5A-4048-9677-70B4B2FDCE9C</a:ObjectID>
 <a:Name>id_gene</a:Name>
 <a:Code>ID_GENE</a:Code>
@@ -3836,7 +3861,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>INT4</a:DataType>
 <a:Length>4</a:Length>
 </o:Column>
-<o:Column Id="o77">
+<o:Column Id="o79">
 <a:ObjectID>FCA11181-DCD3-4CA3-9E98-332A1BE11FCF</a:ObjectID>
 <a:Name>chrom</a:Name>
 <a:Code>CHROM</a:Code>
@@ -3848,7 +3873,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>20</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o78">
+<o:Column Id="o80">
 <a:ObjectID>4C68B877-71F3-491D-B737-BCF7F8DE2398</a:ObjectID>
 <a:Name>strand</a:Name>
 <a:Code>STRAND</a:Code>
@@ -3860,7 +3885,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o79">
+<o:Column Id="o81">
 <a:ObjectID>DC12D711-A1D4-4631-B763-FC512A47CF70</a:ObjectID>
 <a:Name>tx_start</a:Name>
 <a:Code>TX_START</a:Code>
@@ -3872,7 +3897,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o80">
+<o:Column Id="o82">
 <a:ObjectID>1B775C20-DDC5-45AE-A801-78C9E75ACF21</a:ObjectID>
 <a:Name>tx_end</a:Name>
 <a:Code>TX_END</a:Code>
@@ -3884,7 +3909,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o81">
+<o:Column Id="o83">
 <a:ObjectID>3EEF4096-ECDC-41EA-B7A1-E1ABF5872A32</a:ObjectID>
 <a:Name>cds_start</a:Name>
 <a:Code>CDS_START</a:Code>
@@ -3895,7 +3920,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>INT4</a:DataType>
 <a:Length>4</a:Length>
 </o:Column>
-<o:Column Id="o82">
+<o:Column Id="o84">
 <a:ObjectID>9CB8DB83-CE77-4B65-BCF5-6923DC0F257F</a:ObjectID>
 <a:Name>cds_end</a:Name>
 <a:Code>CDS_END</a:Code>
@@ -3906,7 +3931,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>INT4</a:DataType>
 <a:Length>4</a:Length>
 </o:Column>
-<o:Column Id="o83">
+<o:Column Id="o85">
 <a:ObjectID>2ED9FC4F-40A5-4552-8DB2-2AFBC3268E82</a:ObjectID>
 <a:Name>exon_count</a:Name>
 <a:Code>EXON_COUNT</a:Code>
@@ -3919,7 +3944,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o84">
+<o:Key Id="o86">
 <a:ObjectID>DFD2A468-9423-4549-B94A-C99AB319E071</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3928,12 +3953,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1470917837</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o72"/>
+<o:Column Ref="o74"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o84"/>
+<o:Key Ref="o86"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o36">
@@ -3946,7 +3971,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o85">
+<o:Column Id="o87">
 <a:ObjectID>A4752041-DD18-473C-A773-2F48E986EAC0</a:ObjectID>
 <a:Name>id_gene_before</a:Name>
 <a:Code>ID_GENE_BEFORE</a:Code>
@@ -3958,7 +3983,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o86">
+<o:Column Id="o88">
 <a:ObjectID>E3F35EF4-498F-428E-91BA-67D734F6B69D</a:ObjectID>
 <a:Name>id_gene_after</a:Name>
 <a:Code>ID_GENE_AFTER</a:Code>
@@ -3972,7 +3997,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o87">
+<o:Key Id="o89">
 <a:ObjectID>CAF71B17-BB34-4995-A33F-8F67FF66BF7A</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3981,13 +4006,85 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1470918373</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o85"/>
-<o:Column Ref="o86"/>
+<o:Column Ref="o87"/>
+<o:Column Ref="o88"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o87"/>
+<o:Key Ref="o89"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o38">
+<a:ObjectID>BD078CC5-8A65-43C7-92AE-62A6E6F6DC30</a:ObjectID>
+<a:Name>tx_log</a:Name>
+<a:Code>TX_LOG</a:Code>
+<a:CreationDate>1472634865</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1472635004</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o90">
+<a:ObjectID>C7FA467A-8EF4-4320-A7DD-9A2AE265C9B7</a:ObjectID>
+<a:Name>last_activity</a:Name>
+<a:Code>LAST_ACTIVITY</a:Code>
+<a:CreationDate>1472634869</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1472634953</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>TIMESTAMP</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o91">
+<a:ObjectID>64ACC76F-A21F-437A-A999-B3E0A86A46D7</a:ObjectID>
+<a:Name>module</a:Name>
+<a:Code>MODULE</a:Code>
+<a:CreationDate>1472634869</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1472634953</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>VARCHAR(500)</a:DataType>
+<a:Length>500</a:Length>
+</o:Column>
+<o:Column Id="o92">
+<a:ObjectID>8380C44C-3571-4044-955F-68B885D56AB2</a:ObjectID>
+<a:Name>status</a:Name>
+<a:Code>STATUS</a:Code>
+<a:CreationDate>1472634869</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1472634953</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>VARCHAR(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o93">
+<a:ObjectID>CF333D9D-73CE-4418-B621-53AAF3BA6D4C</a:ObjectID>
+<a:Name>comment</a:Name>
+<a:Code>COMMENT</a:Code>
+<a:CreationDate>1472634869</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1472634953</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>TEXT</a:DataType>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o94">
+<a:ObjectID>D609672B-0B06-4E82-BD0F-2F08317FFA5B</a:ObjectID>
+<a:Name>Cle_1</a:Name>
+<a:Code>CLE_1</a:Code>
+<a:CreationDate>1472634869</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1472634953</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o90"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o94"/>
 </c:PrimaryKey>
 </o:Table>
 </c:Tables>
@@ -4011,20 +4108,20 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o30"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o45"/>
+<o:Key Ref="o47"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o88">
+<o:ReferenceJoin Id="o95">
 <a:ObjectID>27E9B419-A70E-4200-BA2F-F6448D5CD20B</a:ObjectID>
 <a:CreationDate>1452759995</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1452759995</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o37"/>
+<o:Column Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o46"/>
+<o:Column Ref="o48"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4048,20 +4145,20 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o32"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o52"/>
+<o:Key Ref="o54"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o89">
+<o:ReferenceJoin Id="o96">
 <a:ObjectID>8992AFE5-A28A-408B-8219-9DAF538DA0EB</a:ObjectID>
 <a:CreationDate>1459928750</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1459928750</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o50"/>
+<o:Column Ref="o52"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o54"/>
+<o:Column Ref="o56"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4085,20 +4182,20 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o31"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o45"/>
+<o:Key Ref="o47"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o90">
+<o:ReferenceJoin Id="o97">
 <a:ObjectID>2E55C082-9EA9-490C-A0C8-F3882FD45EA5</a:ObjectID>
 <a:CreationDate>1460112134</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1460112134</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o37"/>
+<o:Column Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o51"/>
+<o:Column Ref="o53"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4122,20 +4219,20 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o33"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o71"/>
+<o:Key Ref="o73"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o91">
+<o:ReferenceJoin Id="o98">
 <a:ObjectID>6CFB48FC-D09E-4D6B-8C45-E5E5C15B3909</a:ObjectID>
 <a:CreationDate>1470650910</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1470650910</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o69"/>
+<o:Column Ref="o71"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o65"/>
+<o:Column Ref="o67"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4159,20 +4256,20 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o35"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o68"/>
+<o:Key Ref="o70"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o92">
+<o:ReferenceJoin Id="o99">
 <a:ObjectID>ED68045B-12A5-41B8-8C61-FCF29CBA3B68</a:ObjectID>
 <a:CreationDate>1470653661</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1470653661</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o64"/>
+<o:Column Ref="o66"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o75"/>
+<o:Column Ref="o77"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4196,20 +4293,20 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o35"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o45"/>
+<o:Key Ref="o47"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o93">
+<o:ReferenceJoin Id="o100">
 <a:ObjectID>8A290D52-B7E9-4190-B9D9-54E9E9B4A205</a:ObjectID>
 <a:CreationDate>1470653677</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1470653677</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o37"/>
+<o:Column Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o76"/>
+<o:Column Ref="o78"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4233,20 +4330,20 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o36"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o45"/>
+<o:Key Ref="o47"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o94">
+<o:ReferenceJoin Id="o101">
 <a:ObjectID>DF2DB0B7-D251-46DA-8C20-902E0EA8E9ED</a:ObjectID>
 <a:CreationDate>1470918302</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1470918302</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o37"/>
+<o:Column Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o85"/>
+<o:Column Ref="o87"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4270,27 +4367,27 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o36"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o45"/>
+<o:Key Ref="o47"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o95">
+<o:ReferenceJoin Id="o102">
 <a:ObjectID>31BB1940-E443-487A-AECA-5BD3B6445661</a:ObjectID>
 <a:CreationDate>1470918347</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1470918348</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o37"/>
+<o:Column Ref="o39"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o86"/>
+<o:Column Ref="o88"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
 </o:Reference>
 </c:References>
 <c:DefaultGroups>
-<o:Group Id="o96">
+<o:Group Id="o103">
 <a:ObjectID>AAB20F69-FA04-4ABC-96C1-D5FFB55B172A</a:ObjectID>
 <a:Name>PUBLIC</a:Name>
 <a:Code>PUBLIC</a:Code>
@@ -4301,7 +4398,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Group>
 </c:DefaultGroups>
 <c:TargetModels>
-<o:TargetModel Id="o97">
+<o:TargetModel Id="o104">
 <a:ObjectID>D14DA2BA-391D-46D7-8E24-314AFB31C496</a:ObjectID>
 <a:Name>PostgreSQL 8</a:Name>
 <a:Code>PGSQL80</a:Code>

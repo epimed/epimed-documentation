@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  31/08/2016 09:55:50                      */
+/* Date de création :  31/08/2016 11:16:57                      */
 /*==============================================================*/
 
 
@@ -19,6 +19,8 @@ drop table OM_ORGANISM;
 drop table OM_PROTEIN;
 
 drop table OM_PROTEIN_SEQUENCE;
+
+drop table TX_LOG;
 
 /*==============================================================*/
 /* Table : OM_ASSEMBLY                                          */
@@ -117,6 +119,17 @@ create table OM_PROTEIN_SEQUENCE (
    SEQUENCE             TEXT                 not null,
    LAST_UPDATE          DATE                 not null,
    constraint PK_OM_PROTEIN_SEQUENCE primary key (ID_SEQUENCE)
+);
+
+/*==============================================================*/
+/* Table : TX_LOG                                               */
+/*==============================================================*/
+create table TX_LOG (
+   LAST_ACTIVITY        TIMESTAMP            not null,
+   MODULE               VARCHAR(500)         null,
+   STATUS               VARCHAR(255)         null,
+   COMMENT              TEXT                 null,
+   constraint PK_TX_LOG primary key (LAST_ACTIVITY)
 );
 
 alter table OM_ASSEMBLY
