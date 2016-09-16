@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  31/08/2016 11:16:57                      */
+/* Date de création :  16/09/2016 10:41:33                      */
 /*==============================================================*/
 
 
@@ -14,7 +14,11 @@ drop table OM_GENE_HISTORY;
 
 drop table OM_GENE_POSITION;
 
+drop table OM_GP_GPL570;
+
 drop table OM_ORGANISM;
+
+drop table OM_PROBE_GPL570;
 
 drop table OM_PROTEIN;
 
@@ -87,12 +91,29 @@ create table OM_GENE_POSITION (
 );
 
 /*==============================================================*/
+/* Table : OM_GP_GPL570                                         */
+/*==============================================================*/
+create table OM_GP_GPL570 (
+   ID_PROBE             VARCHAR(50)          not null,
+   ID_GENE              INT4                 not null,
+   constraint PK_OM_GP_GPL570 primary key (ID_PROBE, ID_GENE)
+);
+
+/*==============================================================*/
 /* Table : OM_ORGANISM                                          */
 /*==============================================================*/
 create table OM_ORGANISM (
    ID_ORGANISM          INT4                 not null,
    NAME                 VARCHAR(255)         not null,
    constraint PK_OM_ORGANISM primary key (ID_ORGANISM)
+);
+
+/*==============================================================*/
+/* Table : OM_PROBE_GPL570                                      */
+/*==============================================================*/
+create table OM_PROBE_GPL570 (
+   ID_PROBE             VARCHAR(50)          not null,
+   constraint PK_OM_PROBE_GPL570 primary key (ID_PROBE)
 );
 
 /*==============================================================*/
@@ -159,6 +180,16 @@ alter table OM_GENE_POSITION
 
 alter table OM_GENE_POSITION
    add constraint fk_location_gene foreign key (ID_GENE)
+      references OM_GENE (ID_GENE)
+      on delete restrict on update restrict;
+
+alter table OM_GP_GPL570
+   add constraint fk_gp_probe_gpl570 foreign key (ID_PROBE)
+      references OM_PROBE_GPL570 (ID_PROBE)
+      on delete restrict on update restrict;
+
+alter table OM_GP_GPL570
+   add constraint fk_gp_gene_gpl570 foreign key (ID_GENE)
       references OM_GENE (ID_GENE)
       on delete restrict on update restrict;
 
