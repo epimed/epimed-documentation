@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  03/08/2016 15:06:02                      */
+/* Date de création :  16/09/2016 16:27:03                      */
 /*==============================================================*/
 
 
@@ -11,8 +11,6 @@ drop table CL_CELL_LINE;
 drop table CL_CELL_LINE_ALIAS;
 
 drop table CL_COLLECTION_METHOD;
-
-drop table CL_CONSEQUENCE;
 
 drop table CL_EVENT;
 
@@ -26,17 +24,9 @@ drop table CL_FOLLOW_UP;
 
 drop table CL_GENE_MUTATION;
 
-drop table CL_GENE_STATUS;
-
 drop table CL_HISTOLOGY_DETAIL;
 
 drop table CL_MORPHOLOGY;
-
-drop table CL_MUTATION_CONSEQUENCE;
-
-drop table CL_MUTATION_DETAIL;
-
-drop table CL_MUTATION_PARAMETER;
 
 drop table CL_ONTOLOGY_CATEGORY;
 
@@ -174,15 +164,6 @@ create table CL_COLLECTION_METHOD (
 );
 
 /*==============================================================*/
-/* Table : CL_CONSEQUENCE                                       */
-/*==============================================================*/
-create table CL_CONSEQUENCE (
-   ID_CONSEQUENCE       VARCHAR(10)          not null,
-   DESCRIPTION          VARCHAR(100)         null,
-   constraint PK_CL_CONSEQUENCE primary key (ID_CONSEQUENCE)
-);
-
-/*==============================================================*/
 /* Table : CL_EVENT                                             */
 /*==============================================================*/
 create table CL_EVENT (
@@ -246,30 +227,24 @@ create table CL_FOLLOW_UP (
 /*==============================================================*/
 create table CL_GENE_MUTATION (
    ID_MUTATION          INT4                 not null,
-   ID_GENE              INT4                 not null,
-   ID_GENE_STATUS       VARCHAR(3)           not null,
-   ID_BIOPATHO          INT4                 not null,
-   DNA_MUTATION         VARCHAR(100)         not null,
-   CODON_NUMBER         INT4                 null,
-   EXON_NUMBER          INT4                 null,
-   PROTEIN_MUTATION     VARCHAR(100)         null,
-   COMMENT              VARCHAR(500)         null,
+   ID_SAMPLE            VARCHAR(20)          null,
+   ID_GENE              INT4                 null,
+   GENE_SYMBOL          VARCHAR(50)          null,
+   STATUS               VARCHAR(255)         null,
+   DNA_MUTATION         VARCHAR(255)         null,
+   EXON_NUMBER          VARCHAR(255)         null,
+   FUNC_CONSEQUENCE     VARCHAR(500)         null,
+   CODON_NUMBER         VARCHAR(255)         null,
+   PROTEIN_MUTATION     VARCHAR(255)         null,
+   PROTEIN_EXPRESSION   boolean              null,
+   COSMIC               VARCHAR(255)         null,
+   STRUCT_EFFECT_CLASS  VARCHAR(255)         null,
+   SIFT_CLASS           VARCHAR(255)         null,
+   TRANSACT_CLASS       VARCHAR(255)         null,
+   D_ND_CLASS           VARCHAR(255)         null,
+   LOF_GOF              VARCHAR(255)         null,
    constraint PK_CL_GENE_MUTATION primary key (ID_MUTATION)
 );
-
-/*==============================================================*/
-/* Table : CL_GENE_STATUS                                       */
-/*==============================================================*/
-create table CL_GENE_STATUS (
-   ID_GENE_STATUS       VARCHAR(3)           not null,
-   DESCRIPTION          VARCHAR(20)          not null,
-   constraint PK_CL_GENE_STATUS primary key (ID_GENE_STATUS)
-);
-
-comment on table CL_GENE_STATUS is
-'ND - not determined
-WT - wild type
-MT - mutated';
 
 /*==============================================================*/
 /* Table : CL_HISTOLOGY_DETAIL                                  */
@@ -301,34 +276,6 @@ Group: 801 CARCINOMA, NOS
 Morphology : 8010 
 Bihavior : /2
 Carcinoma in situ, NOS';
-
-/*==============================================================*/
-/* Table : CL_MUTATION_CONSEQUENCE                              */
-/*==============================================================*/
-create table CL_MUTATION_CONSEQUENCE (
-   ID_MUTATION          INT4                 not null,
-   ID_CONSEQUENCE       VARCHAR(10)          not null,
-   constraint PK_CL_MUTATION_CONSEQUENCE primary key (ID_MUTATION, ID_CONSEQUENCE)
-);
-
-/*==============================================================*/
-/* Table : CL_MUTATION_DETAIL                                   */
-/*==============================================================*/
-create table CL_MUTATION_DETAIL (
-   ID_MUTATION          INT4                 not null,
-   ID_PARAMETER         INT4                 not null,
-   VALUE                VARCHAR(20)          not null,
-   constraint PK_CL_MUTATION_DETAIL primary key (ID_MUTATION, ID_PARAMETER)
-);
-
-/*==============================================================*/
-/* Table : CL_MUTATION_PARAMETER                                */
-/*==============================================================*/
-create table CL_MUTATION_PARAMETER (
-   ID_PARAMETER         INT4                 not null,
-   NAME                 VARCHAR(100)         not null,
-   constraint PK_CL_MUTATION_PARAMETER primary key (ID_PARAMETER)
-);
 
 /*==============================================================*/
 /* Table : CL_ONTOLOGY_CATEGORY                                 */
@@ -882,21 +829,6 @@ alter table CL_FOLLOW_UP
       references CL_PATIENT (ID_PATIENT)
       on delete restrict on update restrict;
 
-alter table CL_GENE_MUTATION
-   add constraint fk_gene_mut_gene foreign key (ID_GENE)
-      references OM_GENE (ID_GENE)
-      on delete restrict on update restrict;
-
-alter table CL_GENE_MUTATION
-   add constraint fk_gene_mut_gene_status foreign key (ID_GENE_STATUS)
-      references CL_GENE_STATUS (ID_GENE_STATUS)
-      on delete restrict on update restrict;
-
-alter table CL_GENE_MUTATION
-   add constraint fk_gene_mut_histo foreign key (ID_BIOPATHO)
-      references CL_BIOPATHO (ID_BIOPATHO)
-      on delete restrict on update restrict;
-
 alter table CL_HISTOLOGY_DETAIL
    add constraint fk_histo_detail_histo foreign key (ID_BIOPATHO)
       references CL_BIOPATHO (ID_BIOPATHO)
@@ -905,26 +837,6 @@ alter table CL_HISTOLOGY_DETAIL
 alter table CL_HISTOLOGY_DETAIL
    add constraint fk_histo_detail_param foreign key (ID_PARAMETER)
       references CL_PARAMETER (ID_PARAMETER)
-      on delete restrict on update restrict;
-
-alter table CL_MUTATION_CONSEQUENCE
-   add constraint fk_mut_cons_gene_mut foreign key (ID_MUTATION)
-      references CL_GENE_MUTATION (ID_MUTATION)
-      on delete restrict on update restrict;
-
-alter table CL_MUTATION_CONSEQUENCE
-   add constraint fk_mut_cons_cons foreign key (ID_CONSEQUENCE)
-      references CL_CONSEQUENCE (ID_CONSEQUENCE)
-      on delete restrict on update restrict;
-
-alter table CL_MUTATION_DETAIL
-   add constraint fk_mut_detail_gene_mut foreign key (ID_MUTATION)
-      references CL_GENE_MUTATION (ID_MUTATION)
-      on delete restrict on update restrict;
-
-alter table CL_MUTATION_DETAIL
-   add constraint fk_mut_detail_mut_param foreign key (ID_PARAMETER)
-      references CL_MUTATION_PARAMETER (ID_PARAMETER)
       on delete restrict on update restrict;
 
 alter table CL_ONTOLOGY_DICTIONARY
