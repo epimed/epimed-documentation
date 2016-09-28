@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  16/09/2016 16:27:03                      */
+/* Date de création :  28/09/2016 08:08:00                      */
 /*==============================================================*/
 
 
@@ -60,31 +60,13 @@ drop table CL_TREATMENT_METHOD;
 
 drop table CL_TREATMENT_TYPE;
 
-drop table OM_GENE;
-
-drop table OM_GENE_ALIAS;
-
-drop table OM_GENE_DATABASE;
-
 drop table OM_GROUP;
 
 drop table OM_GROUP_VALUE;
 
-drop table OM_METHYLOME;
-
 drop table OM_PLATFORM;
 
-drop table OM_PLATFORM_PROBE;
-
 drop table OM_PLATFORM_TYPE;
-
-drop table OM_PROBE;
-
-drop table OM_PROBE_GENE;
-
-drop table OM_PROTEIN;
-
-drop table OM_PROTEIN_SEQUENCE;
 
 drop table OM_SAMPLE;
 
@@ -99,10 +81,6 @@ drop table OM_URI;
 drop table OM_URI_SAMPLE;
 
 drop table OM_URI_SERIES;
-
-drop table ST_TNBC_PROTEOME;
-
-drop table TX_LOG;
 
 /*==============================================================*/
 /* Table : CL_BIOPATHO                                          */
@@ -489,41 +467,6 @@ comment on table CL_TREATMENT_TYPE is
 'adjuvent, neoadjuvent, curative';
 
 /*==============================================================*/
-/* Table : OM_GENE                                              */
-/*==============================================================*/
-create table OM_GENE (
-   ID_GENE              INT4                 not null,
-   GENE_SYMBOL          VARCHAR(50)          null,
-   TITLE                VARCHAR(255)         not null,
-   LOCATION             VARCHAR(100)         null,
-   STATUS               VARCHAR(100)         null,
-   TYPE                 VARCHAR(100)         null,
-   DATE_MODIFIED        DATE                 null,
-   LAST_UPDATE          DATE                 not null,
-   constraint PK_OM_GENE primary key (ID_GENE)
-);
-
-/*==============================================================*/
-/* Table : OM_GENE_ALIAS                                        */
-/*==============================================================*/
-create table OM_GENE_ALIAS (
-   ID_GENE              INT4                 not null,
-   ALIAS                VARCHAR(50)          not null,
-   ID_DATABASE          VARCHAR(20)          null,
-   constraint PK_OM_GENE_ALIAS primary key (ID_GENE, ALIAS)
-);
-
-/*==============================================================*/
-/* Table : OM_GENE_DATABASE                                     */
-/*==============================================================*/
-create table OM_GENE_DATABASE (
-   ID_DATABASE          VARCHAR(20)          not null,
-   NAME                 VARCHAR(100)         not null,
-   COMMENT              VARCHAR(255)         null,
-   constraint PK_OM_GENE_DATABASE primary key (ID_DATABASE)
-);
-
-/*==============================================================*/
 /* Table : OM_GROUP                                             */
 /*==============================================================*/
 create table OM_GROUP (
@@ -557,16 +500,6 @@ comment on table OM_GROUP_VALUE is
 name: P1';
 
 /*==============================================================*/
-/* Table : OM_METHYLOME                                         */
-/*==============================================================*/
-create table OM_METHYLOME (
-   ID_PROBE             VARCHAR(50)          not null,
-   REFGENE_GROUP        VARCHAR(100)         null,
-   CPG_ISLAND           VARCHAR(100)         null,
-   constraint PK_OM_METHYLOME primary key (ID_PROBE)
-);
-
-/*==============================================================*/
 /* Table : OM_PLATFORM                                          */
 /*==============================================================*/
 create table OM_PLATFORM (
@@ -579,64 +512,12 @@ create table OM_PLATFORM (
 );
 
 /*==============================================================*/
-/* Table : OM_PLATFORM_PROBE                                    */
-/*==============================================================*/
-create table OM_PLATFORM_PROBE (
-   ID_PLATFORM          VARCHAR(20)          not null,
-   ID_PROBE             VARCHAR(50)          not null,
-   constraint PK_OM_PLATFORM_PROBE primary key (ID_PLATFORM, ID_PROBE)
-);
-
-/*==============================================================*/
 /* Table : OM_PLATFORM_TYPE                                     */
 /*==============================================================*/
 create table OM_PLATFORM_TYPE (
    ID_PLATFORM_TYPE     INT4                 not null,
    NAME                 VARCHAR(100)         not null,
    constraint PK_OM_PLATFORM_TYPE primary key (ID_PLATFORM_TYPE)
-);
-
-/*==============================================================*/
-/* Table : OM_PROBE                                             */
-/*==============================================================*/
-create table OM_PROBE (
-   ID_PROBE             VARCHAR(50)          not null,
-   constraint PK_OM_PROBE primary key (ID_PROBE)
-);
-
-/*==============================================================*/
-/* Table : OM_PROBE_GENE                                        */
-/*==============================================================*/
-create table OM_PROBE_GENE (
-   ID_PROBE             VARCHAR(50)          not null,
-   ID_GENE              INT4                 not null,
-   constraint PK_OM_PROBE_GENE primary key (ID_PROBE, ID_GENE)
-);
-
-/*==============================================================*/
-/* Table : OM_PROTEIN                                           */
-/*==============================================================*/
-create table OM_PROTEIN (
-   ID_PROTEIN           VARCHAR(50)          not null,
-   ID_GENE              INT4                 null,
-   constraint PK_OM_PROTEIN primary key (ID_PROTEIN)
-);
-
-/*==============================================================*/
-/* Table : OM_PROTEIN_SEQUENCE                                  */
-/*==============================================================*/
-create table OM_PROTEIN_SEQUENCE (
-   ID_SEQUENCE          VARCHAR(50)          not null,
-   ID_PROTEIN           VARCHAR(50)          not null,
-   META                 TEXT                 not null,
-   LENGTH               INT4                 not null,
-   PI                   FLOAT8               null,
-   AVERAGE_MASS         FLOAT8               null,
-   MONOISOTOPIC_MASS    FLOAT8               null,
-   CANONICAL            boolean              not null,
-   SEQUENCE             TEXT                 not null,
-   LAST_UPDATE          DATE                 not null,
-   constraint PK_OM_PROTEIN_SEQUENCE primary key (ID_SEQUENCE)
 );
 
 /*==============================================================*/
@@ -713,30 +594,6 @@ create table OM_URI_SERIES (
    ID_SERIES            VARCHAR(20)          not null,
    ID_URI               INT4                 not null,
    constraint PK_OM_URI_SERIES primary key (ID_SERIES, ID_URI)
-);
-
-/*==============================================================*/
-/* Table : ST_TNBC_PROTEOME                                     */
-/*==============================================================*/
-create table ST_TNBC_PROTEOME (
-   ID_PROTEOME          INT4                 not null,
-   ORIGINAL_ID_SEQ      VARCHAR(50)          not null,
-   UPDATED_ID_SEQ       VARCHAR(50)          null,
-   BIOMATERIAL          VARCHAR(100)         not null,
-   REPLICATE            INT4                 null,
-   PROTEIN_ABUNDANCE    FLOAT8               null,
-   constraint PK_ST_TNBC_PROTEOME primary key (ID_PROTEOME)
-);
-
-/*==============================================================*/
-/* Table : TX_LOG                                               */
-/*==============================================================*/
-create table TX_LOG (
-   LAST_ACTIVITY        TIMESTAMP            not null,
-   MODULE               VARCHAR(255)         not null,
-   STATUS               VARCHAR(100)         null,
-   COMMENT              TEXT                 null,
-   constraint PK_TX_LOG primary key (LAST_ACTIVITY)
 );
 
 alter table CL_BIOPATHO
@@ -874,59 +731,14 @@ alter table CL_TREATMENT
       references CL_TREATMENT_TYPE (ID_TREATMENT_TYPE)
       on delete restrict on update restrict;
 
-alter table OM_GENE_ALIAS
-   add constraint fk_gene_alias_gene foreign key (ID_GENE)
-      references OM_GENE (ID_GENE)
-      on delete restrict on update restrict;
-
-alter table OM_GENE_ALIAS
-   add constraint fk_gene_alias_gene_db foreign key (ID_DATABASE)
-      references OM_GENE_DATABASE (ID_DATABASE)
-      on delete restrict on update restrict;
-
 alter table OM_GROUP_VALUE
    add constraint fk_group_value_group foreign key (ID_GROUP)
       references OM_GROUP (ID_GROUP)
       on delete restrict on update restrict;
 
-alter table OM_METHYLOME
-   add constraint fk_methyl_probe foreign key (ID_PROBE)
-      references OM_PROBE (ID_PROBE)
-      on delete restrict on update restrict;
-
 alter table OM_PLATFORM
    add constraint fk_platform_platform_type foreign key (ID_PLATFORM_TYPE)
       references OM_PLATFORM_TYPE (ID_PLATFORM_TYPE)
-      on delete restrict on update restrict;
-
-alter table OM_PLATFORM_PROBE
-   add constraint fk_platform_probe_platform foreign key (ID_PLATFORM)
-      references OM_PLATFORM (ID_PLATFORM)
-      on delete restrict on update restrict;
-
-alter table OM_PLATFORM_PROBE
-   add constraint fk_platform_probe_probe foreign key (ID_PROBE)
-      references OM_PROBE (ID_PROBE)
-      on delete restrict on update restrict;
-
-alter table OM_PROBE_GENE
-   add constraint fk_probe_gene_probe foreign key (ID_PROBE)
-      references OM_PROBE (ID_PROBE)
-      on delete restrict on update restrict;
-
-alter table OM_PROBE_GENE
-   add constraint fk_probe_gene_gene foreign key (ID_GENE)
-      references OM_GENE (ID_GENE)
-      on delete restrict on update restrict;
-
-alter table OM_PROTEIN
-   add constraint fk_prot_gene foreign key (ID_GENE)
-      references OM_GENE (ID_GENE)
-      on delete restrict on update restrict;
-
-alter table OM_PROTEIN_SEQUENCE
-   add constraint fk_prot_seq_prot foreign key (ID_PROTEIN)
-      references OM_PROTEIN (ID_PROTEIN)
       on delete restrict on update restrict;
 
 alter table OM_SAMPLE
