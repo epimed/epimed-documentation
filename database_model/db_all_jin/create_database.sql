@@ -1,10 +1,12 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  10/10/2016 15:18:28                      */
+/* Date de création :  13/10/2016 14:27:16                      */
 /*==============================================================*/
 
 
 drop table ALL_ALV_CODE;
+
+drop table ALL_EXPERIMENT;
 
 drop table ALL_GENE;
 
@@ -15,6 +17,8 @@ drop table ALL_PATIENT;
 drop table ALL_PRIMER;
 
 drop table ALL_QPCR;
+
+drop table ALL_QUALITY_CONTROL;
 
 drop table ALL_SAMPLE;
 
@@ -28,6 +32,14 @@ create table ALL_ALV_CODE (
 );
 
 /*==============================================================*/
+/* Table : ALL_EXPERIMENT                                       */
+/*==============================================================*/
+create table ALL_EXPERIMENT (
+   ID_EXP               VARCHAR(100)         not null,
+   constraint PK_ALL_EXPERIMENT primary key (ID_EXP)
+);
+
+/*==============================================================*/
 /* Table : ALL_GENE                                             */
 /*==============================================================*/
 create table ALL_GENE (
@@ -36,7 +48,6 @@ create table ALL_GENE (
    ENTREZ               INT4                 null,
    GENE_SYMBOL          VARCHAR(50)          null,
    TITLE                VARCHAR(255)         null,
-   CTL                  boolean              not null,
    constraint PK_ALL_GENE primary key (ID_GENE)
 );
 
@@ -47,10 +58,11 @@ create table ALL_NORM (
    ID_NORM              INT4                 not null,
    ID_PRIMER            VARCHAR(50)          null,
    ID_SAMPLE            VARCHAR(50)          null,
-   TISSUES_CTL          VARCHAR(255)         null,
-   GENES_CTL            VARCHAR(255)         null,
+   SAMPLES_CTRL         VARCHAR(255)         null,
+   PRIMERS_CTRL         VARCHAR(255)         null,
    DELTA_DELTA_CT       FLOAT8               null,
    EXPRESSION_LEVEL     FLOAT8               null,
+   NORM_DATE            DATE                 null,
    constraint PK_ALL_NORM primary key (ID_NORM)
 );
 
@@ -96,6 +108,7 @@ create table ALL_PRIMER (
    NUMBER               INT4                 not null,
    FORWARD              TEXT                 null,
    REVERSE              TEXT                 null,
+   REF                  boolean              not null default 'false',
    constraint PK_ALL_PRIMER primary key (ID_PRIMER)
 );
 
@@ -104,11 +117,23 @@ create table ALL_PRIMER (
 /*==============================================================*/
 create table ALL_QPCR (
    ID_QPCR              INT4                 not null,
-   ID_PRIMER            VARCHAR(50)          null,
-   ID_SAMPLE            VARCHAR(50)          null,
+   ID_EXP               VARCHAR(100)         not null,
+   ID_PRIMER            VARCHAR(50)          not null,
+   ID_SAMPLE            VARCHAR(50)          not null,
    CT                   FLOAT8               null,
    RED                  boolean              null,
+   VALIDATED            boolean              not null,
    constraint PK_ALL_QPCR primary key (ID_QPCR)
+);
+
+/*==============================================================*/
+/* Table : ALL_QUALITY_CONTROL                                  */
+/*==============================================================*/
+create table ALL_QUALITY_CONTROL (
+   ID_SAMPLE            VARCHAR(50)          not null,
+   ID_EXP               VARCHAR(100)         not null,
+   REJECTED             boolean              not null,
+   constraint PK_ALL_QUALITY_CONTROL primary key (ID_SAMPLE, ID_EXP)
 );
 
 /*==============================================================*/
@@ -120,6 +145,7 @@ create table ALL_SAMPLE (
    COMMENT              VARCHAR(100)         null,
    ENABLED              boolean              not null,
    TISSUE               VARCHAR(255)         null,
+   CTRL                 boolean              not null default 'false',
    constraint PK_ALL_SAMPLE primary key (ID_SAMPLE)
 );
 
@@ -150,6 +176,21 @@ alter table ALL_QPCR
 
 alter table ALL_QPCR
    add constraint fk_qpcr_sample foreign key (ID_SAMPLE)
+      references ALL_SAMPLE (ID_SAMPLE)
+      on delete restrict on update restrict;
+
+alter table ALL_QPCR
+   add constraint fk_qpcr_exp foreign key (ID_EXP)
+      references ALL_EXPERIMENT (ID_EXP)
+      on delete restrict on update restrict;
+
+alter table ALL_QUALITY_CONTROL
+   add constraint fk_qual_cont_exp foreign key (ID_EXP)
+      references ALL_EXPERIMENT (ID_EXP)
+      on delete restrict on update restrict;
+
+alter table ALL_QUALITY_CONTROL
+   add constraint fk_qual_cont_sample foreign key (ID_SAMPLE)
       references ALL_SAMPLE (ID_SAMPLE)
       on delete restrict on update restrict;
 
