@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  13/10/2016 14:27:16                      */
+/* Date de création :  14/10/2016 09:34:51                      */
 /*==============================================================*/
 
 
@@ -56,15 +56,37 @@ create table ALL_GENE (
 /*==============================================================*/
 create table ALL_NORM (
    ID_NORM              INT4                 not null,
-   ID_PRIMER            VARCHAR(50)          null,
-   ID_SAMPLE            VARCHAR(50)          null,
-   SAMPLES_CTRL         VARCHAR(255)         null,
-   PRIMERS_CTRL         VARCHAR(255)         null,
-   DELTA_DELTA_CT       FLOAT8               null,
-   EXPRESSION_LEVEL     FLOAT8               null,
-   NORM_DATE            DATE                 null,
+   ID_QPCR              INT4                 not null,
+   CTRL_SAMPLES         VARCHAR(255)         null,
+   REF_PRIMERS          VARCHAR(255)         null,
+   CT_TARGET_CTRL       FLOAT8               not null,
+   CT_REF_CTRL          FLOAT8               not null,
+   CT_TARGET_SAMPLE     FLOAT8               not null,
+   CT_REF_SAMPLE        FLOAT8               not null,
+   DELTA_DELTA_CT       FLOAT8               not null,
+   EXPRESSION_LEVEL     FLOAT8               not null,
+   NORM_DATE            DATE                 not null,
    constraint PK_ALL_NORM primary key (ID_NORM)
 );
+
+comment on column ALL_NORM.CT_TARGET_CTRL is
+'CT value of gene/primer of interest (target) in control tissue (ctrl)';
+
+comment on column ALL_NORM.CT_REF_CTRL is
+'CT value of a reference gene/primer (ref) in control tissue';
+
+comment on column ALL_NORM.CT_TARGET_SAMPLE is
+'CT value of  gene/primer of interest (target) in a studied sample (usually, of a pathological tissue)';
+
+comment on column ALL_NORM.CT_REF_SAMPLE is
+'CT value of a reference gene/primer (ref) in a stidied sample (usually, of a pathological tissue)';
+
+comment on column ALL_NORM.DELTA_DELTA_CT is
+'delta_delta_ctt = ( ct_target_ctrl - ct_ref_ctrl ) - ( ct_target_sample - ct_ref_sample )
+				';
+
+comment on column ALL_NORM.EXPRESSION_LEVEL is
+'expression_level = 2 power of delta_delta_ct ';
 
 /*==============================================================*/
 /* Table : ALL_PATIENT                                          */
@@ -155,13 +177,8 @@ alter table ALL_ALV_CODE
       on delete restrict on update restrict;
 
 alter table ALL_NORM
-   add constraint fk_norm_primer foreign key (ID_PRIMER)
-      references ALL_PRIMER (ID_PRIMER)
-      on delete restrict on update restrict;
-
-alter table ALL_NORM
-   add constraint fk_norm_sample foreign key (ID_SAMPLE)
-      references ALL_SAMPLE (ID_SAMPLE)
+   add constraint fk_norm_qpcr foreign key (ID_QPCR)
+      references ALL_QPCR (ID_QPCR)
       on delete restrict on update restrict;
 
 alter table ALL_PRIMER
