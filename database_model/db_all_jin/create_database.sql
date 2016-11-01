@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  14/10/2016 09:34:51                      */
+/* Date de création :  31/10/2016 11:11:58                      */
 /*==============================================================*/
 
 
@@ -15,6 +15,8 @@ drop table ALL_NORM;
 drop table ALL_PATIENT;
 
 drop table ALL_PRIMER;
+
+drop table ALL_PROTEOMIC;
 
 drop table ALL_QPCR;
 
@@ -135,6 +137,17 @@ create table ALL_PRIMER (
 );
 
 /*==============================================================*/
+/* Table : ALL_PROTEOMIC                                        */
+/*==============================================================*/
+create table ALL_PROTEOMIC (
+   ID_PROTEOMIC         INT4                 not null,
+   ID_PATIENT           VARCHAR(50)          not null,
+   ID_GENE              VARCHAR(50)          not null,
+   VALUE                INT4                 not null,
+   constraint PK_ALL_PROTEOMIC primary key (ID_PROTEOMIC)
+);
+
+/*==============================================================*/
 /* Table : ALL_QPCR                                             */
 /*==============================================================*/
 create table ALL_QPCR (
@@ -183,6 +196,16 @@ alter table ALL_NORM
 
 alter table ALL_PRIMER
    add constraint fk_primer_gene foreign key (ID_GENE)
+      references ALL_GENE (ID_GENE)
+      on delete restrict on update restrict;
+
+alter table ALL_PROTEOMIC
+   add constraint fk_proteomic_patient foreign key (ID_PATIENT)
+      references ALL_PATIENT (ID_PATIENT)
+      on delete restrict on update restrict;
+
+alter table ALL_PROTEOMIC
+   add constraint fk_proteomic_gene foreign key (ID_GENE)
       references ALL_GENE (ID_GENE)
       on delete restrict on update restrict;
 
