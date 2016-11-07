@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{DC567F39-874D-4A29-92D6-10F027618682}" Label="" LastModificationDate="1475675685" Name="WEB_MPD" Objects="83" Symbols="12" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{DC567F39-874D-4A29-92D6-10F027618682}" Label="" LastModificationDate="1478526604" Name="EPIMED_WEB_MPD" Objects="27" Symbols="4" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -8,11 +8,11 @@
 <c:Children>
 <o:Model Id="o2">
 <a:ObjectID>DC567F39-874D-4A29-92D6-10F027618682</a:ObjectID>
-<a:Name>WEB_MPD</a:Name>
-<a:Code>WEB_MPD</a:Code>
+<a:Name>EPIMED_WEB_MPD</a:Name>
+<a:Code>EPIMED_WEB_MPD</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1475675685</a:ModificationDate>
+<a:ModificationDate>1478525114</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -87,7 +87,7 @@ GenScriptName6=
 GenScriptName7=
 GenScriptName8=
 GenScriptName9=
-GenPathName=E:\WORK\STS_WORKSPACE\epimed-documentation\database_model\web\
+GenPathName=E:\WORK\STS_WORKSPACE\epimed-documentation\database_model\epimed_web\
 GenSingleFile=Yes
 GenODBC=No
 GenCheckModel=Yes
@@ -2461,11 +2461,11 @@ PhysOpts=</a:ModelOptionsText>
 <c:PhysicalDiagrams>
 <o:PhysicalDiagram Id="o4">
 <a:ObjectID>97AB0B8A-8EFA-4A7F-A2BF-DFA428B0335D</a:ObjectID>
-<a:Name>WEB_MPD</a:Name>
-<a:Code>WEB_MPD</a:Code>
+<a:Name>EPIMED_WEB_MPD</a:Name>
+<a:Code>EPIMED_WEB_MPD</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1475675207</a:ModificationDate>
+<a:ModificationDate>1478526604</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -2880,11 +2880,33 @@ Shadow=0</a:DisplayPreferences>
 <a:PageHeaderTemplate>%MODEL% - %DATE%</a:PageHeaderTemplate>
 <a:PageNumberTemplate/>
 <c:Symbols>
-<o:TableSymbol Id="o5">
+<o:ReferenceSymbol Id="o5">
+<a:CreationDate>1478525022</a:CreationDate>
+<a:ModificationDate>1478525049</a:ModificationDate>
+<a:Rect>((-10106,-6976), (-5906,5240))</a:Rect>
+<a:ListOfPoints>((-8006,-6976),(-8006,5240))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>12615680</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 Arial,8,N
+SOURCE 0 Arial,8,N
+DESTINATION 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o6"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o7"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o8"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:TableSymbol Id="o9">
 <a:CreationDate>1475675207</a:CreationDate>
-<a:ModificationDate>1475675207</a:ModificationDate>
+<a:ModificationDate>1478525049</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-16718,15456), (-164,23846))</a:Rect>
+<a:Rect>((-16283,15456), (271,23846))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -2902,7 +2924,57 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Table Ref="o6"/>
+<o:Table Ref="o10"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o7">
+<a:CreationDate>1478524817</a:CreationDate>
+<a:ModificationDate>1478525049</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-16399,2506), (387,7974))</a:Rect>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 Arial,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o11"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o6">
+<a:CreationDate>1478524957</a:CreationDate>
+<a:ModificationDate>1478525049</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-15859,-9224), (-154,-4730))</a:Rect>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 Arial,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o12"/>
 </c:Object>
 </o:TableSymbol>
 </c:Symbols>
@@ -2912,7 +2984,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:PhysicalDiagram Ref="o4"/>
 </c:DefaultDiagram>
 <c:Tables>
-<o:Table Id="o6">
+<o:Table Id="o10">
 <a:ObjectID>3CD1369E-54ED-4661-9525-DC76085B17BA</a:ObjectID>
 <a:Name>web_log</a:Name>
 <a:Code>WEB_LOG</a:Code>
@@ -2922,7 +2994,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o7">
+<o:Column Id="o13">
 <a:ObjectID>E033C23B-BE2E-4692-88D4-186F8A1CAE7C</a:ObjectID>
 <a:Name>last_activity</a:Name>
 <a:Code>LAST_ACTIVITY</a:Code>
@@ -2933,7 +3005,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>TIMESTAMP</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o8">
+<o:Column Id="o14">
 <a:ObjectID>7909B6B0-5E81-48A5-85D2-32EEB24AEE99</a:ObjectID>
 <a:Name>ip</a:Name>
 <a:Code>IP</a:Code>
@@ -2944,7 +3016,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(100)</a:DataType>
 <a:Length>100</a:Length>
 </o:Column>
-<o:Column Id="o9">
+<o:Column Id="o15">
 <a:ObjectID>5DE676D3-143A-4F28-9D66-FFBD674DDE80</a:ObjectID>
 <a:Name>method</a:Name>
 <a:Code>METHOD</a:Code>
@@ -2955,7 +3027,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(10)</a:DataType>
 <a:Length>10</a:Length>
 </o:Column>
-<o:Column Id="o10">
+<o:Column Id="o16">
 <a:ObjectID>B8FB6C7B-697A-400C-A106-9444A043E757</a:ObjectID>
 <a:Name>route</a:Name>
 <a:Code>ROUTE</a:Code>
@@ -2966,7 +3038,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(500)</a:DataType>
 <a:Length>500</a:Length>
 </o:Column>
-<o:Column Id="o11">
+<o:Column Id="o17">
 <a:ObjectID>07D19260-2A68-4543-80F2-E2A9FFB30CBC</a:ObjectID>
 <a:Name>url</a:Name>
 <a:Code>URL</a:Code>
@@ -2977,7 +3049,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(500)</a:DataType>
 <a:Length>500</a:Length>
 </o:Column>
-<o:Column Id="o12">
+<o:Column Id="o18">
 <a:ObjectID>A51477F5-B80C-4FDB-912E-B0334A0E8135</a:ObjectID>
 <a:Name>parameter</a:Name>
 <a:Code>PARAMETER</a:Code>
@@ -2987,7 +3059,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>TEXT</a:DataType>
 </o:Column>
-<o:Column Id="o13">
+<o:Column Id="o19">
 <a:ObjectID>603A3FD5-9BA6-47C8-B623-F219EF64B988</a:ObjectID>
 <a:Name>comment</a:Name>
 <a:Code>COMMENT</a:Code>
@@ -2999,7 +3071,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o14">
+<o:Key Id="o20">
 <a:ObjectID>219E0509-E641-4577-AF30-F643985F0903</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3008,17 +3080,194 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1475675553</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o7"/>
+<o:Column Ref="o13"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o14"/>
+<o:Key Ref="o20"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o11">
+<a:ObjectID>C9543915-B4F1-43F9-87CE-9E8521CEE991</a:ObjectID>
+<a:Name>web_user</a:Name>
+<a:Code>WEB_USER</a:Code>
+<a:CreationDate>1478524817</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478525039</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o21">
+<a:ObjectID>25548B72-3815-4ACF-9011-29A060DC8349</a:ObjectID>
+<a:Name>id_user</a:Name>
+<a:Code>ID_USER</a:Code>
+<a:CreationDate>1478524845</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478524864</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o22">
+<a:ObjectID>6995F04F-8FBD-4D3B-994B-522E93A35B9D</a:ObjectID>
+<a:Name>first_name</a:Name>
+<a:Code>FIRST_NAME</a:Code>
+<a:CreationDate>1478524845</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478524932</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>VARCHAR(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o23">
+<a:ObjectID>4089F6EF-197D-4251-822A-751F2A578E59</a:ObjectID>
+<a:Name>last_name</a:Name>
+<a:Code>LAST_NAME</a:Code>
+<a:CreationDate>1478524845</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478524932</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>VARCHAR(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o24">
+<a:ObjectID>7F8859A5-C1A6-40AD-9686-70C0EB649F48</a:ObjectID>
+<a:Name>organisation</a:Name>
+<a:Code>ORGANISATION</a:Code>
+<a:CreationDate>1478524937</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478524949</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>VARCHAR(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o25">
+<a:ObjectID>4F0922CA-E82E-4C92-A94C-EA5F158C6FB6</a:ObjectID>
+<a:Name>Cle_1</a:Name>
+<a:Code>CLE_1</a:Code>
+<a:CreationDate>1478524845</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478524864</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o21"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o25"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o12">
+<a:ObjectID>D396ABF5-B79A-4808-B988-F3845F0BF965</a:ObjectID>
+<a:Name>web_ip</a:Name>
+<a:Code>WEB_IP</a:Code>
+<a:CreationDate>1478524957</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478525697</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o26">
+<a:ObjectID>6B86366C-7A82-4E9C-990A-96ED96B9A8FE</a:ObjectID>
+<a:Name>ip</a:Name>
+<a:Code>IP</a:Code>
+<a:CreationDate>1478524958</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478525019</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>VARCHAR(100)</a:DataType>
+<a:Length>100</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o27">
+<a:ObjectID>F5217CA8-15F7-49EC-AB49-AB015BC26CAD</a:ObjectID>
+<a:Name>id_user</a:Name>
+<a:Code>ID_USER</a:Code>
+<a:CreationDate>1478525022</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478525031</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o28">
+<a:ObjectID>7682429B-35EC-46F8-A47D-EB5B4E01F1DE</a:ObjectID>
+<a:Name>comment</a:Name>
+<a:Code>COMMENT</a:Code>
+<a:CreationDate>1478525686</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478525697</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>VARCHAR(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o29">
+<a:ObjectID>5BF67938-B2C4-4E15-BFB0-986B8207DCDA</a:ObjectID>
+<a:Name>Cle_1</a:Name>
+<a:Code>CLE_1</a:Code>
+<a:CreationDate>1478525001</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478525019</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o26"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o29"/>
 </c:PrimaryKey>
 </o:Table>
 </c:Tables>
+<c:References>
+<o:Reference Id="o8">
+<a:ObjectID>7901DD0D-BE9C-4EA3-99A4-5665071E5550</a:ObjectID>
+<a:Name>Reference_1</a:Name>
+<a:Code>REFERENCE_1</a:Code>
+<a:CreationDate>1478525022</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478525039</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:ForeignKeyConstraintName>fk_ip_user</a:ForeignKeyConstraintName>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>1</a:UpdateConstraint>
+<a:DeleteConstraint>1</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o11"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o12"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o25"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o30">
+<a:ObjectID>4D2A242C-1156-47B4-A5C8-859F830FED4C</a:ObjectID>
+<a:CreationDate>1478525022</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1478525022</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<c:Object1>
+<o:Column Ref="o21"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o27"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+</c:References>
 <c:DefaultGroups>
-<o:Group Id="o15">
+<o:Group Id="o31">
 <a:ObjectID>AAB20F69-FA04-4ABC-96C1-D5FFB55B172A</a:ObjectID>
 <a:Name>PUBLIC</a:Name>
 <a:Code>PUBLIC</a:Code>
@@ -3029,13 +3278,13 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Group>
 </c:DefaultGroups>
 <c:TargetModels>
-<o:TargetModel Id="o16">
+<o:TargetModel Id="o32">
 <a:ObjectID>D14DA2BA-391D-46D7-8E24-314AFB31C496</a:ObjectID>
 <a:Name>PostgreSQL 8</a:Name>
 <a:Code>PGSQL80</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1452672348</a:ModificationDate>
+<a:ModificationDate>1478524796</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:TargetModelURL>file:///%_DBMS%/pgsql8.xdb</a:TargetModelURL>
 <a:TargetModelID>8AF15AEA-CCBC-4EDC-B468-7DB8DB5300B2</a:TargetModelID>
