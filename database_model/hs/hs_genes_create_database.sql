@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  16/09/2016 10:41:33                      */
+/* Date de création :  14/11/2016 16:00:43                      */
 /*==============================================================*/
 
 
@@ -14,9 +14,15 @@ drop table OM_GENE_HISTORY;
 
 drop table OM_GENE_POSITION;
 
+drop table OM_GP_GPL15088;
+
 drop table OM_GP_GPL570;
 
 drop table OM_ORGANISM;
+
+drop table OM_PLATFORM;
+
+drop table OM_PROBE_GPL15088;
 
 drop table OM_PROBE_GPL570;
 
@@ -91,6 +97,15 @@ create table OM_GENE_POSITION (
 );
 
 /*==============================================================*/
+/* Table : OM_GP_GPL15088                                       */
+/*==============================================================*/
+create table OM_GP_GPL15088 (
+   ID_PROBE             VARCHAR(50)          not null,
+   ID_GENE              INT4                 not null,
+   constraint PK_OM_GP_GPL15088 primary key (ID_PROBE, ID_GENE)
+);
+
+/*==============================================================*/
 /* Table : OM_GP_GPL570                                         */
 /*==============================================================*/
 create table OM_GP_GPL570 (
@@ -106,6 +121,30 @@ create table OM_ORGANISM (
    ID_ORGANISM          INT4                 not null,
    NAME                 VARCHAR(255)         not null,
    constraint PK_OM_ORGANISM primary key (ID_ORGANISM)
+);
+
+/*==============================================================*/
+/* Table : OM_PLATFORM                                          */
+/*==============================================================*/
+create table OM_PLATFORM (
+   ID_PLATFORM          VARCHAR(50)          not null,
+   TITLE                VARCHAR(255)         not null,
+   MANUFACTURER         VARCHAR(255)         not null,
+   ENABLED              boolean              not null default 'false',
+   constraint PK_OM_PLATFORM primary key (ID_PLATFORM)
+);
+
+/*==============================================================*/
+/* Table : OM_PROBE_GPL15088                                    */
+/*==============================================================*/
+create table OM_PROBE_GPL15088 (
+   ID_PROBE             VARCHAR(50)          not null,
+   GENBANK_ACC          VARCHAR(50)          null,
+   GENE_SYMBOL          VARCHAR(50)          null,
+   DESCRIPTION          VARCHAR(255)         null,
+   TITLE                VARCHAR(255)         null,
+   CDNA                 VARCHAR(100)         null,
+   constraint PK_OM_PROBE_GPL15088 primary key (ID_PROBE)
 );
 
 /*==============================================================*/
@@ -180,6 +219,16 @@ alter table OM_GENE_POSITION
 
 alter table OM_GENE_POSITION
    add constraint fk_location_gene foreign key (ID_GENE)
+      references OM_GENE (ID_GENE)
+      on delete restrict on update restrict;
+
+alter table OM_GP_GPL15088
+   add constraint fk_gp_probe15088 foreign key (ID_PROBE)
+      references OM_PROBE_GPL15088 (ID_PROBE)
+      on delete restrict on update restrict;
+
+alter table OM_GP_GPL15088
+   add constraint fk_gp_gene_gpl15088 foreign key (ID_GENE)
       references OM_GENE (ID_GENE)
       on delete restrict on update restrict;
 
