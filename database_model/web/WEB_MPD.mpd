@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{DC567F39-874D-4A29-92D6-10F027618682}" Label="" LastModificationDate="1479397046" Name="EPIMED_SEMANTIC_MPD" Objects="86" Symbols="21" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{DC567F39-874D-4A29-92D6-10F027618682}" Label="" LastModificationDate="1475675685" Name="WEB_MPD" Objects="83" Symbols="12" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -8,11 +8,11 @@
 <c:Children>
 <o:Model Id="o2">
 <a:ObjectID>DC567F39-874D-4A29-92D6-10F027618682</a:ObjectID>
-<a:Name>EPIMED_SEMANTIC_MPD</a:Name>
-<a:Code>EPIMED_SEMANTIC_MPD</a:Code>
+<a:Name>WEB_MPD</a:Name>
+<a:Code>WEB_MPD</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1479396578</a:ModificationDate>
+<a:ModificationDate>1475675685</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -87,7 +87,7 @@ GenScriptName6=
 GenScriptName7=
 GenScriptName8=
 GenScriptName9=
-GenPathName=E:\WORK\STS_WORKSPACE\epimed-documentation\database_model\epimed_prod\
+GenPathName=E:\WORK\STS_WORKSPACE\epimed-documentation\database_model\web\
 GenSingleFile=Yes
 GenODBC=No
 GenCheckModel=Yes
@@ -2461,11 +2461,11 @@ PhysOpts=</a:ModelOptionsText>
 <c:PhysicalDiagrams>
 <o:PhysicalDiagram Id="o4">
 <a:ObjectID>97AB0B8A-8EFA-4A7F-A2BF-DFA428B0335D</a:ObjectID>
-<a:Name>EPIMED_SEMANTIC_MPD</a:Name>
-<a:Code>EPIMED_SEMANTIC_MPD</a:Code>
+<a:Name>WEB_MPD</a:Name>
+<a:Code>WEB_MPD</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1479396578</a:ModificationDate>
+<a:ModificationDate>1475675207</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -2880,143 +2880,11 @@ Shadow=0</a:DisplayPreferences>
 <a:PageHeaderTemplate>%MODEL% - %DATE%</a:PageHeaderTemplate>
 <a:PageNumberTemplate/>
 <c:Symbols>
-<o:ReferenceSymbol Id="o5">
-<a:CreationDate>1456151337</a:CreationDate>
-<a:ModificationDate>1477988811</a:ModificationDate>
-<a:Rect>((-36961,-24540), (-29237,-13918))</a:Rect>
-<a:ListOfPoints>((-33099,-13918),(-33099,-24540))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>1</a:ArrowStyle>
-<a:LineColor>12615680</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 Arial,8,N
-SOURCE 0 Arial,8,N
-DESTINATION 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:TableSymbol Ref="o6"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:TableSymbol Ref="o7"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Reference Ref="o8"/>
-</c:Object>
-</o:ReferenceSymbol>
-<o:ReferenceSymbol Id="o9">
-<a:CreationDate>1465818108</a:CreationDate>
-<a:ModificationDate>1477988815</a:ModificationDate>
-<a:Rect>((-36474,-13918), (-29724,-1101))</a:Rect>
-<a:ListOfPoints>((-33099,-1101),(-33099,-13918))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>1</a:ArrowStyle>
-<a:LineColor>12615680</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 Arial,8,N
-SOURCE 0 Arial,8,N
-DESTINATION 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:TableSymbol Ref="o10"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:TableSymbol Ref="o6"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Reference Ref="o11"/>
-</c:Object>
-</o:ReferenceSymbol>
-<o:ReferenceSymbol Id="o12">
-<a:CreationDate>1465818110</a:CreationDate>
-<a:ModificationDate>1477989016</a:ModificationDate>
-<a:Rect>((-60281,-1288), (-33099,184))</a:Rect>
-<a:ListOfPoints>((-33099,-1063),(-60281,-1063))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>1</a:ArrowStyle>
-<a:LineColor>12615680</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 Arial,8,N
-SOURCE 0 Arial,8,N
-DESTINATION 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:TableSymbol Ref="o10"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:TableSymbol Ref="o13"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Reference Ref="o14"/>
-</c:Object>
-</o:ReferenceSymbol>
-<o:ReferenceSymbol Id="o15">
-<a:CreationDate>1466406451</a:CreationDate>
-<a:ModificationDate>1477989024</a:ModificationDate>
-<a:Rect>((-64218,-28855), (-56344,-20354))</a:Rect>
-<a:ListOfPoints>((-60281,-28855),(-60281,-20354))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>1</a:ArrowStyle>
-<a:LineColor>12615680</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 Arial,8,N
-SOURCE 0 Arial,8,N
-DESTINATION 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:TableSymbol Ref="o16"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:TableSymbol Ref="o17"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Reference Ref="o18"/>
-</c:Object>
-</o:ReferenceSymbol>
-<o:ReferenceSymbol Id="o19">
-<a:CreationDate>1466494487</a:CreationDate>
-<a:ModificationDate>1477989024</a:ModificationDate>
-<a:Rect>((-63956,-20354), (-56606,-10807))</a:Rect>
-<a:ListOfPoints>((-60281,-10807),(-60281,-20354))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>1</a:ArrowStyle>
-<a:LineColor>12615680</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 Arial,8,N
-SOURCE 0 Arial,8,N
-DESTINATION 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:TableSymbol Ref="o20"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:TableSymbol Ref="o17"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Reference Ref="o21"/>
-</c:Object>
-</o:ReferenceSymbol>
-<o:ReferenceSymbol Id="o22">
-<a:CreationDate>1470051318</a:CreationDate>
-<a:ModificationDate>1477988815</a:ModificationDate>
-<a:Rect>((-35799,-1101), (-30399,11469))</a:Rect>
-<a:ListOfPoints>((-33099,11469),(-33099,-1101))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>1</a:ArrowStyle>
-<a:LineColor>12615680</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>CENTER 0 Arial,8,N
-SOURCE 0 Arial,8,N
-DESTINATION 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:TableSymbol Ref="o23"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:TableSymbol Ref="o10"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Reference Ref="o24"/>
-</c:Object>
-</o:ReferenceSymbol>
-<o:TableSymbol Id="o25">
-<a:CreationDate>1455457079</a:CreationDate>
-<a:ModificationDate>1477989010</a:ModificationDate>
+<o:TableSymbol Id="o5">
+<a:CreationDate>1475675207</a:CreationDate>
+<a:ModificationDate>1475675207</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-12501,-8780), (4904,-4781))</a:Rect>
+<a:Rect>((-16718,15456), (-164,23846))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -3034,357 +2902,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Table Ref="o26"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o27">
-<a:CreationDate>1455457079</a:CreationDate>
-<a:ModificationDate>1477989016</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-68829,8996), (-51733,13490))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o28"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o29">
-<a:CreationDate>1455457079</a:CreationDate>
-<a:ModificationDate>1477989375</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-12382,-19392), (4636,-15393))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o30"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o31">
-<a:CreationDate>1455549500</a:CreationDate>
-<a:ModificationDate>1477989010</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-13659,-30004), (6063,-26005))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o32"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o6">
-<a:CreationDate>1456151105</a:CreationDate>
-<a:ModificationDate>1477988811</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-41415,-16165), (-24783,-11671))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o33"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o7">
-<a:CreationDate>1456151131</a:CreationDate>
-<a:ModificationDate>1477988811</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-40875,-26540), (-25323,-22540))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o34"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o13">
-<a:CreationDate>1456151646</a:CreationDate>
-<a:ModificationDate>1477989016</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-69177,-3026), (-51385,974))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o35"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o36">
-<a:CreationDate>1456230734</a:CreationDate>
-<a:ModificationDate>1477989010</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-12539,1832), (4943,5831))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o37"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o10">
-<a:CreationDate>1465817927</a:CreationDate>
-<a:ModificationDate>1477988815</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-42110,-5296), (-24088,3094))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o38"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o17">
-<a:CreationDate>1466406288</a:CreationDate>
-<a:ModificationDate>1477989024</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-68558,-22354), (-52004,-18355))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o39"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o16">
-<a:CreationDate>1466406386</a:CreationDate>
-<a:ModificationDate>1477989024</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-68944,-31103), (-51618,-26609))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o40"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o20">
-<a:CreationDate>1466494417</a:CreationDate>
-<a:ModificationDate>1477989024</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-69099,-13054), (-51463,-8560))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o41"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o42">
-<a:CreationDate>1466516157</a:CreationDate>
-<a:ModificationDate>1477989010</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-13350,12444), (5754,16443))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o43"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o23">
-<a:CreationDate>1470051230</a:CreationDate>
-<a:ModificationDate>1477988811</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-42265,9469), (-23933,13469))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o44"/>
-</c:Object>
-</o:TableSymbol>
-<o:TableSymbol Id="o45">
-<a:CreationDate>1479396578</a:CreationDate>
-<a:ModificationDate>1479397046</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-41735,-36820), (-25179,-30378))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o46"/>
+<o:Table Ref="o6"/>
 </c:Object>
 </o:TableSymbol>
 </c:Symbols>
@@ -3394,1148 +2912,113 @@ LABL 0 Arial,8,N</a:FontList>
 <o:PhysicalDiagram Ref="o4"/>
 </c:DefaultDiagram>
 <c:Tables>
-<o:Table Id="o26">
-<a:ObjectID>BCED8B26-6EE7-43AF-8279-1FF96DCBBB97</a:ObjectID>
-<a:Name>cl_tissue_stage</a:Name>
-<a:Code>CL_TISSUE_STAGE</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
+<o:Table Id="o6">
+<a:ObjectID>3CD1369E-54ED-4661-9525-DC76085B17BA</a:ObjectID>
+<a:Name>web_log</a:Name>
+<a:Code>WEB_LOG</a:Code>
+<a:CreationDate>1475675207</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1456749880</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>Tissue stage: adult, fetal, not relevant</a:Comment>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o47">
-<a:ObjectID>563093F0-5406-494B-83D6-699361C7C9A2</a:ObjectID>
-<a:Name>id_tissue_stage</a:Name>
-<a:Code>ID_TISSUE_STAGE</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456920502</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>INT4</a:DataType>
-<a:Length>4</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o48">
-<a:ObjectID>57172C91-1800-4F79-BE77-F95912B2B12E</a:ObjectID>
-<a:Name>stage</a:Name>
-<a:Code>STAGE</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1458211766</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(50)</a:DataType>
-<a:Length>50</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o49">
-<a:ObjectID>635197D3-5ED1-48EB-A23E-8BEC3A12E710</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1455457080</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o47"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o49"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o28">
-<a:ObjectID>B1A2FF3A-7CCB-48CE-90E6-2E33A3D15F0F</a:ObjectID>
-<a:Name>cl_pathology</a:Name>
-<a:Code>CL_PATHOLOGY</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456916100</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>Disease: COPD</a:Comment>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o50">
-<a:ObjectID>5F8F1D59-DC5F-4D30-B00D-B18DE4A6D1B4</a:ObjectID>
-<a:Name>id_pathology</a:Name>
-<a:Code>ID_PATHOLOGY</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1470207926</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(20)</a:DataType>
-<a:Length>20</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o51">
-<a:ObjectID>C1C03012-2CE2-45CC-9C7C-9FCD7D405874</a:ObjectID>
-<a:Name>code</a:Name>
-<a:Code>CODE</a:Code>
-<a:CreationDate>1456216074</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456216092</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(20)</a:DataType>
-<a:Length>20</a:Length>
-</o:Column>
-<o:Column Id="o52">
-<a:ObjectID>64FAA480-E0D3-46EA-AD7A-52153B5B38EB</a:ObjectID>
-<a:Name>name</a:Name>
-<a:Code>NAME</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1455457080</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(200)</a:DataType>
-<a:Length>200</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o53">
-<a:ObjectID>E3807DF0-EC7A-43F2-A28E-27DA03BC18B4</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1455457080</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o50"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o53"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o30">
-<a:ObjectID>82A0BF66-019A-4218-A51C-24F8BF6B4997</a:ObjectID>
-<a:Name>cl_substance</a:Name>
-<a:Code>CL_SUBSTANCE</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1477989430</a:ModificationDate>
+<a:ModificationDate>1475675625</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o54">
-<a:ObjectID>AFA83F07-0CC7-48E6-A53D-B4A4F7D21E08</a:ObjectID>
-<a:Name>id_substance</a:Name>
-<a:Code>ID_SUBSTANCE</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
+<o:Column Id="o7">
+<a:ObjectID>E033C23B-BE2E-4692-88D4-186F8A1CAE7C</a:ObjectID>
+<a:Name>last_activity</a:Name>
+<a:Code>LAST_ACTIVITY</a:Code>
+<a:CreationDate>1475675209</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1465467881</a:ModificationDate>
+<a:ModificationDate>1475675553</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>TIMESTAMP</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o8">
+<a:ObjectID>7909B6B0-5E81-48A5-85D2-32EEB24AEE99</a:ObjectID>
+<a:Name>ip</a:Name>
+<a:Code>IP</a:Code>
+<a:CreationDate>1475675243</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1475675268</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>VARCHAR(100)</a:DataType>
 <a:Length>100</a:Length>
-<a:Mandatory>1</a:Mandatory>
 </o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o55">
-<a:ObjectID>FCF29852-66F8-44E9-8DF1-FFE332DC2255</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1455457079</a:CreationDate>
+<o:Column Id="o9">
+<a:ObjectID>5DE676D3-143A-4F28-9D66-FFBD674DDE80</a:ObjectID>
+<a:Name>method</a:Name>
+<a:Code>METHOD</a:Code>
+<a:CreationDate>1475675411</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1455457080</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o54"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o55"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o32">
-<a:ObjectID>8CC34004-69A5-41DB-ACC3-BFC040DADE7D</a:ObjectID>
-<a:Name>cl_treatment_method</a:Name>
-<a:Code>CL_TREATMENT_METHOD</a:Code>
-<a:CreationDate>1455549500</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456749952</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>surgery, chemotherapy, radiotherapy</a:Comment>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o56">
-<a:ObjectID>17C5ED35-DDE9-400E-872B-009E085591FA</a:ObjectID>
-<a:Name>id_treatment_method</a:Name>
-<a:Code>ID_TREATMENT_METHOD</a:Code>
-<a:CreationDate>1455549502</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456920584</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>INT4</a:DataType>
-<a:Length>4</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o57">
-<a:ObjectID>A494761B-59A3-467F-B824-D1844ABF2892</a:ObjectID>
-<a:Name>name</a:Name>
-<a:Code>NAME</a:Code>
-<a:CreationDate>1455550463</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1458211842</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(50)</a:DataType>
-<a:Length>50</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o58">
-<a:ObjectID>978A8500-AFCD-4B9E-A553-5EDB011CD31D</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1455549502</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1455549536</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o56"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o58"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o33">
-<a:ObjectID>F939A970-86D2-4F45-A1FF-62D83826C275</a:ObjectID>
-<a:Name>cl_topology</a:Name>
-<a:Code>CL_TOPOLOGY</a:Code>
-<a:CreationDate>1456151105</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1465818128</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>ICD-0 topology</a:Comment>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o59">
-<a:ObjectID>7F620981-8ABC-4336-AD3D-AAD1A99E2758</a:ObjectID>
-<a:Name>id_topology</a:Name>
-<a:Code>ID_TOPOLOGY</a:Code>
-<a:CreationDate>1456151179</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456151247</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(10)</a:DataType>
-<a:Length>10</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o60">
-<a:ObjectID>138FF17E-017E-4C05-BBAA-A7326CD531A3</a:ObjectID>
-<a:Name>name</a:Name>
-<a:Code>NAME</a:Code>
-<a:CreationDate>1456151216</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456152103</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(200)</a:DataType>
-<a:Length>200</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o61">
-<a:ObjectID>16C13DC0-B47E-4352-9EC3-15511E13E7DA</a:ObjectID>
-<a:Name>id_group</a:Name>
-<a:Code>ID_GROUP</a:Code>
-<a:CreationDate>1456151337</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456152103</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(10)</a:DataType>
-<a:Length>10</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o62">
-<a:ObjectID>8C1C3B9D-0A8E-4C81-890F-2030FB4D1861</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1456151179</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456152103</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o59"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o62"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o34">
-<a:ObjectID>AA094BD9-174D-465B-A349-9607CD6B8FA2</a:ObjectID>
-<a:Name>cl_topology_group</a:Name>
-<a:Code>CL_TOPOLOGY_GROUP</a:Code>
-<a:CreationDate>1456151131</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456916119</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o63">
-<a:ObjectID>86681EC0-D3B6-4ADF-A9C0-C235EC6B20C5</a:ObjectID>
-<a:Name>id_group</a:Name>
-<a:Code>ID_GROUP</a:Code>
-<a:CreationDate>1456151133</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456151275</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(10)</a:DataType>
-<a:Length>10</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o64">
-<a:ObjectID>8D6B5C76-634D-4FD7-AE09-E2828617D021</a:ObjectID>
-<a:Name>name</a:Name>
-<a:Code>NAME</a:Code>
-<a:CreationDate>1456151133</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456151170</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(100)</a:DataType>
-<a:Length>100</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o65">
-<a:ObjectID>C5EF3E25-D194-4E35-87E3-92638E777EBB</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1456151133</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456151170</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o63"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o65"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o35">
-<a:ObjectID>9C8A7E63-A301-4724-BF6E-37EEC0B13487</a:ObjectID>
-<a:Name>cl_morphology</a:Name>
-<a:Code>CL_MORPHOLOGY</a:Code>
-<a:CreationDate>1456151646</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1465818140</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>ICD-O morphology
-
-Group: 801 CARCINOMA, NOS
-Morphology : 8010 
-Bihavior : /2
-Carcinoma in situ, NOS</a:Comment>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o66">
-<a:ObjectID>6BEDCF79-247C-4FF5-BC0F-5F138D9A37CA</a:ObjectID>
-<a:Name>id_morphology</a:Name>
-<a:Code>ID_MORPHOLOGY</a:Code>
-<a:CreationDate>1456151648</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456500061</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(20)</a:DataType>
-<a:Length>20</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o67">
-<a:ObjectID>B9895AA5-E730-4E4E-BE83-35A3786F2171</a:ObjectID>
-<a:Name>name</a:Name>
-<a:Code>NAME</a:Code>
-<a:CreationDate>1456151648</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456151678</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(200)</a:DataType>
-<a:Length>200</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o68">
-<a:ObjectID>304BB56D-3098-467B-BD88-20E2FB80A1A5</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1456151648</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456151678</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o66"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o68"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o37">
-<a:ObjectID>FDB1BF10-A4F2-4E68-ADFC-BC0516AD78BC</a:ObjectID>
-<a:Name>cl_tissue_status</a:Name>
-<a:Code>CL_TISSUE_STATUS</a:Code>
-<a:CreationDate>1456230734</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456749896</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>1 - Normal
-2 - Pathological non tumoral
-3 - Pathological tumoral primary site
-4 - Pathological tumoral metastasis</a:Comment>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o69">
-<a:ObjectID>33AE9E15-208C-46FD-81BD-57E72CB7E2D1</a:ObjectID>
-<a:Name>id_tissue_status</a:Name>
-<a:Code>ID_TISSUE_STATUS</a:Code>
-<a:CreationDate>1456230762</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456920458</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>INT4</a:DataType>
-<a:Length>4</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o70">
-<a:ObjectID>0510B209-829B-4AA8-BF6E-C0D4D1F1FFFE</a:ObjectID>
-<a:Name>name</a:Name>
-<a:Code>NAME</a:Code>
-<a:CreationDate>1456230762</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1458211774</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(50)</a:DataType>
-<a:Length>50</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o71">
-<a:ObjectID>41A0B6CA-0F40-4BB7-B396-E5C6AEDFCF56</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1456230762</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456230787</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o69"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o71"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o38">
-<a:ObjectID>96FC9958-B84A-4BC9-BD87-BF93C1FE4931</a:ObjectID>
-<a:Name>cl_cell_line</a:Name>
-<a:Code>CL_CELL_LINE</a:Code>
-<a:CreationDate>1465817927</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1470051338</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o72">
-<a:ObjectID>D5BBE625-3953-4220-8A78-10159C7B612B</a:ObjectID>
-<a:Name>id_cell_line</a:Name>
-<a:Code>ID_CELL_LINE</a:Code>
-<a:CreationDate>1465817936</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1465818033</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(20)</a:DataType>
-<a:Length>20</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o73">
-<a:ObjectID>8DD568FE-05FD-457E-9596-5FD78302F15D</a:ObjectID>
-<a:Name>atcc</a:Name>
-<a:Code>ATCC</a:Code>
-<a:CreationDate>1465817957</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1465818199</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(50)</a:DataType>
-<a:Length>50</a:Length>
-</o:Column>
-<o:Column Id="o74">
-<a:ObjectID>ABF9291E-9377-4016-B19C-F971B4BC0CD3</a:ObjectID>
-<a:Name>age</a:Name>
-<a:Code>AGE</a:Code>
-<a:CreationDate>1465818148</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1467034795</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>FLOAT8</a:DataType>
-<a:Length>8</a:Length>
-</o:Column>
-<o:Column Id="o75">
-<a:ObjectID>6D0FAAC0-F8AF-41EE-A617-902EB83FF3FA</a:ObjectID>
-<a:Name>sex</a:Name>
-<a:Code>SEX</a:Code>
-<a:CreationDate>1465827405</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1465827420</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(1)</a:DataType>
-<a:Length>1</a:Length>
-</o:Column>
-<o:Column Id="o76">
-<a:ObjectID>AF28A76C-3C36-4FFB-B480-DB8111A21447</a:ObjectID>
-<a:Name>id_topology</a:Name>
-<a:Code>ID_TOPOLOGY</a:Code>
-<a:CreationDate>1465818108</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1467034795</a:ModificationDate>
+<a:ModificationDate>1475675553</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>VARCHAR(10)</a:DataType>
 <a:Length>10</a:Length>
 </o:Column>
-<o:Column Id="o77">
-<a:ObjectID>B1E8E297-CA9B-491F-8D74-B4D3F71B8B0D</a:ObjectID>
-<a:Name>id_morphology</a:Name>
-<a:Code>ID_MORPHOLOGY</a:Code>
-<a:CreationDate>1465818110</a:CreationDate>
+<o:Column Id="o10">
+<a:ObjectID>B8FB6C7B-697A-400C-A106-9444A043E757</a:ObjectID>
+<a:Name>route</a:Name>
+<a:Code>ROUTE</a:Code>
+<a:CreationDate>1475675411</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1467034795</a:ModificationDate>
+<a:ModificationDate>1475675620</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(20)</a:DataType>
-<a:Length>20</a:Length>
+<a:DataType>VARCHAR(500)</a:DataType>
+<a:Length>500</a:Length>
 </o:Column>
-<o:Column Id="o78">
-<a:ObjectID>1307FA8E-D34D-4F1D-8361-A346ADE261FA</a:ObjectID>
-<a:Name>histology_type</a:Name>
-<a:Code>HISTOLOGY_TYPE</a:Code>
-<a:CreationDate>1467034795</a:CreationDate>
+<o:Column Id="o11">
+<a:ObjectID>07D19260-2A68-4543-80F2-E2A9FFB30CBC</a:ObjectID>
+<a:Name>url</a:Name>
+<a:Code>URL</a:Code>
+<a:CreationDate>1475675411</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1467034851</a:ModificationDate>
+<a:ModificationDate>1475675553</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(255)</a:DataType>
-<a:Length>255</a:Length>
+<a:DataType>VARCHAR(500)</a:DataType>
+<a:Length>500</a:Length>
+</o:Column>
+<o:Column Id="o12">
+<a:ObjectID>A51477F5-B80C-4FDB-912E-B0334A0E8135</a:ObjectID>
+<a:Name>parameter</a:Name>
+<a:Code>PARAMETER</a:Code>
+<a:CreationDate>1475675588</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1475675600</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>TEXT</a:DataType>
+</o:Column>
+<o:Column Id="o13">
+<a:ObjectID>603A3FD5-9BA6-47C8-B623-F219EF64B988</a:ObjectID>
+<a:Name>comment</a:Name>
+<a:Code>COMMENT</a:Code>
+<a:CreationDate>1475675411</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1475675553</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>TEXT</a:DataType>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o79">
-<a:ObjectID>090D2561-518A-4E01-9537-FDF2F461F887</a:ObjectID>
+<o:Key Id="o14">
+<a:ObjectID>219E0509-E641-4577-AF30-F643985F0903</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
-<a:CreationDate>1465817957</a:CreationDate>
+<a:CreationDate>1475675243</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1465818033</a:ModificationDate>
+<a:ModificationDate>1475675553</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o72"/>
+<o:Column Ref="o7"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o79"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o39">
-<a:ObjectID>A4EFCDCE-6C1B-4923-8767-F95896F19DD9</a:ObjectID>
-<a:Name>cl_ontology_category</a:Name>
-<a:Code>CL_ONTOLOGY_CATEGORY</a:Code>
-<a:CreationDate>1466406288</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466494743</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o80">
-<a:ObjectID>A025A9B9-7EC2-4EB4-BF15-EECEB309A49B</a:ObjectID>
-<a:Name>id_category</a:Name>
-<a:Code>ID_CATEGORY</a:Code>
-<a:CreationDate>1466406323</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466406343</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(100)</a:DataType>
-<a:Length>100</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o81">
-<a:ObjectID>97A59384-AA60-4AFC-AE03-EAC21B8F0B09</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1466406340</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466406343</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o80"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o81"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o40">
-<a:ObjectID>AF3747C1-20B0-47F7-88DB-3E7221E93D33</a:ObjectID>
-<a:Name>cl_ontology_keyword</a:Name>
-<a:Code>CL_ONTOLOGY_KEYWORD</a:Code>
-<a:CreationDate>1466406386</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1477989732</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>Contains keywords to recognize a category</a:Comment>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o82">
-<a:ObjectID>A1ACA3AF-CE36-411F-B928-E23108A9A9FA</a:ObjectID>
-<a:Name>id_keyword</a:Name>
-<a:Code>ID_KEYWORD</a:Code>
-<a:CreationDate>1466406400</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466406437</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(255)</a:DataType>
-<a:Length>255</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o83">
-<a:ObjectID>FE00382C-D95E-402B-B15B-0C7C2096BA6F</a:ObjectID>
-<a:Name>id_category</a:Name>
-<a:Code>ID_CATEGORY</a:Code>
-<a:CreationDate>1466406451</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1467189607</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(100)</a:DataType>
-<a:Length>100</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o84">
-<a:ObjectID>C0394621-1EBE-47D9-B914-15C34324BA8C</a:ObjectID>
-<a:Name>enabled</a:Name>
-<a:Code>ENABLED</a:Code>
-<a:CreationDate>1477989713</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1477989764</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DefaultValue>true</a:DefaultValue>
-<a:DataType>boolean</a:DataType>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o85">
-<a:ObjectID>6C0F0F99-E0D9-40B1-B231-57BE210ACF2D</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1466406400</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1467189607</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o82"/>
-<o:Column Ref="o83"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o85"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o41">
-<a:ObjectID>25462D77-282E-47DF-8C7D-8F90DA5FE33C</a:ObjectID>
-<a:Name>cl_ontology_dictionary</a:Name>
-<a:Code>CL_ONTOLOGY_DICTIONARY</a:Code>
-<a:CreationDate>1466494417</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466494904</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>Link a term to its identification reference in EpiMed database </a:Comment>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o86">
-<a:ObjectID>5A155EF7-F161-4585-B9C2-52FF54B67013</a:ObjectID>
-<a:Name>term</a:Name>
-<a:Code>TERM</a:Code>
-<a:CreationDate>1466494419</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466494998</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>Any word that should be recognized as a referenced entity.</a:Comment>
-<a:DataType>VARCHAR(255)</a:DataType>
-<a:Length>255</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o87">
-<a:ObjectID>93A312F0-D608-4A6C-AC0F-054B0333A6BC</a:ObjectID>
-<a:Name>id_reference</a:Name>
-<a:Code>ID_REFERENCE</a:Code>
-<a:CreationDate>1466494491</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466495027</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>Identification number (ID) of the referenced entity.</a:Comment>
-<a:DataType>VARCHAR(50)</a:DataType>
-<a:Length>50</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o88">
-<a:ObjectID>1C6C292A-AF60-4EFE-9EF7-13262D973707</a:ObjectID>
-<a:Name>id_category</a:Name>
-<a:Code>ID_CATEGORY</a:Code>
-<a:CreationDate>1466494487</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1467189614</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:Comment>Category to which belongs the term and the referenced entity.</a:Comment>
-<a:DataType>VARCHAR(100)</a:DataType>
-<a:Length>100</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o89">
-<a:ObjectID>D4B4C1A2-B613-4B2C-A3F0-9D160C60E4A9</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1466494419</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1467189614</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o86"/>
-<o:Column Ref="o88"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o89"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o43">
-<a:ObjectID>5E17429C-96AA-4983-81AD-D818E30E2B5D</a:ObjectID>
-<a:Name>cl_collection_method</a:Name>
-<a:Code>CL_COLLECTION_METHOD</a:Code>
-<a:CreationDate>1466516157</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466516248</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o90">
-<a:ObjectID>10345B19-C440-42C9-8B09-9E0B030DF6A6</a:ObjectID>
-<a:Name>collection_method</a:Name>
-<a:Code>COLLECTION_METHOD</a:Code>
-<a:CreationDate>1466516159</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466516217</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(100)</a:DataType>
-<a:Length>100</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o91">
-<a:ObjectID>BF865360-D1AF-4DC9-BA58-9B6EE3A92915</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1466516159</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466516186</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o90"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o91"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o44">
-<a:ObjectID>EBF863C9-617D-4B91-B588-72D1D8F07A49</a:ObjectID>
-<a:Name>cl_cell_line_alias</a:Name>
-<a:Code>CL_CELL_LINE_ALIAS</a:Code>
-<a:CreationDate>1470051230</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1470051338</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o92">
-<a:ObjectID>FD281FE8-26AE-4E25-96C9-2A4673388115</a:ObjectID>
-<a:Name>id_cell_line_alias</a:Name>
-<a:Code>ID_CELL_LINE_ALIAS</a:Code>
-<a:CreationDate>1470051290</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1470051312</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(20)</a:DataType>
-<a:Length>20</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o93">
-<a:ObjectID>EB5B462D-0828-46DD-BBFB-13666A8CD1B5</a:ObjectID>
-<a:Name>id_cell_line</a:Name>
-<a:Code>ID_CELL_LINE</a:Code>
-<a:CreationDate>1470051318</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1470051348</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(20)</a:DataType>
-<a:Length>20</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o94">
-<a:ObjectID>3E68D1D0-2864-453D-B39B-36911A127962</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1470051290</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1470051312</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o92"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o94"/>
-</c:PrimaryKey>
-</o:Table>
-<o:Table Id="o46">
-<a:ObjectID>9322A2A8-A1EC-47FD-BD2F-4BF4D60F9218</a:ObjectID>
-<a:Name>cl_expgroup_attribute</a:Name>
-<a:Code>CL_EXPGROUP_ATTRIBUTE</a:Code>
-<a:CreationDate>1479396578</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1479397018</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:TotalSavingCurrency/>
-<c:Columns>
-<o:Column Id="o95">
-<a:ObjectID>A68196BE-05C2-477D-84E0-DC2195B34E25</a:ObjectID>
-<a:Name>id_attribute</a:Name>
-<a:Code>ID_ATTRIBUTE</a:Code>
-<a:CreationDate>1479396661</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1479396745</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>INT4</a:DataType>
-<a:Length>4</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o96">
-<a:ObjectID>DFB3E0B0-3354-46F6-B40D-4146A5F12BA1</a:ObjectID>
-<a:Name>name</a:Name>
-<a:Code>NAME</a:Code>
-<a:CreationDate>1479396661</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1479396745</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(100)</a:DataType>
-<a:Length>100</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o97">
-<a:ObjectID>42238D41-790C-4BA8-880D-F712B4406F01</a:ObjectID>
-<a:Name>priority</a:Name>
-<a:Code>PRIORITY</a:Code>
-<a:CreationDate>1479396771</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1479396816</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>INT4</a:DataType>
-<a:Length>4</a:Length>
-<a:Mandatory>1</a:Mandatory>
-</o:Column>
-<o:Column Id="o98">
-<a:ObjectID>4F06C41F-287C-4A71-8F2D-31D4D400672A</a:ObjectID>
-<a:Name>entity</a:Name>
-<a:Code>ENTITY</a:Code>
-<a:CreationDate>1479396661</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1479397018</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(100)</a:DataType>
-<a:Length>100</a:Length>
-</o:Column>
-<o:Column Id="o99">
-<a:ObjectID>68CA239F-253B-45EF-BC74-60E14E56A0E9</a:ObjectID>
-<a:Name>id_category</a:Name>
-<a:Code>ID_CATEGORY</a:Code>
-<a:CreationDate>1479396942</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1479396956</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>VARCHAR(100)</a:DataType>
-<a:Length>100</a:Length>
-</o:Column>
-</c:Columns>
-<c:Keys>
-<o:Key Id="o100">
-<a:ObjectID>61BAD2CC-5456-4AE5-B31E-813BC7220658</a:ObjectID>
-<a:Name>Cle_1</a:Name>
-<a:Code>CLE_1</a:Code>
-<a:CreationDate>1479396661</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1479396745</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Key.Columns>
-<o:Column Ref="o95"/>
-</c:Key.Columns>
-</o:Key>
-</c:Keys>
-<c:PrimaryKey>
-<o:Key Ref="o100"/>
+<o:Key Ref="o14"/>
 </c:PrimaryKey>
 </o:Table>
 </c:Tables>
-<c:References>
-<o:Reference Id="o8">
-<a:ObjectID>6F97E922-40BB-4ED3-A6C9-2DD5C5A4E324</a:ObjectID>
-<a:Name>Reference_57</a:Name>
-<a:Code>REFERENCE_57</a:Code>
-<a:CreationDate>1456151337</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456916119</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:ForeignKeyConstraintName>fk_topo_topo_group</a:ForeignKeyConstraintName>
-<a:Cardinality>0..*</a:Cardinality>
-<a:UpdateConstraint>1</a:UpdateConstraint>
-<a:DeleteConstraint>1</a:DeleteConstraint>
-<c:ParentTable>
-<o:Table Ref="o34"/>
-</c:ParentTable>
-<c:ChildTable>
-<o:Table Ref="o33"/>
-</c:ChildTable>
-<c:ParentKey>
-<o:Key Ref="o65"/>
-</c:ParentKey>
-<c:Joins>
-<o:ReferenceJoin Id="o101">
-<a:ObjectID>9008BD09-2008-4F2B-93EE-996351F9C656</a:ObjectID>
-<a:CreationDate>1456151337</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1456151337</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Object1>
-<o:Column Ref="o63"/>
-</c:Object1>
-<c:Object2>
-<o:Column Ref="o61"/>
-</c:Object2>
-</o:ReferenceJoin>
-</c:Joins>
-</o:Reference>
-<o:Reference Id="o11">
-<a:ObjectID>9DCC8E44-C1B5-428A-8BFD-48D3B29F5CC2</a:ObjectID>
-<a:Name>Reference_94</a:Name>
-<a:Code>REFERENCE_94</a:Code>
-<a:CreationDate>1465818108</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1465818128</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:ForeignKeyConstraintName>fk_cell_line_topo</a:ForeignKeyConstraintName>
-<a:Cardinality>0..*</a:Cardinality>
-<a:UpdateConstraint>1</a:UpdateConstraint>
-<a:DeleteConstraint>1</a:DeleteConstraint>
-<c:ParentTable>
-<o:Table Ref="o33"/>
-</c:ParentTable>
-<c:ChildTable>
-<o:Table Ref="o38"/>
-</c:ChildTable>
-<c:ParentKey>
-<o:Key Ref="o62"/>
-</c:ParentKey>
-<c:Joins>
-<o:ReferenceJoin Id="o102">
-<a:ObjectID>7BA3810B-A1E5-43CF-A4F5-9A5070ACA7AF</a:ObjectID>
-<a:CreationDate>1465818108</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1465818108</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Object1>
-<o:Column Ref="o59"/>
-</c:Object1>
-<c:Object2>
-<o:Column Ref="o76"/>
-</c:Object2>
-</o:ReferenceJoin>
-</c:Joins>
-</o:Reference>
-<o:Reference Id="o14">
-<a:ObjectID>462C7DCE-3EFB-4149-9890-8000D5B1F0A9</a:ObjectID>
-<a:Name>Reference_95</a:Name>
-<a:Code>REFERENCE_95</a:Code>
-<a:CreationDate>1465818110</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1465818140</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:ForeignKeyConstraintName>fk_cell_line_morpho</a:ForeignKeyConstraintName>
-<a:Cardinality>0..*</a:Cardinality>
-<a:UpdateConstraint>1</a:UpdateConstraint>
-<a:DeleteConstraint>1</a:DeleteConstraint>
-<c:ParentTable>
-<o:Table Ref="o35"/>
-</c:ParentTable>
-<c:ChildTable>
-<o:Table Ref="o38"/>
-</c:ChildTable>
-<c:ParentKey>
-<o:Key Ref="o68"/>
-</c:ParentKey>
-<c:Joins>
-<o:ReferenceJoin Id="o103">
-<a:ObjectID>FFA2F817-3716-4DC6-B4FE-56F1FF752A69</a:ObjectID>
-<a:CreationDate>1465818110</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1465818110</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Object1>
-<o:Column Ref="o66"/>
-</c:Object1>
-<c:Object2>
-<o:Column Ref="o77"/>
-</c:Object2>
-</o:ReferenceJoin>
-</c:Joins>
-</o:Reference>
-<o:Reference Id="o18">
-<a:ObjectID>7DDF927A-9159-4655-B4F5-148FCA59CD4C</a:ObjectID>
-<a:Name>Reference_59</a:Name>
-<a:Code>REFERENCE_59</a:Code>
-<a:CreationDate>1466406451</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466406523</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:ForeignKeyConstraintName>fk_keyword_category</a:ForeignKeyConstraintName>
-<a:Cardinality>0..*</a:Cardinality>
-<a:UpdateConstraint>1</a:UpdateConstraint>
-<a:DeleteConstraint>1</a:DeleteConstraint>
-<c:ParentTable>
-<o:Table Ref="o39"/>
-</c:ParentTable>
-<c:ChildTable>
-<o:Table Ref="o40"/>
-</c:ChildTable>
-<c:ParentKey>
-<o:Key Ref="o81"/>
-</c:ParentKey>
-<c:Joins>
-<o:ReferenceJoin Id="o104">
-<a:ObjectID>653655EF-5F3D-40F4-8393-565EA8FFFD61</a:ObjectID>
-<a:CreationDate>1466406451</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466406451</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Object1>
-<o:Column Ref="o80"/>
-</c:Object1>
-<c:Object2>
-<o:Column Ref="o83"/>
-</c:Object2>
-</o:ReferenceJoin>
-</c:Joins>
-</o:Reference>
-<o:Reference Id="o21">
-<a:ObjectID>7FD0AC44-B5E6-4C86-B639-B85AFB8CCB5A</a:ObjectID>
-<a:Name>Reference_60</a:Name>
-<a:Code>REFERENCE_60</a:Code>
-<a:CreationDate>1466494487</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466494743</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:ForeignKeyConstraintName>fk_ont_dic_ont_cat</a:ForeignKeyConstraintName>
-<a:Cardinality>0..*</a:Cardinality>
-<a:UpdateConstraint>1</a:UpdateConstraint>
-<a:DeleteConstraint>1</a:DeleteConstraint>
-<c:ParentTable>
-<o:Table Ref="o39"/>
-</c:ParentTable>
-<c:ChildTable>
-<o:Table Ref="o41"/>
-</c:ChildTable>
-<c:ParentKey>
-<o:Key Ref="o81"/>
-</c:ParentKey>
-<c:Joins>
-<o:ReferenceJoin Id="o105">
-<a:ObjectID>22319FF4-878C-41BC-8C03-A2D0DEEFCA89</a:ObjectID>
-<a:CreationDate>1466494487</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1466494487</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Object1>
-<o:Column Ref="o80"/>
-</c:Object1>
-<c:Object2>
-<o:Column Ref="o88"/>
-</c:Object2>
-</o:ReferenceJoin>
-</c:Joins>
-</o:Reference>
-<o:Reference Id="o24">
-<a:ObjectID>84090646-77A9-4A19-94B9-5663FD726F50</a:ObjectID>
-<a:Name>Reference_73</a:Name>
-<a:Code>REFERENCE_73</a:Code>
-<a:CreationDate>1470051318</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1470051338</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:ForeignKeyConstraintName>fk_cl_alias_cl</a:ForeignKeyConstraintName>
-<a:Cardinality>0..*</a:Cardinality>
-<a:UpdateConstraint>1</a:UpdateConstraint>
-<a:DeleteConstraint>1</a:DeleteConstraint>
-<c:ParentTable>
-<o:Table Ref="o38"/>
-</c:ParentTable>
-<c:ChildTable>
-<o:Table Ref="o44"/>
-</c:ChildTable>
-<c:ParentKey>
-<o:Key Ref="o79"/>
-</c:ParentKey>
-<c:Joins>
-<o:ReferenceJoin Id="o106">
-<a:ObjectID>9D81EDC2-3DC8-4EE8-9ABD-6C646D49BCD6</a:ObjectID>
-<a:CreationDate>1470051318</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1470051318</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<c:Object1>
-<o:Column Ref="o72"/>
-</c:Object1>
-<c:Object2>
-<o:Column Ref="o93"/>
-</c:Object2>
-</o:ReferenceJoin>
-</c:Joins>
-</o:Reference>
-</c:References>
 <c:DefaultGroups>
-<o:Group Id="o107">
+<o:Group Id="o15">
 <a:ObjectID>AAB20F69-FA04-4ABC-96C1-D5FFB55B172A</a:ObjectID>
 <a:Name>PUBLIC</a:Name>
 <a:Code>PUBLIC</a:Code>
@@ -4546,7 +3029,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Group>
 </c:DefaultGroups>
 <c:TargetModels>
-<o:TargetModel Id="o108">
+<o:TargetModel Id="o16">
 <a:ObjectID>D14DA2BA-391D-46D7-8E24-314AFB31C496</a:ObjectID>
 <a:Name>PostgreSQL 8</a:Name>
 <a:Code>PGSQL80</a:Code>

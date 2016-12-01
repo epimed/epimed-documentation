@@ -1,8 +1,14 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  14/11/2016 16:00:43                      */
+/* Date de création :  01/12/2016 08:10:08                      */
 /*==============================================================*/
 
+
+drop table EST_EXPRESSION;
+
+drop table EST_PARAMETER;
+
+drop table EST_TYPE;
 
 drop table OM_ASSEMBLY;
 
@@ -30,7 +36,40 @@ drop table OM_PROTEIN;
 
 drop table OM_PROTEIN_SEQUENCE;
 
+drop table OM_UNIGENE;
+
 drop table TX_LOG;
+
+/*==============================================================*/
+/* Table : EST_EXPRESSION                                       */
+/*==============================================================*/
+create table EST_EXPRESSION (
+   ID_UNIGENE           VARCHAR(20)          not null,
+   ID_PARAMETER         INT4                 not null,
+   EXPRESSION           INT4                 null,
+   TOTAL                INT4                 null,
+   RESTRICTED           boolean              null default 'false',
+   constraint PK_EST_EXPRESSION primary key (ID_UNIGENE, ID_PARAMETER)
+);
+
+/*==============================================================*/
+/* Table : EST_PARAMETER                                        */
+/*==============================================================*/
+create table EST_PARAMETER (
+   ID_PARAMETER         INT4                 not null,
+   NAME                 VARCHAR(100)         not null,
+   ID_TYPE              INT4                 not null,
+   constraint PK_EST_PARAMETER primary key (ID_PARAMETER)
+);
+
+/*==============================================================*/
+/* Table : EST_TYPE                                             */
+/*==============================================================*/
+create table EST_TYPE (
+   ID_TYPE              INT4                 not null,
+   NAME                 VARCHAR(100)         not null,
+   constraint PK_EST_TYPE primary key (ID_TYPE)
+);
 
 /*==============================================================*/
 /* Table : OM_ASSEMBLY                                          */
@@ -81,9 +120,7 @@ create table OM_GENE_HISTORY (
 /* Table : OM_GENE_POSITION                                     */
 /*==============================================================*/
 create table OM_GENE_POSITION (
-   ID_POSITION          INT4                 not null,
-   ID_UCSC              VARCHAR(20)          null,
-   ID_ENSEMBL           VARCHAR(50)          null,
+   ID_POSITION          VARCHAR(50)          not null,
    ID_ASSEMBLY          VARCHAR(50)          not null,
    ID_GENE              INT4                 null,
    CHROM                VARCHAR(20)          not null,
@@ -130,7 +167,6 @@ create table OM_PLATFORM (
    ID_PLATFORM          VARCHAR(50)          not null,
    TITLE                VARCHAR(255)         not null,
    MANUFACTURER         VARCHAR(255)         not null,
-   ENABLED              boolean              not null default 'false',
    constraint PK_OM_PLATFORM primary key (ID_PLATFORM)
 );
 
@@ -182,6 +218,15 @@ create table OM_PROTEIN_SEQUENCE (
 );
 
 /*==============================================================*/
+/* Table : OM_UNIGENE                                           */
+/*==============================================================*/
+create table OM_UNIGENE (
+   ID_UNIGENE           VARCHAR(20)          not null,
+   ID_GENE              INT4                 null,
+   constraint PK_OM_UNIGENE primary key (ID_UNIGENE)
+);
+
+/*==============================================================*/
 /* Table : TX_LOG                                               */
 /*==============================================================*/
 create table TX_LOG (
@@ -191,6 +236,21 @@ create table TX_LOG (
    COMMENT              TEXT                 null,
    constraint PK_TX_LOG primary key (LAST_ACTIVITY)
 );
+
+alter table EST_EXPRESSION
+   add constraint fk_exp_unigene foreign key (ID_UNIGENE)
+      references OM_UNIGENE (ID_UNIGENE)
+      on delete restrict on update restrict;
+
+alter table EST_EXPRESSION
+   add constraint fk_exp_param foreign key (ID_PARAMETER)
+      references EST_PARAMETER (ID_PARAMETER)
+      on delete restrict on update restrict;
+
+alter table EST_PARAMETER
+   add constraint fk_param_type foreign key (ID_TYPE)
+      references EST_TYPE (ID_TYPE)
+      on delete restrict on update restrict;
 
 alter table OM_ASSEMBLY
    add constraint fk_assembly_organism foreign key (ID_ORGANISM)
@@ -250,5 +310,10 @@ alter table OM_PROTEIN
 alter table OM_PROTEIN_SEQUENCE
    add constraint fk_prot_seq_prot foreign key (ID_PROTEIN)
       references OM_PROTEIN (ID_PROTEIN)
+      on delete restrict on update restrict;
+
+alter table OM_UNIGENE
+   add constraint fk_unigene_gene foreign key (ID_GENE)
+      references OM_GENE (ID_GENE)
       on delete restrict on update restrict;
 

@@ -1,793 +1,577 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  28/09/2016 08:08:00                      */
+/* Date de création :  16/11/2016 09:45:11                      */
 /*==============================================================*/
 
 
-drop table CL_BIOPATHO;
+drop table ADRESSE;
 
-drop table CL_CELL_LINE;
+drop table ANTECEDENT_GENERAL;
 
-drop table CL_CELL_LINE_ALIAS;
+drop table ANTECEDENT_GYNECO;
 
-drop table CL_COLLECTION_METHOD;
+drop table CHIRURGIE;
 
-drop table CL_EVENT;
+drop table CODE_CHIRURGIE;
 
-drop table CL_EVENT_TYPE;
+drop table CODE_TH;
 
-drop table CL_EXPOSURE;
+drop table COMMUNE;
 
-drop table CL_EXPOSURE_TYPE;
+drop table FACTEUR_HISTOLOGIE;
 
-drop table CL_FOLLOW_UP;
+drop table GROUPE_MALADIE;
 
-drop table CL_GENE_MUTATION;
+drop table GROUPE_TOPOGRAPHIE;
 
-drop table CL_HISTOLOGY_DETAIL;
+drop table MALADIE;
 
-drop table CL_MORPHOLOGY;
+drop table METHODE_TRAITEMENT;
 
-drop table CL_ONTOLOGY_CATEGORY;
+drop table MODE_VIE;
 
-drop table CL_ONTOLOGY_DICTIONARY;
+drop table MORPHOLOGIE;
 
-drop table CL_ONTOLOGY_KEYWORD;
+drop table PATIENT;
 
-drop table CL_PARAMETER;
+drop table PHASE_TUMEUR;
 
-drop table CL_PATHOLOGY;
+drop table PRELEVEMENT;
 
-drop table CL_PATIENT;
+drop table PRELEVEMENT_FACTEUR_HISTOLOGIE;
 
-drop table CL_SUBSTANCE;
+drop table PROFESSION;
 
-drop table CL_SURVIVAL;
+drop table REPONSE;
 
-drop table CL_TISSUE_STAGE;
+drop table RESSOURCE_BIOLOGIQUE;
 
-drop table CL_TISSUE_STATUS;
+drop table STATUT_MARITAL;
 
-drop table CL_TNM;
+drop table TNM;
 
-drop table CL_TOPOLOGY;
+drop table TOPOGRAPHIE;
 
-drop table CL_TOPOLOGY_GROUP;
+drop table TRAITEMENT;
 
-drop table CL_TREATMENT;
+drop table TUMEUR;
 
-drop table CL_TREATMENT_METHOD;
+drop table TYPE_ADRESSE;
 
-drop table CL_TREATMENT_TYPE;
+drop table TYPE_PRELEVEMENT;
 
-drop table OM_GROUP;
+drop table TYPE_RESSOURCE;
 
-drop table OM_GROUP_VALUE;
-
-drop table OM_PLATFORM;
-
-drop table OM_PLATFORM_TYPE;
-
-drop table OM_SAMPLE;
-
-drop table OM_SAMPLE_GROUP;
-
-drop table OM_SAMPLE_SERIES;
-
-drop table OM_SERIES;
-
-drop table OM_URI;
-
-drop table OM_URI_SAMPLE;
-
-drop table OM_URI_SERIES;
+drop table TYPE_TRAITEMENT;
 
 /*==============================================================*/
-/* Table : CL_BIOPATHO                                          */
+/* Table : ADRESSE                                              */
 /*==============================================================*/
-create table CL_BIOPATHO (
-   ID_BIOPATHO          INT4                 not null,
-   NUMBER               VARCHAR(20)          null,
-   ID_PATIENT           INT4                 null,
-   AGE_MIN              FLOAT8               null,
-   AGE_MAX              FLOAT8               null,
-   SAMPLING_DATE        DATE                 null,
-   DIAGNOSIS_DATE       DATE                 null,
-   COLLECTION_METHOD    VARCHAR(100)         null,
-   HISTOLOGY_TYPE       VARCHAR(255)         null,
-   HISTOLOGY_SUBTYPE    VARCHAR(255)         null,
-   ID_SAMPLE_TOPOLOGY   VARCHAR(10)          not null,
-   ID_PRIMARY_TOPOLOGY  VARCHAR(10)          null,
-   ID_MORPHOLOGY        VARCHAR(20)          null,
-   ID_TISSUE_STAGE      INT4                 not null,
-   ID_TISSUE_STATUS     INT4                 not null,
-   ID_PATHOLOGY         VARCHAR(20)          null,
-   ID_SURVIVAL          INT4                 null,
-   COMMENT              VARCHAR(255)         null,
-   constraint PK_CL_BIOPATHO primary key (ID_BIOPATHO)
-);
-
-comment on column CL_BIOPATHO.ID_SAMPLE_TOPOLOGY is
-'The topology (site) of this biopathological sample. Usually, the site of the sample is the primary tumor site. Sometimes, it corresponds to a distant metatstatic site for which we could know the primary site. In the latter case, the sample tom=pology is not the same that the primary topology.';
-
-/*==============================================================*/
-/* Table : CL_CELL_LINE                                         */
-/*==============================================================*/
-create table CL_CELL_LINE (
-   ID_CELL_LINE         VARCHAR(20)          not null,
-   ATCC                 VARCHAR(50)          null,
-   AGE                  FLOAT8               null,
-   SEX                  VARCHAR(1)           null,
-   ID_TOPOLOGY          VARCHAR(10)          null,
-   ID_MORPHOLOGY        VARCHAR(20)          null,
-   HISTOLOGY_TYPE       VARCHAR(255)         null,
-   constraint PK_CL_CELL_LINE primary key (ID_CELL_LINE)
-);
-
-/*==============================================================*/
-/* Table : CL_CELL_LINE_ALIAS                                   */
-/*==============================================================*/
-create table CL_CELL_LINE_ALIAS (
-   ID_CELL_LINE_ALIAS   VARCHAR(20)          not null,
-   ID_CELL_LINE         VARCHAR(20)          not null,
-   constraint PK_CL_CELL_LINE_ALIAS primary key (ID_CELL_LINE_ALIAS)
-);
-
-/*==============================================================*/
-/* Table : CL_COLLECTION_METHOD                                 */
-/*==============================================================*/
-create table CL_COLLECTION_METHOD (
-   COLLECTION_METHOD    VARCHAR(100)         not null,
-   constraint PK_CL_COLLECTION_METHOD primary key (COLLECTION_METHOD)
-);
-
-/*==============================================================*/
-/* Table : CL_EVENT                                             */
-/*==============================================================*/
-create table CL_EVENT (
-   ID_EVENT             INT4                 not null,
-   ID_EVENT_TYPE        INT4                 null,
-   ID_FOLLOW_UP         INT4                 null,
-   EVENT_DATE           DATE                 not null,
-   EVENT_CAUSE          VARCHAR(50)          null,
-   METASTATIC_SITE      VARCHAR(100)         null,
-   COMMENT              VARCHAR(100)         null,
-   constraint PK_CL_EVENT primary key (ID_EVENT)
-);
-
-/*==============================================================*/
-/* Table : CL_EVENT_TYPE                                        */
-/*==============================================================*/
-create table CL_EVENT_TYPE (
-   ID_EVENT_TYPE        INT4                 not null,
-   NAME                 VARCHAR(50)          not null,
-   constraint PK_CL_EVENT_TYPE primary key (ID_EVENT_TYPE)
-);
-
-comment on column CL_EVENT_TYPE.NAME is
-'death, local relapse, metastatic relapse';
-
-/*==============================================================*/
-/* Table : CL_EXPOSURE                                          */
-/*==============================================================*/
-create table CL_EXPOSURE (
+create table ADRESSE (
+   ID_ADRESSE           INT4                 not null,
    ID_PATIENT           INT4                 not null,
-   ID_SUBSTANCE         VARCHAR(100)         not null,
-   EXPOSED              boolean              null,
-   ID_EXPOSURE_TYPE     VARCHAR(100)         null,
-   VALUE                VARCHAR(255)         null,
-   COMMENT              VARCHAR(255)         null,
-   constraint PK_CL_EXPOSURE primary key (ID_PATIENT, ID_SUBSTANCE)
+   INSEE                VARCHAR(5)           not null,
+   ID_TYPE_ADRESSE      INT4                 not null,
+   DUREE                VARCHAR(100)         null,
+   REMARQUE             VARCHAR(255)         null,
+   constraint PK_ADRESSE primary key (ID_ADRESSE)
 );
 
 /*==============================================================*/
-/* Table : CL_EXPOSURE_TYPE                                     */
+/* Table : ANTECEDENT_GENERAL                                   */
 /*==============================================================*/
-create table CL_EXPOSURE_TYPE (
-   ID_EXPOSURE_TYPE     VARCHAR(100)         not null,
-   constraint PK_CL_EXPOSURE_TYPE primary key (ID_EXPOSURE_TYPE)
-);
-
-/*==============================================================*/
-/* Table : CL_FOLLOW_UP                                         */
-/*==============================================================*/
-create table CL_FOLLOW_UP (
-   ID_FOLLOW_UP         INT4                 not null,
+create table ANTECEDENT_GENERAL (
    ID_PATIENT           INT4                 not null,
-   FOLLOW_UP_DATE       DATE                 null,
-   PATIENT_STATUS       VARCHAR(50)          null,
-   COMMENT              VARCHAR(255)         null,
-   constraint PK_CL_FOLLOW_UP primary key (ID_FOLLOW_UP)
+   ID_MALADIE           VARCHAR(10)          not null,
+   ID_GROUPE_MALADIE    INT4                 null,
+   constraint PK_ANTECEDENT_GENERAL primary key (ID_PATIENT, ID_MALADIE)
 );
 
 /*==============================================================*/
-/* Table : CL_GENE_MUTATION                                     */
+/* Table : ANTECEDENT_GYNECO                                    */
 /*==============================================================*/
-create table CL_GENE_MUTATION (
-   ID_MUTATION          INT4                 not null,
-   ID_SAMPLE            VARCHAR(20)          null,
-   ID_GENE              INT4                 null,
-   GENE_SYMBOL          VARCHAR(50)          null,
-   STATUS               VARCHAR(255)         null,
-   DNA_MUTATION         VARCHAR(255)         null,
-   EXON_NUMBER          VARCHAR(255)         null,
-   FUNC_CONSEQUENCE     VARCHAR(500)         null,
-   CODON_NUMBER         VARCHAR(255)         null,
-   PROTEIN_MUTATION     VARCHAR(255)         null,
-   PROTEIN_EXPRESSION   boolean              null,
-   COSMIC               VARCHAR(255)         null,
-   STRUCT_EFFECT_CLASS  VARCHAR(255)         null,
-   SIFT_CLASS           VARCHAR(255)         null,
-   TRANSACT_CLASS       VARCHAR(255)         null,
-   D_ND_CLASS           VARCHAR(255)         null,
-   LOF_GOF              VARCHAR(255)         null,
-   constraint PK_CL_GENE_MUTATION primary key (ID_MUTATION)
+create table ANTECEDENT_GYNECO (
+   ID_ANTECEDENT_GYNECO INT4                 not null,
+   ID_THS               INT4                 null,
+   ID_CONTRACEPTIF      INT4                 null,
+   PATHOLOGIE           VARCHAR(255)         null,
+   AGE_REGLES           INT4                 null,
+   AGE_MENOPAUSE        INT4                 null,
+   NB_ENFANTS           INT4                 null,
+   AGE_PREMIER_ENFANT   INT4                 null,
+   AGE_DERNIER_ENFANT   INT4                 null,
+   NB_FAUSSE_COUCHES    INT4                 null,
+   ALLAITEMENT          VARCHAR(100)         null,
+   constraint PK_ANTECEDENT_GYNECO primary key (ID_ANTECEDENT_GYNECO)
 );
 
 /*==============================================================*/
-/* Table : CL_HISTOLOGY_DETAIL                                  */
+/* Table : CHIRURGIE                                            */
 /*==============================================================*/
-create table CL_HISTOLOGY_DETAIL (
-   ID_BIOPATHO          INT4                 not null,
-   ID_PARAMETER         INT4                 not null,
-   VALUE                VARCHAR(255)         null,
-   COMMENT              VARCHAR(255)         null,
-   constraint PK_CL_HISTOLOGY_DETAIL primary key (ID_BIOPATHO, ID_PARAMETER)
-);
-
-comment on table CL_HISTOLOGY_DETAIL is
-'% Tumor cells = 70';
-
-/*==============================================================*/
-/* Table : CL_MORPHOLOGY                                        */
-/*==============================================================*/
-create table CL_MORPHOLOGY (
-   ID_MORPHOLOGY        VARCHAR(20)          not null,
-   NAME                 VARCHAR(200)         not null,
-   constraint PK_CL_MORPHOLOGY primary key (ID_MORPHOLOGY)
-);
-
-comment on table CL_MORPHOLOGY is
-'ICD-O morphology
-
-Group: 801 CARCINOMA, NOS
-Morphology : 8010 
-Bihavior : /2
-Carcinoma in situ, NOS';
-
-/*==============================================================*/
-/* Table : CL_ONTOLOGY_CATEGORY                                 */
-/*==============================================================*/
-create table CL_ONTOLOGY_CATEGORY (
-   ID_CATEGORY          VARCHAR(100)         not null,
-   constraint PK_CL_ONTOLOGY_CATEGORY primary key (ID_CATEGORY)
+create table CHIRURGIE (
+   ID_CHIRURGIE         INT4                 not null,
+   ID_TUMEUR            INT4                 not null,
+   ID_CODE              INT4                 not null,
+   DATE_CHIRURGIE       DATE                 not null,
+   GG_SENTINELLE        boolean              null,
+   constraint PK_CHIRURGIE primary key (ID_CHIRURGIE)
 );
 
 /*==============================================================*/
-/* Table : CL_ONTOLOGY_DICTIONARY                               */
+/* Table : CODE_CHIRURGIE                                       */
 /*==============================================================*/
-create table CL_ONTOLOGY_DICTIONARY (
-   TERM                 VARCHAR(255)         not null,
-   ID_REFERENCE         VARCHAR(50)          not null,
-   ID_CATEGORY          VARCHAR(100)         not null,
-   constraint PK_CL_ONTOLOGY_DICTIONARY primary key (TERM, ID_CATEGORY)
+create table CODE_CHIRURGIE (
+   ID_CODE              INT4                 not null,
+   NOM                  VARCHAR(255)         not null,
+   constraint PK_CODE_CHIRURGIE primary key (ID_CODE)
 );
 
-comment on table CL_ONTOLOGY_DICTIONARY is
-'Link a term to its identification reference in EpiMed database ';
-
-comment on column CL_ONTOLOGY_DICTIONARY.TERM is
-'Any word that should be recognized as a referenced entity.';
-
-comment on column CL_ONTOLOGY_DICTIONARY.ID_REFERENCE is
-'Identification number (ID) of the referenced entity.';
-
-comment on column CL_ONTOLOGY_DICTIONARY.ID_CATEGORY is
-'Category to which belongs the term and the referenced entity.';
-
 /*==============================================================*/
-/* Table : CL_ONTOLOGY_KEYWORD                                  */
+/* Table : CODE_TH                                              */
 /*==============================================================*/
-create table CL_ONTOLOGY_KEYWORD (
-   ID_KEYWORD           VARCHAR(255)         not null,
-   ID_CATEGORY          VARCHAR(100)         not null,
-   constraint PK_CL_ONTOLOGY_KEYWORD primary key (ID_KEYWORD, ID_CATEGORY)
+create table CODE_TH (
+   ID_CODE_TH           INT4                 not null,
+   NOM                  VARCHAR(100)         not null,
+   constraint PK_CODE_TH primary key (ID_CODE_TH)
 );
 
-comment on table CL_ONTOLOGY_KEYWORD is
-'Contains keywords to recognize a category';
-
 /*==============================================================*/
-/* Table : CL_PARAMETER                                         */
+/* Table : COMMUNE                                              */
 /*==============================================================*/
-create table CL_PARAMETER (
-   ID_PARAMETER         INT4                 not null,
-   NAME                 VARCHAR(100)         not null,
-   constraint PK_CL_PARAMETER primary key (ID_PARAMETER)
+create table COMMUNE (
+   INSEE                VARCHAR(5)           not null,
+   CODE_POSTAL          VARCHAR(5)           not null,
+   NOM                  VARCHAR(255)         not null,
+   constraint PK_COMMUNE primary key (INSEE)
 );
 
-comment on table CL_PARAMETER is
-'% Tumor Cells
-IHC % Ki 67';
-
 /*==============================================================*/
-/* Table : CL_PATHOLOGY                                         */
+/* Table : FACTEUR_HISTOLOGIE                                   */
 /*==============================================================*/
-create table CL_PATHOLOGY (
-   ID_PATHOLOGY         VARCHAR(20)          not null,
-   CODE                 VARCHAR(20)          null,
-   NAME                 VARCHAR(200)         not null,
-   constraint PK_CL_PATHOLOGY primary key (ID_PATHOLOGY)
+create table FACTEUR_HISTOLOGIE (
+   ID_FACTEUR           VARCHAR(10)          not null,
+   NOM                  VARCHAR(100)         not null,
+   constraint PK_FACTEUR_HISTOLOGIE primary key (ID_FACTEUR)
 );
 
-comment on table CL_PATHOLOGY is
-'Disease: COPD';
+/*==============================================================*/
+/* Table : GROUPE_MALADIE                                       */
+/*==============================================================*/
+create table GROUPE_MALADIE (
+   ID_GROUPE_MALADIE    INT4                 not null,
+   NOM_GROUPE           VARCHAR(255)         not null,
+   REMARQUE             VARCHAR(500)         null,
+   constraint PK_GROUPE_MALADIE primary key (ID_GROUPE_MALADIE)
+);
 
 /*==============================================================*/
-/* Table : CL_PATIENT                                           */
+/* Table : GROUPE_TOPOGRAPHIE                                   */
 /*==============================================================*/
-create table CL_PATIENT (
+create table GROUPE_TOPOGRAPHIE (
+   ID_GROUPE_TOPO       VARCHAR(20)          not null,
+   NOM                  VARCHAR(255)         not null,
+   constraint PK_GROUPE_TOPOGRAPHIE primary key (ID_GROUPE_TOPO)
+);
+
+/*==============================================================*/
+/* Table : MALADIE                                              */
+/*==============================================================*/
+create table MALADIE (
+   ID_MALADIE           VARCHAR(10)          not null,
+   ID_GROUPE_MALADIE    INT4                 null,
+   NOM                  VARCHAR(500)         not null,
+   SCORE_CHARLSON       INT4                 not null,
+   constraint PK_MALADIE primary key (ID_MALADIE)
+);
+
+/*==============================================================*/
+/* Table : METHODE_TRAITEMENT                                   */
+/*==============================================================*/
+create table METHODE_TRAITEMENT (
+   ID_METHODE           INT4                 not null,
+   NOM                  VARCHAR(255)         not null,
+   constraint PK_METHODE_TRAITEMENT primary key (ID_METHODE)
+);
+
+/*==============================================================*/
+/* Table : MODE_VIE                                             */
+/*==============================================================*/
+create table MODE_VIE (
+   ID_MODE_VIE          INT4                 not null,
+   ACTIVITE_PHYSIQUE    VARCHAR(255)         null,
+   COSMETIQUE           VARCHAR(100)         null,
+   BRICOLAGE            VARCHAR(100)         null,
+   EXPOSITION           VARCHAR(255)         null,
+   TABAC_STATUT         VARCHAR(100)         null,
+   TABAC_PAN            VARCHAR(100)         null,
+   ALCOOL               VARCHAR(255)         null,
+   DROGUE               VARCHAR(255)         null,
+   TRAVAIL_DE_NUIT      VARCHAR(100)         null,
+   AUTRE                VARCHAR(255)         null,
+   constraint PK_MODE_VIE primary key (ID_MODE_VIE)
+);
+
+/*==============================================================*/
+/* Table : MORPHOLOGIE                                          */
+/*==============================================================*/
+create table MORPHOLOGIE (
+   ID_MORPHOLOGIE       VARCHAR(20)          not null,
+   NOM                  VARCHAR(255)         not null,
+   constraint PK_MORPHOLOGIE primary key (ID_MORPHOLOGIE)
+);
+
+/*==============================================================*/
+/* Table : PATIENT                                              */
+/*==============================================================*/
+create table PATIENT (
    ID_PATIENT           INT4                 not null,
-   SEX                  VARCHAR(1)           null
-      constraint CKC_SEX_CL_PATIE check (SEX is null or (SEX in ('F','M'))),
-   BIRTH_DATE           DATE                 null,
-   ETHNIC_GROUP         VARCHAR(100)         null,
-   COMMENT              VARCHAR(255)         null,
-   constraint PK_CL_PATIENT primary key (ID_PATIENT)
+   PRENOM               VARCHAR(255)         not null,
+   NOM                  VARCHAR(255)         not null,
+   DATE_NAISSANCE       Date                 null,
+   AGE_DIAG             INT4                 null,
+   SEXE                 VARCHAR(1)           null,
+   IMC_DIAG             FLOAT8               null,
+   IMC_20_ANS           FLOAT8               null,
+   SCORE_CHARLSON_CUMULE INT4                 null,
+   QUESTIONNAIRE        boolean              null,
+   RCP                  VARCHAR(100)         null,
+   ID_ANTECEDENT_GYNECO INT4                 null,
+   ID_MODE_VIE          INT4                 null,
+   ID_PROFESSION        INT4                 null,
+   ID_STATUT_MARITAL    INT4                 null,
+   constraint PK_PATIENT primary key (ID_PATIENT)
 );
 
 /*==============================================================*/
-/* Table : CL_SUBSTANCE                                         */
+/* Table : PHASE_TUMEUR                                         */
 /*==============================================================*/
-create table CL_SUBSTANCE (
-   ID_SUBSTANCE         VARCHAR(100)         not null,
-   constraint PK_CL_SUBSTANCE primary key (ID_SUBSTANCE)
+create table PHASE_TUMEUR (
+   ID_PHASE             INT4                 not null,
+   ID_TUMEUR            INT4                 not null,
+   TYPE                 VARCHAR(100)         not null,
+   DATE_DIAGNOSTIC      DATE                 not null,
+   NATURE_DIAGNOSTIC    VARCHAR(100)         null,
+   SITES_METASTATIQUES  VARCHAR(500)         null,
+   PROFONDEUR           VARCHAR(255)         null,
+   CT_MM                VARCHAR(10)          null,
+   constraint PK_PHASE_TUMEUR primary key (ID_PHASE)
 );
 
 /*==============================================================*/
-/* Table : CL_SURVIVAL                                          */
+/* Table : PRELEVEMENT                                          */
 /*==============================================================*/
-create table CL_SURVIVAL (
-   ID_SURVIVAL          INT4                 not null,
-   DFS_MONTHS           FLOAT8               null,
-   OS_MONTHS            FLOAT8               null,
-   RELAPSED             boolean              null,
-   DEAD                 boolean              null,
-   constraint PK_CL_SURVIVAL primary key (ID_SURVIVAL)
-);
-
-comment on column CL_SURVIVAL.DFS_MONTHS is
-'disease free survival in months';
-
-comment on column CL_SURVIVAL.OS_MONTHS is
-'overall survival in months';
-
-/*==============================================================*/
-/* Table : CL_TISSUE_STAGE                                      */
-/*==============================================================*/
-create table CL_TISSUE_STAGE (
-   ID_TISSUE_STAGE      INT4                 not null,
-   STAGE                VARCHAR(50)          not null,
-   constraint PK_CL_TISSUE_STAGE primary key (ID_TISSUE_STAGE)
-);
-
-comment on table CL_TISSUE_STAGE is
-'Tissue stage: adult, fetal, not relevant';
-
-/*==============================================================*/
-/* Table : CL_TISSUE_STATUS                                     */
-/*==============================================================*/
-create table CL_TISSUE_STATUS (
-   ID_TISSUE_STATUS     INT4                 not null,
-   NAME                 VARCHAR(50)          not null,
-   constraint PK_CL_TISSUE_STATUS primary key (ID_TISSUE_STATUS)
-);
-
-comment on table CL_TISSUE_STATUS is
-'1 - Normal
-2 - Pathological non tumoral
-3 - Pathological tumoral primary site
-4 - Pathological tumoral metastasis';
-
-/*==============================================================*/
-/* Table : CL_TNM                                               */
-/*==============================================================*/
-create table CL_TNM (
-   ID_BIOPATHO          INT4                 not null,
-   T                    VARCHAR(10)          not null,
-   N                    VARCHAR(10)          not null,
-   M                    VARCHAR(10)          not null,
-   GRADE                VARCHAR(10)          null,
-   STAGE                VARCHAR(10)          null,
-   constraint PK_CL_TNM primary key (ID_BIOPATHO, T, N, M)
+create table PRELEVEMENT (
+   ID_PRELEVEMENT       INT4                 not null,
+   ID_TYPE_PRELEVEMENT  INT4                 not null,
+   ID_TUMEUR            INT4                 not null,
+   ID_MORPHOLOGIE       VARCHAR(20)          null,
+   DATE_PRELEVEMENT     DATE                 null,
+   TYPE                 VARCHAR(500)         null,
+   ASSOCIATION_CIS      boolean              null,
+   REMARQUE             VARCHAR(255)         null,
+   constraint PK_PRELEVEMENT primary key (ID_PRELEVEMENT)
 );
 
 /*==============================================================*/
-/* Table : CL_TOPOLOGY                                          */
+/* Table : PRELEVEMENT_FACTEUR_HISTOLOGIE                       */
 /*==============================================================*/
-create table CL_TOPOLOGY (
-   ID_TOPOLOGY          VARCHAR(10)          not null,
-   NAME                 VARCHAR(200)         not null,
-   ID_GROUP             VARCHAR(10)          not null,
-   constraint PK_CL_TOPOLOGY primary key (ID_TOPOLOGY)
-);
-
-comment on table CL_TOPOLOGY is
-'ICD-0 topology';
-
-/*==============================================================*/
-/* Table : CL_TOPOLOGY_GROUP                                    */
-/*==============================================================*/
-create table CL_TOPOLOGY_GROUP (
-   ID_GROUP             VARCHAR(10)          not null,
-   NAME                 VARCHAR(100)         not null,
-   constraint PK_CL_TOPOLOGY_GROUP primary key (ID_GROUP)
+create table PRELEVEMENT_FACTEUR_HISTOLOGIE (
+   ID_PRELEVEMENT       INT4                 not null,
+   ID_FACTEUR           VARCHAR(10)          not null,
+   VALEUR               VARCHAR(100)         not null,
+   constraint PK_PRELEVEMENT_FACTEUR_HISTOLO primary key (ID_PRELEVEMENT, ID_FACTEUR)
 );
 
 /*==============================================================*/
-/* Table : CL_TREATMENT                                         */
+/* Table : PROFESSION                                           */
 /*==============================================================*/
-create table CL_TREATMENT (
-   ID_TREATMENT         INT4                 not null,
+create table PROFESSION (
+   ID_PROFESSION        INT4                 not null,
+   NOM                  VARCHAR(255)         not null,
+   constraint PK_PROFESSION primary key (ID_PROFESSION)
+);
+
+/*==============================================================*/
+/* Table : REPONSE                                              */
+/*==============================================================*/
+create table REPONSE (
+   ID_REPONSE           INT4                 not null,
+   NOM                  VARCHAR(100)         not null,
+   constraint PK_REPONSE primary key (ID_REPONSE)
+);
+
+/*==============================================================*/
+/* Table : RESSOURCE_BIOLOGIQUE                                 */
+/*==============================================================*/
+create table RESSOURCE_BIOLOGIQUE (
+   ID_RESSOURCE         INT4                 not null,
+   ID_TYPE_RESSOURCE    INT4                 not null,
+   ID_DIAGNOSTIC        INT4                 not null,
+   TK                   VARCHAR(100)         null,
+   CLINATEC             VARCHAR(100)         null,
+   DATE_PRELEVEMENT     DATE                 null,
+   ADN_CIRCULANT        VARCHAR(100)         null,
+   TEMP_CONGELATION     INT4                 null,
+   CONTROLE_HE          boolean              null,
+   CONSENTEMENT         boolean              null,
+   constraint PK_RESSOURCE_BIOLOGIQUE primary key (ID_RESSOURCE)
+);
+
+/*==============================================================*/
+/* Table : STATUT_MARITAL                                       */
+/*==============================================================*/
+create table STATUT_MARITAL (
+   ID_STATUT_MARITAL    INT4                 not null,
+   NOM                  VARCHAR(100)         not null,
+   constraint PK_STATUT_MARITAL primary key (ID_STATUT_MARITAL)
+);
+
+/*==============================================================*/
+/* Table : TNM                                                  */
+/*==============================================================*/
+create table TNM (
+   ID_TNM               INT4                 not null,
+   ID_TUMEUR            INT4                 not null,
+   T                    VARCHAR(10)          null,
+   N                    VARCHAR(10)          null,
+   M                    VARCHAR(10)          null,
+   TYPE                 VARCHAR(100)         null,
+   constraint PK_TNM primary key (ID_TNM)
+);
+
+/*==============================================================*/
+/* Table : TOPOGRAPHIE                                          */
+/*==============================================================*/
+create table TOPOGRAPHIE (
+   ID_TOPOGRAPHIE       VARCHAR(20)          not null,
+   NOM                  VARCHAR(255)         not null,
+   ID_GROUPE_TOPO       VARCHAR(20)          not null,
+   constraint PK_TOPOGRAPHIE primary key (ID_TOPOGRAPHIE)
+);
+
+/*==============================================================*/
+/* Table : TRAITEMENT                                           */
+/*==============================================================*/
+create table TRAITEMENT (
+   ID_TRAITEMENT        INT4                 not null,
+   ID_TUMEUR            INT4                 not null,
+   ID_TYPE_TRAITEMENT   INT4                 not null,
+   ID_METHODE           INT4                 not null,
+   ID_REPONSE           INT4                 null,
+   DATE_DEBUT           DATE                 not null,
+   DATE_FIN             DATE                 null,
+   TYPE                 VARCHAR(100)         null,
+   PROTOCOLE            VARCHAR(255)         null,
+   DOSE                 VARCHAR(100)         null,
+   NB_CURES             VARCHAR(100)         null,
+   constraint PK_TRAITEMENT primary key (ID_TRAITEMENT)
+);
+
+/*==============================================================*/
+/* Table : TUMEUR                                               */
+/*==============================================================*/
+create table TUMEUR (
+   ID_TUMEUR            INT4                 not null,
    ID_PATIENT           INT4                 not null,
-   ID_TREATMENT_METHOD  INT4                 not null,
-   ID_TREATMENT_TYPE    INT4                 not null,
-   TREATMENT_DATE       DATE                 null,
-   TYPE                 VARCHAR(255)         null,
-   RESPONSE             VARCHAR(255)         null,
-   COMMENT              VARCHAR(255)         null,
-   constraint PK_CL_TREATMENT primary key (ID_TREATMENT)
-);
-
-comment on column CL_TREATMENT.TYPE is
-'Drug used for the treatment';
-
-/*==============================================================*/
-/* Table : CL_TREATMENT_METHOD                                  */
-/*==============================================================*/
-create table CL_TREATMENT_METHOD (
-   ID_TREATMENT_METHOD  INT4                 not null,
-   NAME                 VARCHAR(50)          not null,
-   constraint PK_CL_TREATMENT_METHOD primary key (ID_TREATMENT_METHOD)
-);
-
-comment on table CL_TREATMENT_METHOD is
-'surgery, chemotherapy, radiotherapy';
-
-/*==============================================================*/
-/* Table : CL_TREATMENT_TYPE                                    */
-/*==============================================================*/
-create table CL_TREATMENT_TYPE (
-   ID_TREATMENT_TYPE    INT4                 not null,
-   NAME                 VARCHAR(50)          not null,
-   constraint PK_CL_TREATMENT_TYPE primary key (ID_TREATMENT_TYPE)
-);
-
-comment on table CL_TREATMENT_TYPE is
-'adjuvent, neoadjuvent, curative';
-
-/*==============================================================*/
-/* Table : OM_GROUP                                             */
-/*==============================================================*/
-create table OM_GROUP (
-   ID_GROUP             INT4                 not null,
-   TITLE                VARCHAR(100)         not null,
-   DATE                 DATE                 not null,
-   ENABLED              boolean              not null,
-   ORDERING             INT4                 not null,
-   COMMENT              VARCHAR(255)         null,
-   constraint PK_OM_GROUP primary key (ID_GROUP)
-);
-
-comment on table OM_GROUP is
-'We devide the samples into several groups. Each group can have several values. 
-Example: Group "26 genes", values : "P1", "P2", "P3"';
-
-/*==============================================================*/
-/* Table : OM_GROUP_VALUE                                       */
-/*==============================================================*/
-create table OM_GROUP_VALUE (
-   ID_GROUP_VALUE       INT4                 not null,
-   ID_GROUP             INT4                 not null,
-   NAME                 VARCHAR(50)          not null,
-   ENABLED              boolean              not null,
-   ORDERING             INT4                 not null,
-   constraint PK_OM_GROUP_VALUE primary key (ID_GROUP_VALUE)
-);
-
-comment on table OM_GROUP_VALUE is
-'id_group: 26 genes
-name: P1';
-
-/*==============================================================*/
-/* Table : OM_PLATFORM                                          */
-/*==============================================================*/
-create table OM_PLATFORM (
-   ID_PLATFORM          VARCHAR(20)          not null,
-   ID_PLATFORM_TYPE     INT4                 not null,
-   GEO_NUMBER           VARCHAR(20)          null,
-   TITLE                VARCHAR(255)         not null,
-   MANUFACTURER         VARCHAR(100)         not null,
-   constraint PK_OM_PLATFORM primary key (ID_PLATFORM)
+   ID_TOPOGRAPHIE       VARCHAR(20)          null,
+   COTE                 VARCHAR(100)         null,
+   constraint PK_TUMEUR primary key (ID_TUMEUR)
 );
 
 /*==============================================================*/
-/* Table : OM_PLATFORM_TYPE                                     */
+/* Table : TYPE_ADRESSE                                         */
 /*==============================================================*/
-create table OM_PLATFORM_TYPE (
-   ID_PLATFORM_TYPE     INT4                 not null,
-   NAME                 VARCHAR(100)         not null,
-   constraint PK_OM_PLATFORM_TYPE primary key (ID_PLATFORM_TYPE)
+create table TYPE_ADRESSE (
+   ID_TYPE_ADRESSE      INT4                 not null,
+   NOM                  VARCHAR(255)         not null,
+   constraint PK_TYPE_ADRESSE primary key (ID_TYPE_ADRESSE)
 );
 
 /*==============================================================*/
-/* Table : OM_SAMPLE                                            */
+/* Table : TYPE_PRELEVEMENT                                     */
 /*==============================================================*/
-create table OM_SAMPLE (
-   ID_SAMPLE            VARCHAR(20)          not null,
-   TITLE                VARCHAR(255)         null,
-   RELEASE_DATE         DATE                 null,
-   LAST_UPDATE          DATE                 null,
-   ID_PLATFORM          VARCHAR(20)          not null,
-   ID_BIOPATHO          INT4                 not null,
-   SOURCE               VARCHAR(255)         null,
-   GSM_NUMBER           VARCHAR(20)          null,
-   MAIN_GSE_NUMBER      VARCHAR(20)          null,
-   COMMENT              VARCHAR(255)         null,
-   constraint PK_OM_SAMPLE primary key (ID_SAMPLE)
+create table TYPE_PRELEVEMENT (
+   ID_TYPE_PRELEVEMENT  INT4                 not null,
+   NOM                  VARCHAR(255)         not null,
+   constraint PK_TYPE_PRELEVEMENT primary key (ID_TYPE_PRELEVEMENT)
+);
+
+comment on table TYPE_PRELEVEMENT is
+'Tissu SP, tissu tumoral, tissu sain, serum, plasma';
+
+/*==============================================================*/
+/* Table : TYPE_RESSOURCE                                       */
+/*==============================================================*/
+create table TYPE_RESSOURCE (
+   ID_TYPE_RESSOURCE    INT4                 not null,
+   NOM                  VARCHAR(255)         not null,
+   constraint PK_TYPE_RESSOURCE primary key (ID_TYPE_RESSOURCE)
 );
 
 /*==============================================================*/
-/* Table : OM_SAMPLE_GROUP                                      */
+/* Table : TYPE_TRAITEMENT                                      */
 /*==============================================================*/
-create table OM_SAMPLE_GROUP (
-   ID_SAMPLE            VARCHAR(20)          not null,
-   ID_GROUP_VALUE       INT4                 not null,
-   constraint PK_OM_SAMPLE_GROUP primary key (ID_SAMPLE, ID_GROUP_VALUE)
+create table TYPE_TRAITEMENT (
+   ID_TYPE_TRAITEMENT   INT4                 not null,
+   NOM                  VARCHAR(255)         not null,
+   constraint PK_TYPE_TRAITEMENT primary key (ID_TYPE_TRAITEMENT)
 );
 
-/*==============================================================*/
-/* Table : OM_SAMPLE_SERIES                                     */
-/*==============================================================*/
-create table OM_SAMPLE_SERIES (
-   ID_SAMPLE            VARCHAR(20)          not null,
-   ID_SERIES            VARCHAR(20)          not null,
-   constraint PK_OM_SAMPLE_SERIES primary key (ID_SERIES, ID_SAMPLE)
-);
+comment on table TYPE_TRAITEMENT is
+'neoadjuvent, adjuvent, rechute';
 
-/*==============================================================*/
-/* Table : OM_SERIES                                            */
-/*==============================================================*/
-create table OM_SERIES (
-   ID_SERIES            VARCHAR(20)          not null,
-   TITLE                VARCHAR(500)         not null,
-   RELEASE_DATE         DATE                 null,
-   LAST_UPDATE          DATE                 null,
-   COMMENT              VARCHAR(500)         null,
-   constraint PK_OM_SERIES primary key (ID_SERIES)
-);
-
-/*==============================================================*/
-/* Table : OM_URI                                               */
-/*==============================================================*/
-create table OM_URI (
-   ID_URI               INT4                 not null,
-   PROTOCOL             VARCHAR(20)          not null,
-   PATH                 VARCHAR(500)         not null,
-   TYPE                 VARCHAR(50)          not null,
-   constraint PK_OM_URI primary key (ID_URI)
-);
-
-/*==============================================================*/
-/* Table : OM_URI_SAMPLE                                        */
-/*==============================================================*/
-create table OM_URI_SAMPLE (
-   ID_SAMPLE            VARCHAR(20)          not null,
-   ID_URI               INT4                 not null,
-   constraint PK_OM_URI_SAMPLE primary key (ID_SAMPLE, ID_URI)
-);
-
-/*==============================================================*/
-/* Table : OM_URI_SERIES                                        */
-/*==============================================================*/
-create table OM_URI_SERIES (
-   ID_SERIES            VARCHAR(20)          not null,
-   ID_URI               INT4                 not null,
-   constraint PK_OM_URI_SERIES primary key (ID_SERIES, ID_URI)
-);
-
-alter table CL_BIOPATHO
-   add constraint fk_biopatho_col_method foreign key (COLLECTION_METHOD)
-      references CL_COLLECTION_METHOD (COLLECTION_METHOD)
+alter table ADRESSE
+   add constraint fk_adr_patient foreign key (ID_PATIENT)
+      references PATIENT (ID_PATIENT)
       on delete restrict on update restrict;
 
-alter table CL_BIOPATHO
-   add constraint fk_histo_morpho foreign key (ID_MORPHOLOGY)
-      references CL_MORPHOLOGY (ID_MORPHOLOGY)
+alter table ADRESSE
+   add constraint fk_adr_commune foreign key (INSEE)
+      references COMMUNE (INSEE)
       on delete restrict on update restrict;
 
-alter table CL_BIOPATHO
-   add constraint fk_histo_topo_primary foreign key (ID_SAMPLE_TOPOLOGY)
-      references CL_TOPOLOGY (ID_TOPOLOGY)
+alter table ADRESSE
+   add constraint fk_adr_type_adr foreign key (ID_TYPE_ADRESSE)
+      references TYPE_ADRESSE (ID_TYPE_ADRESSE)
       on delete restrict on update restrict;
 
-alter table CL_BIOPATHO
-   add constraint fk_histo_patho foreign key (ID_PATHOLOGY)
-      references CL_PATHOLOGY (ID_PATHOLOGY)
+alter table ANTECEDENT_GENERAL
+   add constraint fk_ant_gen_patient foreign key (ID_PATIENT)
+      references PATIENT (ID_PATIENT)
       on delete restrict on update restrict;
 
-alter table CL_BIOPATHO
-   add constraint fk_histo_tissue_status foreign key (ID_TISSUE_STATUS)
-      references CL_TISSUE_STATUS (ID_TISSUE_STATUS)
+alter table ANTECEDENT_GENERAL
+   add constraint fk_ant_gen_mal foreign key (ID_MALADIE)
+      references MALADIE (ID_MALADIE)
       on delete restrict on update restrict;
 
-alter table CL_BIOPATHO
-   add constraint fk_histo_tissue_stage foreign key (ID_TISSUE_STAGE)
-      references CL_TISSUE_STAGE (ID_TISSUE_STAGE)
+alter table ANTECEDENT_GENERAL
+   add constraint fk_ant_gen_groupe_mal foreign key (ID_GROUPE_MALADIE)
+      references GROUPE_MALADIE (ID_GROUPE_MALADIE)
       on delete restrict on update restrict;
 
-alter table CL_BIOPATHO
-   add constraint fk_histo_patient foreign key (ID_PATIENT)
-      references CL_PATIENT (ID_PATIENT)
+alter table ANTECEDENT_GYNECO
+   add constraint fk_ant_gyn_ths foreign key (ID_THS)
+      references CODE_TH (ID_CODE_TH)
       on delete restrict on update restrict;
 
-alter table CL_BIOPATHO
-   add constraint fk_histo_topo_histology foreign key (ID_PRIMARY_TOPOLOGY)
-      references CL_TOPOLOGY (ID_TOPOLOGY)
+alter table ANTECEDENT_GYNECO
+   add constraint fk_ant_gyn_contraceptif foreign key (ID_CONTRACEPTIF)
+      references CODE_TH (ID_CODE_TH)
       on delete restrict on update restrict;
 
-alter table CL_BIOPATHO
-   add constraint fk_biopatho_survival foreign key (ID_SURVIVAL)
-      references CL_SURVIVAL (ID_SURVIVAL)
+alter table CHIRURGIE
+   add constraint fk_chirurgie_tumeur foreign key (ID_TUMEUR)
+      references PHASE_TUMEUR (ID_PHASE)
       on delete restrict on update restrict;
 
-alter table CL_CELL_LINE
-   add constraint fk_cell_line_topo foreign key (ID_TOPOLOGY)
-      references CL_TOPOLOGY (ID_TOPOLOGY)
+alter table CHIRURGIE
+   add constraint fk_chir_code_chir foreign key (ID_CODE)
+      references CODE_CHIRURGIE (ID_CODE)
       on delete restrict on update restrict;
 
-alter table CL_CELL_LINE
-   add constraint fk_cell_line_morpho foreign key (ID_MORPHOLOGY)
-      references CL_MORPHOLOGY (ID_MORPHOLOGY)
+alter table MALADIE
+   add constraint fk_mal_groupe_mal foreign key (ID_GROUPE_MALADIE)
+      references GROUPE_MALADIE (ID_GROUPE_MALADIE)
       on delete restrict on update restrict;
 
-alter table CL_CELL_LINE_ALIAS
-   add constraint fk_cl_alias_cl foreign key (ID_CELL_LINE)
-      references CL_CELL_LINE (ID_CELL_LINE)
+alter table PATIENT
+   add constraint fk_patient_ant_gyn foreign key (ID_ANTECEDENT_GYNECO)
+      references ANTECEDENT_GYNECO (ID_ANTECEDENT_GYNECO)
       on delete restrict on update restrict;
 
-alter table CL_EVENT
-   add constraint fk_event_event_type foreign key (ID_EVENT_TYPE)
-      references CL_EVENT_TYPE (ID_EVENT_TYPE)
+alter table PATIENT
+   add constraint fk_patient_mode_vie foreign key (ID_MODE_VIE)
+      references MODE_VIE (ID_MODE_VIE)
       on delete restrict on update restrict;
 
-alter table CL_EVENT
-   add constraint fk_event_follow_up foreign key (ID_FOLLOW_UP)
-      references CL_FOLLOW_UP (ID_FOLLOW_UP)
+alter table PATIENT
+   add constraint fk_patient_profession foreign key (ID_PROFESSION)
+      references PROFESSION (ID_PROFESSION)
       on delete restrict on update restrict;
 
-alter table CL_EXPOSURE
-   add constraint fk_expo_expo_type foreign key (ID_EXPOSURE_TYPE)
-      references CL_EXPOSURE_TYPE (ID_EXPOSURE_TYPE)
+alter table PATIENT
+   add constraint fk_patient_statut_marital foreign key (ID_STATUT_MARITAL)
+      references STATUT_MARITAL (ID_STATUT_MARITAL)
       on delete restrict on update restrict;
 
-alter table CL_EXPOSURE
-   add constraint fk_exposure_patient foreign key (ID_PATIENT)
-      references CL_PATIENT (ID_PATIENT)
+alter table PHASE_TUMEUR
+   add constraint fk_phase_tumeur foreign key (ID_TUMEUR)
+      references TUMEUR (ID_TUMEUR)
       on delete restrict on update restrict;
 
-alter table CL_EXPOSURE
-   add constraint fk_expo_sub foreign key (ID_SUBSTANCE)
-      references CL_SUBSTANCE (ID_SUBSTANCE)
+alter table PRELEVEMENT
+   add constraint fk_prel_morpho foreign key (ID_MORPHOLOGIE)
+      references MORPHOLOGIE (ID_MORPHOLOGIE)
       on delete restrict on update restrict;
 
-alter table CL_FOLLOW_UP
-   add constraint fk_follow_up_patient foreign key (ID_PATIENT)
-      references CL_PATIENT (ID_PATIENT)
+alter table PRELEVEMENT
+   add constraint fk_prel_type_prel foreign key (ID_TYPE_PRELEVEMENT)
+      references TYPE_PRELEVEMENT (ID_TYPE_PRELEVEMENT)
       on delete restrict on update restrict;
 
-alter table CL_HISTOLOGY_DETAIL
-   add constraint fk_histo_detail_histo foreign key (ID_BIOPATHO)
-      references CL_BIOPATHO (ID_BIOPATHO)
+alter table PRELEVEMENT
+   add constraint fk_prel_tumeur foreign key (ID_TUMEUR)
+      references PHASE_TUMEUR (ID_PHASE)
       on delete restrict on update restrict;
 
-alter table CL_HISTOLOGY_DETAIL
-   add constraint fk_histo_detail_param foreign key (ID_PARAMETER)
-      references CL_PARAMETER (ID_PARAMETER)
+alter table PRELEVEMENT_FACTEUR_HISTOLOGIE
+   add constraint fk_prel_fhisto_prel foreign key (ID_PRELEVEMENT)
+      references PRELEVEMENT (ID_PRELEVEMENT)
       on delete restrict on update restrict;
 
-alter table CL_ONTOLOGY_DICTIONARY
-   add constraint fk_ont_dic_ont_cat foreign key (ID_CATEGORY)
-      references CL_ONTOLOGY_CATEGORY (ID_CATEGORY)
+alter table PRELEVEMENT_FACTEUR_HISTOLOGIE
+   add constraint fk_prel_fhisto_fhisto foreign key (ID_FACTEUR)
+      references FACTEUR_HISTOLOGIE (ID_FACTEUR)
       on delete restrict on update restrict;
 
-alter table CL_ONTOLOGY_KEYWORD
-   add constraint fk_keyword_category foreign key (ID_CATEGORY)
-      references CL_ONTOLOGY_CATEGORY (ID_CATEGORY)
+alter table RESSOURCE_BIOLOGIQUE
+   add constraint fk_res_type_res foreign key (ID_TYPE_RESSOURCE)
+      references TYPE_RESSOURCE (ID_TYPE_RESSOURCE)
       on delete restrict on update restrict;
 
-alter table CL_TNM
-   add constraint fk_tnm_histo foreign key (ID_BIOPATHO)
-      references CL_BIOPATHO (ID_BIOPATHO)
+alter table RESSOURCE_BIOLOGIQUE
+   add constraint fk_res_tumeur foreign key (ID_DIAGNOSTIC)
+      references PHASE_TUMEUR (ID_PHASE)
       on delete restrict on update restrict;
 
-alter table CL_TOPOLOGY
-   add constraint fk_topo_topo_group foreign key (ID_GROUP)
-      references CL_TOPOLOGY_GROUP (ID_GROUP)
+alter table TNM
+   add constraint fk_tnm_tumeur foreign key (ID_TUMEUR)
+      references PHASE_TUMEUR (ID_PHASE)
       on delete restrict on update restrict;
 
-alter table CL_TREATMENT
-   add constraint fk_treat_patient foreign key (ID_PATIENT)
-      references CL_PATIENT (ID_PATIENT)
+alter table TOPOGRAPHIE
+   add constraint fk_topo_groupe_topo foreign key (ID_GROUPE_TOPO)
+      references GROUPE_TOPOGRAPHIE (ID_GROUPE_TOPO)
       on delete restrict on update restrict;
 
-alter table CL_TREATMENT
-   add constraint fk_tret_treat_method foreign key (ID_TREATMENT_METHOD)
-      references CL_TREATMENT_METHOD (ID_TREATMENT_METHOD)
+alter table TRAITEMENT
+   add constraint fk_trait_tumeur foreign key (ID_TUMEUR)
+      references PHASE_TUMEUR (ID_PHASE)
       on delete restrict on update restrict;
 
-alter table CL_TREATMENT
-   add constraint fk_treat_treat_type foreign key (ID_TREATMENT_TYPE)
-      references CL_TREATMENT_TYPE (ID_TREATMENT_TYPE)
+alter table TRAITEMENT
+   add constraint fk_trait_methode_trait foreign key (ID_METHODE)
+      references METHODE_TRAITEMENT (ID_METHODE)
       on delete restrict on update restrict;
 
-alter table OM_GROUP_VALUE
-   add constraint fk_group_value_group foreign key (ID_GROUP)
-      references OM_GROUP (ID_GROUP)
+alter table TRAITEMENT
+   add constraint fk_trait_phase_trait foreign key (ID_TYPE_TRAITEMENT)
+      references TYPE_TRAITEMENT (ID_TYPE_TRAITEMENT)
       on delete restrict on update restrict;
 
-alter table OM_PLATFORM
-   add constraint fk_platform_platform_type foreign key (ID_PLATFORM_TYPE)
-      references OM_PLATFORM_TYPE (ID_PLATFORM_TYPE)
+alter table TRAITEMENT
+   add constraint fk_traitement_reponse foreign key (ID_REPONSE)
+      references REPONSE (ID_REPONSE)
       on delete restrict on update restrict;
 
-alter table OM_SAMPLE
-   add constraint fk_sample_platform foreign key (ID_PLATFORM)
-      references OM_PLATFORM (ID_PLATFORM)
+alter table TUMEUR
+   add constraint fk_tumeur_topo foreign key (ID_TOPOGRAPHIE)
+      references TOPOGRAPHIE (ID_TOPOGRAPHIE)
       on delete restrict on update restrict;
 
-alter table OM_SAMPLE
-   add constraint fk_sample_histo foreign key (ID_BIOPATHO)
-      references CL_BIOPATHO (ID_BIOPATHO)
-      on delete restrict on update restrict;
-
-alter table OM_SAMPLE_GROUP
-   add constraint fk_sample_group_sample foreign key (ID_SAMPLE)
-      references OM_SAMPLE (ID_SAMPLE)
-      on delete restrict on update restrict;
-
-alter table OM_SAMPLE_GROUP
-   add constraint fk_sample_group_group_value foreign key (ID_GROUP_VALUE)
-      references OM_GROUP_VALUE (ID_GROUP_VALUE)
-      on delete restrict on update restrict;
-
-alter table OM_SAMPLE_SERIES
-   add constraint fk_sample_ser_ser foreign key (ID_SERIES)
-      references OM_SERIES (ID_SERIES)
-      on delete restrict on update restrict;
-
-alter table OM_SAMPLE_SERIES
-   add constraint fk_sample_ser_sample foreign key (ID_SAMPLE)
-      references OM_SAMPLE (ID_SAMPLE)
-      on delete restrict on update restrict;
-
-alter table OM_URI_SAMPLE
-   add constraint fk_sample_uri_sample foreign key (ID_SAMPLE)
-      references OM_SAMPLE (ID_SAMPLE)
-      on delete restrict on update restrict;
-
-alter table OM_URI_SAMPLE
-   add constraint fk_sample_uri_uri foreign key (ID_URI)
-      references OM_URI (ID_URI)
-      on delete restrict on update restrict;
-
-alter table OM_URI_SERIES
-   add constraint fk_uri_ser_ser foreign key (ID_SERIES)
-      references OM_SERIES (ID_SERIES)
-      on delete restrict on update restrict;
-
-alter table OM_URI_SERIES
-   add constraint fk_uri_ser_uri foreign key (ID_URI)
-      references OM_URI (ID_URI)
+alter table TUMEUR
+   add constraint fk_tumeur_patient foreign key (ID_PATIENT)
+      references PATIENT (ID_PATIENT)
       on delete restrict on update restrict;
 
