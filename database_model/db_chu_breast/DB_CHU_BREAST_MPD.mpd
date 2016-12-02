@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{DC567F39-874D-4A29-92D6-10F027618682}" Label="" LastModificationDate="1479289982" Name="DB_CHU_BREAST_MPD" Objects="267" Symbols="74" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{DC567F39-874D-4A29-92D6-10F027618682}" Label="" LastModificationDate="1480668507" Name="DB_CHU_BREAST_MPD" Objects="267" Symbols="74" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>DB_CHU_BREAST_MPD</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1479284709</a:ModificationDate>
+<a:ModificationDate>1480664944</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -87,7 +87,7 @@ GenScriptName6=
 GenScriptName7=
 GenScriptName8=
 GenScriptName9=
-GenPathName=E:\WORK\STS_WORKSPACE\epimed-documentation\database_model\epimed_prod\
+GenPathName=E:\WORK\STS_WORKSPACE\epimed-documentation\database_model\db_chu_breast\
 GenSingleFile=Yes
 GenODBC=No
 GenCheckModel=Yes
@@ -2465,7 +2465,7 @@ PhysOpts=</a:ModelOptionsText>
 <a:Code>DB_CHU_BREAST_MPD</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1479284709</a:ModificationDate>
+<a:ModificationDate>1480668507</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -2873,7 +2873,7 @@ Pen=1 0 0 0 255
 Shadow color=192 192 192
 Shadow=0</a:DisplayPreferences>
 <a:PaperSize>(8268, 11693)</a:PaperSize>
-<a:PageMargins>((354,315), (354,433))</a:PageMargins>
+<a:PageMargins>((354,433), (354,315))</a:PageMargins>
 <a:PageOrientation>1</a:PageOrientation>
 <a:PaperSource>15</a:PaperSource>
 <a:PageFooterTemplate/>
@@ -2927,8 +2927,8 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <o:TextSymbol Id="o13">
 <a:Text>Phase initiale ou rechute</a:Text>
 <a:CreationDate>1479225404</a:CreationDate>
-<a:ModificationDate>1479285799</a:ModificationDate>
-<a:Rect>((-7797,35551), (3001,39150))</a:Rect>
+<a:ModificationDate>1480664674</a:ModificationDate>
+<a:Rect>((-6897,34651), (3901,38250))</a:Rect>
 <a:TextStyle>4130</a:TextStyle>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>0</a:LineColor>
@@ -3161,8 +3161,7 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <o:ReferenceSymbol Id="o45">
 <a:CreationDate>1475498090</a:CreationDate>
 <a:ModificationDate>1479285808</a:ModificationDate>
-<a:CenterTextOffset>(10800, 825)</a:CenterTextOffset>
-<a:Rect>((8400,30227), (36240,39565))</a:Rect>
+<a:Rect>((4575,30227), (36240,38740))</a:Rect>
 <a:ListOfPoints>((36240,37494),(8400,37494),(8400,30227))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
@@ -3229,7 +3228,7 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <o:ReferenceSymbol Id="o53">
 <a:CreationDate>1475502573</a:CreationDate>
 <a:ModificationDate>1479225271</a:ModificationDate>
-<a:Rect>((-109881,14926), (-90756,22469))</a:Rect>
+<a:Rect>((-113743,14339), (-90756,22469))</a:Rect>
 <a:ListOfPoints>((-109881,22469),(-109881,14926),(-90756,14926))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
@@ -3273,7 +3272,7 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <o:ReferenceSymbol Id="o60">
 <a:CreationDate>1475502956</a:CreationDate>
 <a:ModificationDate>1479225271</a:ModificationDate>
-<a:Rect>((-109544,24719), (-90719,30302))</a:Rect>
+<a:Rect>((-112731,24719), (-90719,31548))</a:Rect>
 <a:ListOfPoints>((-90719,30302),(-109544,30302),(-109544,24719))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
@@ -3295,7 +3294,7 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <o:ReferenceSymbol Id="o62">
 <a:CreationDate>1475504241</a:CreationDate>
 <a:ModificationDate>1479225271</a:ModificationDate>
-<a:Rect>((-91219,14926), (-90219,30302))</a:Rect>
+<a:Rect>((-95369,14926), (-86069,30302))</a:Rect>
 <a:ListOfPoints>((-90719,30302),(-90719,14926))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
@@ -3318,7 +3317,7 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <a:CreationDate>1475505136</a:CreationDate>
 <a:ModificationDate>1479225104</a:ModificationDate>
 <a:CenterTextOffset>(-300, 1350)</a:CenterTextOffset>
-<a:Rect>((-92911,49701), (-91911,70474))</a:Rect>
+<a:Rect>((-95673,49701), (-89749,70474))</a:Rect>
 <a:ListOfPoints>((-92411,49701),(-92411,70474))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
@@ -3407,8 +3406,7 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <o:ReferenceSymbol Id="o75">
 <a:CreationDate>1475506478</a:CreationDate>
 <a:ModificationDate>1479225246</a:ModificationDate>
-<a:CenterTextOffset>(-675, 6225)</a:CenterTextOffset>
-<a:Rect>((-65452,35442), (-38964,47325))</a:Rect>
+<a:Rect>((-65452,34196), (-38289,47325))</a:Rect>
 <a:ListOfPoints>((-65452,35442),(-42339,35442),(-42339,47325))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
@@ -3430,8 +3428,8 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <o:ReferenceSymbol Id="o78">
 <a:CreationDate>1479204445</a:CreationDate>
 <a:ModificationDate>1479285782</a:ModificationDate>
-<a:Rect>((10279,13322), (21791,27736))</a:Rect>
-<a:ListOfPoints>((18829,13322),(18829,27149),(10279,27149))</a:ListOfPoints>
+<a:Rect>((10279,13322), (21795,27736))</a:Rect>
+<a:ListOfPoints>((18833,13322),(18833,27149),(10279,27149))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
@@ -3519,7 +3517,7 @@ DESTINATION 0 Arial,8,N</a:FontList>
 <a:CreationDate>1479224796</a:CreationDate>
 <a:ModificationDate>1479289982</a:ModificationDate>
 <a:Rect>((-59778,30077), (-32215,31548))</a:Rect>
-<a:ListOfPoints>((-32215,30302),(-46469,30302),(-59778,30302))</a:ListOfPoints>
+<a:ListOfPoints>((-32215,30302),(-59778,30302))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>12615680</a:LineColor>
@@ -4236,7 +4234,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1479204330</a:CreationDate>
 <a:ModificationDate>1479285782</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((10983,11038), (26997,18454))</a:Rect>
+<a:Rect>((11176,11038), (26804,18454))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -4645,11 +4643,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 <o:Column Id="o152">
 <a:ObjectID>467FAF59-2D3A-45DE-B8E1-171BBED25199</a:ObjectID>
-<a:Name>id_tumeur</a:Name>
-<a:Code>ID_TUMEUR</a:Code>
+<a:Name>id_phase</a:Name>
+<a:Code>ID_PHASE</a:Code>
 <a:CreationDate>1475222695</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1479204590</a:ModificationDate>
+<a:ModificationDate>1480664332</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>INT4</a:DataType>
 <a:Length>4</a:Length>
@@ -5261,11 +5259,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 <o:Column Id="o193">
 <a:ObjectID>41F43C83-C900-4FD0-8BA4-115145EA9244</a:ObjectID>
-<a:Name>id_tumeur</a:Name>
-<a:Code>ID_TUMEUR</a:Code>
+<a:Name>id_phase</a:Name>
+<a:Code>ID_PHASE</a:Code>
 <a:CreationDate>1475496924</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1479224621</a:ModificationDate>
+<a:ModificationDate>1480664323</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>INT4</a:DataType>
 <a:Length>4</a:Length>
@@ -5521,11 +5519,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 <o:Column Id="o211">
 <a:ObjectID>D6ECB963-A7CB-4B0C-8166-FBC6EE409115</a:ObjectID>
-<a:Name>id_tumeur</a:Name>
-<a:Code>ID_TUMEUR</a:Code>
+<a:Name>id_phase</a:Name>
+<a:Code>ID_PHASE</a:Code>
 <a:CreationDate>1475498090</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1479204740</a:ModificationDate>
+<a:ModificationDate>1480665368</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>INT4</a:DataType>
 <a:Length>4</a:Length>
@@ -5619,11 +5617,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 <o:Column Id="o218">
 <a:ObjectID>A4E2EF5A-C96A-43AF-B662-30F479F8748B</a:ObjectID>
-<a:Name>id_diagnostic</a:Name>
-<a:Code>ID_DIAGNOSTIC</a:Code>
+<a:Name>id_phase</a:Name>
+<a:Code>ID_PHASE</a:Code>
 <a:CreationDate>1475499996</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1475500924</a:ModificationDate>
+<a:ModificationDate>1480664606</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>INT4</a:DataType>
 <a:Length>4</a:Length>
@@ -5631,11 +5629,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 <o:Column Id="o219">
 <a:ObjectID>A467FE88-F1E6-47A7-8C1E-FE66116C0450</a:ObjectID>
-<a:Name>tk</a:Name>
-<a:Code>TK</a:Code>
+<a:Name>tumorotek</a:Name>
+<a:Code>TUMOROTEK</a:Code>
 <a:CreationDate>1475499786</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1475499786</a:ModificationDate>
+<a:ModificationDate>1480664712</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>VARCHAR(100)</a:DataType>
 <a:Length>100</a:Length>
@@ -6465,11 +6463,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 <o:Column Id="o277">
 <a:ObjectID>B2CF982B-D28A-433F-B073-D9C664FBB040</a:ObjectID>
-<a:Name>id_tumeur</a:Name>
-<a:Code>ID_TUMEUR</a:Code>
+<a:Name>id_phase</a:Name>
+<a:Code>ID_PHASE</a:Code>
 <a:CreationDate>1479204445</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1479221072</a:ModificationDate>
+<a:ModificationDate>1480664635</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>INT4</a:DataType>
 <a:Length>4</a:Length>
