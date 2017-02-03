@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  01/12/2016 08:10:08                      */
+/* Date de création :  01/02/2017 16:56:53                      */
 /*==============================================================*/
 
 
@@ -11,6 +11,8 @@ drop table EST_PARAMETER;
 drop table EST_TYPE;
 
 drop table OM_ASSEMBLY;
+
+drop table OM_DATA_SOURCE;
 
 drop table OM_GENE;
 
@@ -83,17 +85,32 @@ create table OM_ASSEMBLY (
 );
 
 /*==============================================================*/
+/* Table : OM_DATA_SOURCE                                       */
+/*==============================================================*/
+create table OM_DATA_SOURCE (
+   SOURCE               VARCHAR(20)          not null,
+   PRIORITY             INT2                 null,
+   DESCRIPTION          VARCHAR(255)         null,
+   constraint PK_OM_DATA_SOURCE primary key (SOURCE)
+);
+
+/*==============================================================*/
 /* Table : OM_GENE                                              */
 /*==============================================================*/
 create table OM_GENE (
    ID_GENE              INT4                 not null,
-   GENE_SYMBOL          VARCHAR(50)          null,
+   GENE_SYMBOL          VARCHAR(50)          not null,
    TITLE                VARCHAR(255)         null,
    LOCATION             VARCHAR(100)         null,
-   STATUS               VARCHAR(100)         null,
-   TYPE                 VARCHAR(100)         null,
-   DATE_MODIFIED        DATE                 null,
+   STATUS               VARCHAR(100)         not null,
+   TYPE                 VARCHAR(100)         not null,
+   DATE_MODIFIED        DATE                 not null,
    LAST_UPDATE          DATE                 not null,
+   HGNC_ID              VARCHAR(50)          null,
+   LOCUS_GROUP          VARCHAR(100)         not null,
+   SOURCE               VARCHAR(20)          not null,
+   REPLACED_BY          INT4                 null,
+   REMOVED              boolean              not null,
    constraint PK_OM_GENE primary key (ID_GENE)
 );
 
@@ -103,7 +120,7 @@ create table OM_GENE (
 create table OM_GENE_ALIAS (
    ID_GENE              INT4                 not null,
    ALIAS                VARCHAR(50)          not null,
-   DATABASE             VARCHAR(50)          not null,
+   SOURCE               VARCHAR(20)          null,
    constraint PK_OM_GENE_ALIAS primary key (ID_GENE, ALIAS)
 );
 
@@ -255,6 +272,11 @@ alter table EST_PARAMETER
 alter table OM_ASSEMBLY
    add constraint fk_assembly_organism foreign key (ID_ORGANISM)
       references OM_ORGANISM (ID_ORGANISM)
+      on delete restrict on update restrict;
+
+alter table OM_GENE_ALIAS
+   add constraint fk_gene_alias_data_source foreign key (SOURCE)
+      references OM_DATA_SOURCE (SOURCE)
       on delete restrict on update restrict;
 
 alter table OM_GENE_ALIAS
