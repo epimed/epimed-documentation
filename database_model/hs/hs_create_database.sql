@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  01/02/2017 16:56:53                      */
+/* Date de création :  16/03/2017 09:19:14                      */
 /*==============================================================*/
 
 
@@ -13,6 +13,8 @@ drop table EST_TYPE;
 drop table OM_ASSEMBLY;
 
 drop table OM_DATA_SOURCE;
+
+drop table OM_GENBANK_UNIGENE;
 
 drop table OM_GENE;
 
@@ -92,6 +94,16 @@ create table OM_DATA_SOURCE (
    PRIORITY             INT2                 null,
    DESCRIPTION          VARCHAR(255)         null,
    constraint PK_OM_DATA_SOURCE primary key (SOURCE)
+);
+
+/*==============================================================*/
+/* Table : OM_GENBANK_UNIGENE                                   */
+/*==============================================================*/
+create table OM_GENBANK_UNIGENE (
+   GENBANK_ACC          VARCHAR(50)          not null,
+   ID_UNIGENE           VARCHAR(20)          null,
+   LAST_UPDATE          DATE                 null,
+   constraint PK_OM_GENBANK_UNIGENE primary key (GENBANK_ACC)
 );
 
 /*==============================================================*/
@@ -205,6 +217,7 @@ create table OM_PROBE_GPL15088 (
 /*==============================================================*/
 create table OM_PROBE_GPL570 (
    ID_PROBE             VARCHAR(50)          not null,
+   GENBANK_ACC          VARCHAR(50)          null,
    constraint PK_OM_PROBE_GPL570 primary key (ID_PROBE)
 );
 
@@ -272,6 +285,11 @@ alter table EST_PARAMETER
 alter table OM_ASSEMBLY
    add constraint fk_assembly_organism foreign key (ID_ORGANISM)
       references OM_ORGANISM (ID_ORGANISM)
+      on delete restrict on update restrict;
+
+alter table OM_GENBANK_UNIGENE
+   add constraint fk_gb_unigene_unigene foreign key (ID_UNIGENE)
+      references OM_UNIGENE (ID_UNIGENE)
       on delete restrict on update restrict;
 
 alter table OM_GENE_ALIAS
