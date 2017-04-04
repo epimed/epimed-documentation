@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{DC567F39-874D-4A29-92D6-10F027618682}" Label="" LastModificationDate="1479397046" Name="EPIMED_SEMANTIC_MPD" Objects="86" Symbols="21" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{DC567F39-874D-4A29-92D6-10F027618682}" Label="" LastModificationDate="1490365742" Name="EPIMED_SEMANTIC_MPD" Objects="89" Symbols="22" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>EPIMED_SEMANTIC_MPD</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1479396578</a:ModificationDate>
+<a:ModificationDate>1490365742</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -87,7 +87,7 @@ GenScriptName6=
 GenScriptName7=
 GenScriptName8=
 GenScriptName9=
-GenPathName=E:\WORK\STS_WORKSPACE\epimed-documentation\database_model\epimed_prod\
+GenPathName=E:\WORK\ECLIPSE_WORKSPACE\epimed-documentation\database_model\epimed_semantic\
 GenSingleFile=Yes
 GenODBC=No
 GenCheckModel=Yes
@@ -2465,7 +2465,7 @@ PhysOpts=</a:ModelOptionsText>
 <a:Code>EPIMED_SEMANTIC_MPD</a:Code>
 <a:CreationDate>1452672348</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1479396578</a:ModificationDate>
+<a:ModificationDate>1490365692</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -3387,6 +3387,31 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o46"/>
 </c:Object>
 </o:TableSymbol>
+<o:TableSymbol Id="o47">
+<a:CreationDate>1490365692</a:CreationDate>
+<a:ModificationDate>1490365692</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-10774,-37016), (4622,-33017))</a:Rect>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 Arial,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o48"/>
+</c:Object>
+</o:TableSymbol>
 </c:Symbols>
 </o:PhysicalDiagram>
 </c:PhysicalDiagrams>
@@ -3405,7 +3430,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Comment>Tissue stage: adult, fetal, not relevant</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o47">
+<o:Column Id="o49">
 <a:ObjectID>563093F0-5406-494B-83D6-699361C7C9A2</a:ObjectID>
 <a:Name>id_tissue_stage</a:Name>
 <a:Code>ID_TISSUE_STAGE</a:Code>
@@ -3417,7 +3442,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o48">
+<o:Column Id="o50">
 <a:ObjectID>57172C91-1800-4F79-BE77-F95912B2B12E</a:ObjectID>
 <a:Name>stage</a:Name>
 <a:Code>STAGE</a:Code>
@@ -3431,7 +3456,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o49">
+<o:Key Id="o51">
 <a:ObjectID>635197D3-5ED1-48EB-A23E-8BEC3A12E710</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3440,12 +3465,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1455457080</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o47"/>
+<o:Column Ref="o49"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o49"/>
+<o:Key Ref="o51"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o28">
@@ -3459,7 +3484,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Comment>Disease: COPD</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o50">
+<o:Column Id="o52">
 <a:ObjectID>5F8F1D59-DC5F-4D30-B00D-B18DE4A6D1B4</a:ObjectID>
 <a:Name>id_pathology</a:Name>
 <a:Code>ID_PATHOLOGY</a:Code>
@@ -3471,7 +3496,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>20</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o51">
+<o:Column Id="o53">
 <a:ObjectID>C1C03012-2CE2-45CC-9C7C-9FCD7D405874</a:ObjectID>
 <a:Name>code</a:Name>
 <a:Code>CODE</a:Code>
@@ -3482,7 +3507,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>VARCHAR(20)</a:DataType>
 <a:Length>20</a:Length>
 </o:Column>
-<o:Column Id="o52">
+<o:Column Id="o54">
 <a:ObjectID>64FAA480-E0D3-46EA-AD7A-52153B5B38EB</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>NAME</a:Code>
@@ -3496,7 +3521,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o53">
+<o:Key Id="o55">
 <a:ObjectID>E3807DF0-EC7A-43F2-A28E-27DA03BC18B4</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3505,12 +3530,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1455457080</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o50"/>
+<o:Column Ref="o52"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o53"/>
+<o:Key Ref="o55"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o30">
@@ -3523,7 +3548,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o54">
+<o:Column Id="o56">
 <a:ObjectID>AFA83F07-0CC7-48E6-A53D-B4A4F7D21E08</a:ObjectID>
 <a:Name>id_substance</a:Name>
 <a:Code>ID_SUBSTANCE</a:Code>
@@ -3537,7 +3562,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o55">
+<o:Key Id="o57">
 <a:ObjectID>FCF29852-66F8-44E9-8DF1-FFE332DC2255</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3546,12 +3571,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1455457080</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o54"/>
+<o:Column Ref="o56"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o55"/>
+<o:Key Ref="o57"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o32">
@@ -3565,7 +3590,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Comment>surgery, chemotherapy, radiotherapy</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o56">
+<o:Column Id="o58">
 <a:ObjectID>17C5ED35-DDE9-400E-872B-009E085591FA</a:ObjectID>
 <a:Name>id_treatment_method</a:Name>
 <a:Code>ID_TREATMENT_METHOD</a:Code>
@@ -3577,7 +3602,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o57">
+<o:Column Id="o59">
 <a:ObjectID>A494761B-59A3-467F-B824-D1844ABF2892</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>NAME</a:Code>
@@ -3591,7 +3616,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o58">
+<o:Key Id="o60">
 <a:ObjectID>978A8500-AFCD-4B9E-A553-5EDB011CD31D</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3600,12 +3625,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1455549536</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o56"/>
+<o:Column Ref="o58"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o58"/>
+<o:Key Ref="o60"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o33">
@@ -3619,7 +3644,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Comment>ICD-0 topology</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o59">
+<o:Column Id="o61">
 <a:ObjectID>7F620981-8ABC-4336-AD3D-AAD1A99E2758</a:ObjectID>
 <a:Name>id_topology</a:Name>
 <a:Code>ID_TOPOLOGY</a:Code>
@@ -3631,7 +3656,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>10</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o60">
+<o:Column Id="o62">
 <a:ObjectID>138FF17E-017E-4C05-BBAA-A7326CD531A3</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>NAME</a:Code>
@@ -3643,7 +3668,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>200</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o61">
+<o:Column Id="o63">
 <a:ObjectID>16C13DC0-B47E-4352-9EC3-15511E13E7DA</a:ObjectID>
 <a:Name>id_group</a:Name>
 <a:Code>ID_GROUP</a:Code>
@@ -3657,7 +3682,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o62">
+<o:Key Id="o64">
 <a:ObjectID>8C1C3B9D-0A8E-4C81-890F-2030FB4D1861</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3666,12 +3691,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1456152103</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o59"/>
+<o:Column Ref="o61"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o62"/>
+<o:Key Ref="o64"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o34">
@@ -3684,7 +3709,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o63">
+<o:Column Id="o65">
 <a:ObjectID>86681EC0-D3B6-4ADF-A9C0-C235EC6B20C5</a:ObjectID>
 <a:Name>id_group</a:Name>
 <a:Code>ID_GROUP</a:Code>
@@ -3696,7 +3721,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Length>10</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o64">
+<o:Column Id="o66">
 <a:ObjectID>8D6B5C76-634D-4FD7-AE09-E2828617D021</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>NAME</a:Code>
@@ -3710,7 +3735,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o65">
+<o:Key Id="o67">
 <a:ObjectID>C5EF3E25-D194-4E35-87E3-92638E777EBB</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3719,12 +3744,12 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1456151170</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o63"/>
+<o:Column Ref="o65"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o65"/>
+<o:Key Ref="o67"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o35">
@@ -3743,7 +3768,7 @@ Bihavior : /2
 Carcinoma in situ, NOS</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o66">
+<o:Column Id="o68">
 <a:ObjectID>6BEDCF79-247C-4FF5-BC0F-5F138D9A37CA</a:ObjectID>
 <a:Name>id_morphology</a:Name>
 <a:Code>ID_MORPHOLOGY</a:Code>
@@ -3755,7 +3780,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>20</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o67">
+<o:Column Id="o69">
 <a:ObjectID>B9895AA5-E730-4E4E-BE83-35A3786F2171</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>NAME</a:Code>
@@ -3769,7 +3794,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o68">
+<o:Key Id="o70">
 <a:ObjectID>304BB56D-3098-467B-BD88-20E2FB80A1A5</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3778,12 +3803,12 @@ Carcinoma in situ, NOS</a:Comment>
 <a:ModificationDate>1456151678</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o66"/>
+<o:Column Ref="o68"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o68"/>
+<o:Key Ref="o70"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o37">
@@ -3800,7 +3825,7 @@ Carcinoma in situ, NOS</a:Comment>
 4 - Pathological tumoral metastasis</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o69">
+<o:Column Id="o71">
 <a:ObjectID>33AE9E15-208C-46FD-81BD-57E72CB7E2D1</a:ObjectID>
 <a:Name>id_tissue_status</a:Name>
 <a:Code>ID_TISSUE_STATUS</a:Code>
@@ -3812,7 +3837,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o70">
+<o:Column Id="o72">
 <a:ObjectID>0510B209-829B-4AA8-BF6E-C0D4D1F1FFFE</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>NAME</a:Code>
@@ -3826,7 +3851,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o71">
+<o:Key Id="o73">
 <a:ObjectID>41A0B6CA-0F40-4BB7-B396-E5C6AEDFCF56</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3835,12 +3860,12 @@ Carcinoma in situ, NOS</a:Comment>
 <a:ModificationDate>1456230787</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o69"/>
+<o:Column Ref="o71"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o71"/>
+<o:Key Ref="o73"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o38">
@@ -3853,7 +3878,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o72">
+<o:Column Id="o74">
 <a:ObjectID>D5BBE625-3953-4220-8A78-10159C7B612B</a:ObjectID>
 <a:Name>id_cell_line</a:Name>
 <a:Code>ID_CELL_LINE</a:Code>
@@ -3865,7 +3890,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>20</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o73">
+<o:Column Id="o75">
 <a:ObjectID>8DD568FE-05FD-457E-9596-5FD78302F15D</a:ObjectID>
 <a:Name>atcc</a:Name>
 <a:Code>ATCC</a:Code>
@@ -3876,7 +3901,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:DataType>VARCHAR(50)</a:DataType>
 <a:Length>50</a:Length>
 </o:Column>
-<o:Column Id="o74">
+<o:Column Id="o76">
 <a:ObjectID>ABF9291E-9377-4016-B19C-F971B4BC0CD3</a:ObjectID>
 <a:Name>age</a:Name>
 <a:Code>AGE</a:Code>
@@ -3887,7 +3912,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:DataType>FLOAT8</a:DataType>
 <a:Length>8</a:Length>
 </o:Column>
-<o:Column Id="o75">
+<o:Column Id="o77">
 <a:ObjectID>6D0FAAC0-F8AF-41EE-A617-902EB83FF3FA</a:ObjectID>
 <a:Name>sex</a:Name>
 <a:Code>SEX</a:Code>
@@ -3898,7 +3923,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:DataType>VARCHAR(1)</a:DataType>
 <a:Length>1</a:Length>
 </o:Column>
-<o:Column Id="o76">
+<o:Column Id="o78">
 <a:ObjectID>AF28A76C-3C36-4FFB-B480-DB8111A21447</a:ObjectID>
 <a:Name>id_topology</a:Name>
 <a:Code>ID_TOPOLOGY</a:Code>
@@ -3909,7 +3934,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:DataType>VARCHAR(10)</a:DataType>
 <a:Length>10</a:Length>
 </o:Column>
-<o:Column Id="o77">
+<o:Column Id="o79">
 <a:ObjectID>B1E8E297-CA9B-491F-8D74-B4D3F71B8B0D</a:ObjectID>
 <a:Name>id_morphology</a:Name>
 <a:Code>ID_MORPHOLOGY</a:Code>
@@ -3920,7 +3945,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:DataType>VARCHAR(20)</a:DataType>
 <a:Length>20</a:Length>
 </o:Column>
-<o:Column Id="o78">
+<o:Column Id="o80">
 <a:ObjectID>1307FA8E-D34D-4F1D-8361-A346ADE261FA</a:ObjectID>
 <a:Name>histology_type</a:Name>
 <a:Code>HISTOLOGY_TYPE</a:Code>
@@ -3933,7 +3958,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o79">
+<o:Key Id="o81">
 <a:ObjectID>090D2561-518A-4E01-9537-FDF2F461F887</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3942,12 +3967,12 @@ Carcinoma in situ, NOS</a:Comment>
 <a:ModificationDate>1465818033</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o72"/>
+<o:Column Ref="o74"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o79"/>
+<o:Key Ref="o81"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o39">
@@ -3960,7 +3985,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o80">
+<o:Column Id="o82">
 <a:ObjectID>A025A9B9-7EC2-4EB4-BF15-EECEB309A49B</a:ObjectID>
 <a:Name>id_category</a:Name>
 <a:Code>ID_CATEGORY</a:Code>
@@ -3974,7 +3999,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o81">
+<o:Key Id="o83">
 <a:ObjectID>97A59384-AA60-4AFC-AE03-EAC21B8F0B09</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -3983,12 +4008,12 @@ Carcinoma in situ, NOS</a:Comment>
 <a:ModificationDate>1466406343</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o80"/>
+<o:Column Ref="o82"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o81"/>
+<o:Key Ref="o83"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o40">
@@ -4002,7 +4027,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Comment>Contains keywords to recognize a category</a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o82">
+<o:Column Id="o84">
 <a:ObjectID>A1ACA3AF-CE36-411F-B928-E23108A9A9FA</a:ObjectID>
 <a:Name>id_keyword</a:Name>
 <a:Code>ID_KEYWORD</a:Code>
@@ -4014,7 +4039,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>255</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o83">
+<o:Column Id="o85">
 <a:ObjectID>FE00382C-D95E-402B-B15B-0C7C2096BA6F</a:ObjectID>
 <a:Name>id_category</a:Name>
 <a:Code>ID_CATEGORY</a:Code>
@@ -4026,7 +4051,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>100</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o84">
+<o:Column Id="o86">
 <a:ObjectID>C0394621-1EBE-47D9-B914-15C34324BA8C</a:ObjectID>
 <a:Name>enabled</a:Name>
 <a:Code>ENABLED</a:Code>
@@ -4040,7 +4065,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o85">
+<o:Key Id="o87">
 <a:ObjectID>6C0F0F99-E0D9-40B1-B231-57BE210ACF2D</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -4049,13 +4074,13 @@ Carcinoma in situ, NOS</a:Comment>
 <a:ModificationDate>1467189607</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o82"/>
-<o:Column Ref="o83"/>
+<o:Column Ref="o84"/>
+<o:Column Ref="o85"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o85"/>
+<o:Key Ref="o87"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o41">
@@ -4069,7 +4094,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Comment>Link a term to its identification reference in EpiMed database </a:Comment>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o86">
+<o:Column Id="o88">
 <a:ObjectID>5A155EF7-F161-4585-B9C2-52FF54B67013</a:ObjectID>
 <a:Name>term</a:Name>
 <a:Code>TERM</a:Code>
@@ -4082,7 +4107,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>255</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o87">
+<o:Column Id="o89">
 <a:ObjectID>93A312F0-D608-4A6C-AC0F-054B0333A6BC</a:ObjectID>
 <a:Name>id_reference</a:Name>
 <a:Code>ID_REFERENCE</a:Code>
@@ -4095,7 +4120,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>50</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o88">
+<o:Column Id="o90">
 <a:ObjectID>1C6C292A-AF60-4EFE-9EF7-13262D973707</a:ObjectID>
 <a:Name>id_category</a:Name>
 <a:Code>ID_CATEGORY</a:Code>
@@ -4110,7 +4135,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o89">
+<o:Key Id="o91">
 <a:ObjectID>D4B4C1A2-B613-4B2C-A3F0-9D160C60E4A9</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -4119,13 +4144,13 @@ Carcinoma in situ, NOS</a:Comment>
 <a:ModificationDate>1467189614</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o86"/>
 <o:Column Ref="o88"/>
+<o:Column Ref="o90"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o89"/>
+<o:Key Ref="o91"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o43">
@@ -4138,7 +4163,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o90">
+<o:Column Id="o92">
 <a:ObjectID>10345B19-C440-42C9-8B09-9E0B030DF6A6</a:ObjectID>
 <a:Name>collection_method</a:Name>
 <a:Code>COLLECTION_METHOD</a:Code>
@@ -4152,7 +4177,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o91">
+<o:Key Id="o93">
 <a:ObjectID>BF865360-D1AF-4DC9-BA58-9B6EE3A92915</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -4161,12 +4186,12 @@ Carcinoma in situ, NOS</a:Comment>
 <a:ModificationDate>1466516186</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o90"/>
+<o:Column Ref="o92"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o91"/>
+<o:Key Ref="o93"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o44">
@@ -4179,7 +4204,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o92">
+<o:Column Id="o94">
 <a:ObjectID>FD281FE8-26AE-4E25-96C9-2A4673388115</a:ObjectID>
 <a:Name>id_cell_line_alias</a:Name>
 <a:Code>ID_CELL_LINE_ALIAS</a:Code>
@@ -4191,7 +4216,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>20</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o93">
+<o:Column Id="o95">
 <a:ObjectID>EB5B462D-0828-46DD-BBFB-13666A8CD1B5</a:ObjectID>
 <a:Name>id_cell_line</a:Name>
 <a:Code>ID_CELL_LINE</a:Code>
@@ -4205,7 +4230,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o94">
+<o:Key Id="o96">
 <a:ObjectID>3E68D1D0-2864-453D-B39B-36911A127962</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -4214,12 +4239,12 @@ Carcinoma in situ, NOS</a:Comment>
 <a:ModificationDate>1470051312</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o92"/>
+<o:Column Ref="o94"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o94"/>
+<o:Key Ref="o96"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o46">
@@ -4232,7 +4257,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Modifier>fline</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o95">
+<o:Column Id="o97">
 <a:ObjectID>A68196BE-05C2-477D-84E0-DC2195B34E25</a:ObjectID>
 <a:Name>id_attribute</a:Name>
 <a:Code>ID_ATTRIBUTE</a:Code>
@@ -4244,7 +4269,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o96">
+<o:Column Id="o98">
 <a:ObjectID>DFB3E0B0-3354-46F6-B40D-4146A5F12BA1</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>NAME</a:Code>
@@ -4256,7 +4281,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>100</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o97">
+<o:Column Id="o99">
 <a:ObjectID>42238D41-790C-4BA8-880D-F712B4406F01</a:ObjectID>
 <a:Name>priority</a:Name>
 <a:Code>PRIORITY</a:Code>
@@ -4268,7 +4293,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o98">
+<o:Column Id="o100">
 <a:ObjectID>4F06C41F-287C-4A71-8F2D-31D4D400672A</a:ObjectID>
 <a:Name>entity</a:Name>
 <a:Code>ENTITY</a:Code>
@@ -4279,7 +4304,7 @@ Carcinoma in situ, NOS</a:Comment>
 <a:DataType>VARCHAR(100)</a:DataType>
 <a:Length>100</a:Length>
 </o:Column>
-<o:Column Id="o99">
+<o:Column Id="o101">
 <a:ObjectID>68CA239F-253B-45EF-BC74-60E14E56A0E9</a:ObjectID>
 <a:Name>id_category</a:Name>
 <a:Code>ID_CATEGORY</a:Code>
@@ -4292,7 +4317,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o100">
+<o:Key Id="o102">
 <a:ObjectID>61BAD2CC-5456-4AE5-B31E-813BC7220658</a:ObjectID>
 <a:Name>Cle_1</a:Name>
 <a:Code>CLE_1</a:Code>
@@ -4301,12 +4326,53 @@ Carcinoma in situ, NOS</a:Comment>
 <a:ModificationDate>1479396745</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o95"/>
+<o:Column Ref="o97"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o100"/>
+<o:Key Ref="o102"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o48">
+<a:ObjectID>11912009-F85D-42A3-ADEF-12AA1FD34508</a:ObjectID>
+<a:Name>cl_biomarker</a:Name>
+<a:Code>CL_BIOMARKER</a:Code>
+<a:CreationDate>1490365692</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1490365719</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o103">
+<a:ObjectID>90CB9621-9C5C-414E-ACC4-35D430ECF8F5</a:ObjectID>
+<a:Name>biomarker</a:Name>
+<a:Code>BIOMARKER</a:Code>
+<a:CreationDate>1490365704</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1490365719</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>VARCHAR(50)</a:DataType>
+<a:Length>50</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o104">
+<a:ObjectID>24C64542-02ED-45D2-9DF8-B3420747DECC</a:ObjectID>
+<a:Name>Cle_1</a:Name>
+<a:Code>CLE_1</a:Code>
+<a:CreationDate>1490365704</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1490365719</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o103"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o104"/>
 </c:PrimaryKey>
 </o:Table>
 </c:Tables>
@@ -4330,20 +4396,20 @@ Carcinoma in situ, NOS</a:Comment>
 <o:Table Ref="o33"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o65"/>
+<o:Key Ref="o67"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o101">
+<o:ReferenceJoin Id="o105">
 <a:ObjectID>9008BD09-2008-4F2B-93EE-996351F9C656</a:ObjectID>
 <a:CreationDate>1456151337</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1456151337</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o63"/>
+<o:Column Ref="o65"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o61"/>
+<o:Column Ref="o63"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4367,20 +4433,20 @@ Carcinoma in situ, NOS</a:Comment>
 <o:Table Ref="o38"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o62"/>
+<o:Key Ref="o64"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o102">
+<o:ReferenceJoin Id="o106">
 <a:ObjectID>7BA3810B-A1E5-43CF-A4F5-9A5070ACA7AF</a:ObjectID>
 <a:CreationDate>1465818108</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1465818108</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o59"/>
+<o:Column Ref="o61"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o76"/>
+<o:Column Ref="o78"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4404,20 +4470,20 @@ Carcinoma in situ, NOS</a:Comment>
 <o:Table Ref="o38"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o68"/>
+<o:Key Ref="o70"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o103">
+<o:ReferenceJoin Id="o107">
 <a:ObjectID>FFA2F817-3716-4DC6-B4FE-56F1FF752A69</a:ObjectID>
 <a:CreationDate>1465818110</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1465818110</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o66"/>
+<o:Column Ref="o68"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o77"/>
+<o:Column Ref="o79"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4441,20 +4507,20 @@ Carcinoma in situ, NOS</a:Comment>
 <o:Table Ref="o40"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o81"/>
+<o:Key Ref="o83"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o104">
+<o:ReferenceJoin Id="o108">
 <a:ObjectID>653655EF-5F3D-40F4-8393-565EA8FFFD61</a:ObjectID>
 <a:CreationDate>1466406451</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1466406451</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o80"/>
+<o:Column Ref="o82"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o83"/>
+<o:Column Ref="o85"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4478,20 +4544,20 @@ Carcinoma in situ, NOS</a:Comment>
 <o:Table Ref="o41"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o81"/>
+<o:Key Ref="o83"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o105">
+<o:ReferenceJoin Id="o109">
 <a:ObjectID>22319FF4-878C-41BC-8C03-A2D0DEEFCA89</a:ObjectID>
 <a:CreationDate>1466494487</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1466494487</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o80"/>
+<o:Column Ref="o82"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o88"/>
+<o:Column Ref="o90"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
@@ -4515,27 +4581,27 @@ Carcinoma in situ, NOS</a:Comment>
 <o:Table Ref="o44"/>
 </c:ChildTable>
 <c:ParentKey>
-<o:Key Ref="o79"/>
+<o:Key Ref="o81"/>
 </c:ParentKey>
 <c:Joins>
-<o:ReferenceJoin Id="o106">
+<o:ReferenceJoin Id="o110">
 <a:ObjectID>9D81EDC2-3DC8-4EE8-9ABD-6C646D49BCD6</a:ObjectID>
 <a:CreationDate>1470051318</a:CreationDate>
 <a:Creator>fline</a:Creator>
 <a:ModificationDate>1470051318</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <c:Object1>
-<o:Column Ref="o72"/>
+<o:Column Ref="o74"/>
 </c:Object1>
 <c:Object2>
-<o:Column Ref="o93"/>
+<o:Column Ref="o95"/>
 </c:Object2>
 </o:ReferenceJoin>
 </c:Joins>
 </o:Reference>
 </c:References>
 <c:DefaultGroups>
-<o:Group Id="o107">
+<o:Group Id="o111">
 <a:ObjectID>AAB20F69-FA04-4ABC-96C1-D5FFB55B172A</a:ObjectID>
 <a:Name>PUBLIC</a:Name>
 <a:Code>PUBLIC</a:Code>
@@ -4546,7 +4612,7 @@ Carcinoma in situ, NOS</a:Comment>
 </o:Group>
 </c:DefaultGroups>
 <c:TargetModels>
-<o:TargetModel Id="o108">
+<o:TargetModel Id="o112">
 <a:ObjectID>D14DA2BA-391D-46D7-8E24-314AFB31C496</a:ObjectID>
 <a:Name>PostgreSQL 8</a:Name>
 <a:Code>PGSQL80</a:Code>
