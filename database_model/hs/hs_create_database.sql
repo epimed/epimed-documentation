@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  PostgreSQL 8                                  */
-/* Date de création :  24/04/2017 16:46:24                      */
+/* Date de création :  10/05/2017 11:33:35                      */
 /*==============================================================*/
 
 
@@ -41,6 +41,8 @@ drop table OM_PROBE_GPL570;
 drop table OM_PROTEIN;
 
 drop table OM_PROTEIN_SEQUENCE;
+
+drop table OM_SEQUENCE_MODIFICATION;
 
 drop table OM_UNIGENE;
 
@@ -258,6 +260,18 @@ create table OM_PROTEIN_SEQUENCE (
 );
 
 /*==============================================================*/
+/* Table : OM_SEQUENCE_MODIFICATION                             */
+/*==============================================================*/
+create table OM_SEQUENCE_MODIFICATION (
+   ID_MODIFICATION      INT4                 not null,
+   ID_SEQUENCE          VARCHAR(50)          not null,
+   "POSITION"           INT4                 not null,
+   CODE                 VARCHAR(1)           not null,
+   TYPE                 VARCHAR(255)         not null,
+   constraint PK_OM_SEQUENCE_MODIFICATION primary key (ID_MODIFICATION)
+);
+
+/*==============================================================*/
 /* Table : OM_UNIGENE                                           */
 /*==============================================================*/
 create table OM_UNIGENE (
@@ -365,6 +379,11 @@ alter table OM_GP_GPL570
 alter table OM_PROTEIN_SEQUENCE
    add constraint fk_prot_seq_prot foreign key (ID_PROTEIN)
       references OM_PROTEIN (ID_PROTEIN)
+      on delete restrict on update restrict;
+
+alter table OM_SEQUENCE_MODIFICATION
+   add constraint fk_seq_mod_prot_seq foreign key (ID_SEQUENCE)
+      references OM_PROTEIN_SEQUENCE (ID_SEQUENCE)
       on delete restrict on update restrict;
 
 alter table OM_UNIGENE
