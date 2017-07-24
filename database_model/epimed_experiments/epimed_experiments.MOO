@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{78086B01-C9E1-11D4-9552-0090277716A9}" Label="" LastModificationDate="1500896645" Name="epimed_experiments" Objects="77" Symbols="8" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{78086B01-C9E1-11D4-9552-0090277716A9}" Label="" LastModificationDate="1500897151" Name="epimed_experiments" Objects="76" Symbols="7" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1395,9 +1395,9 @@ Shadow=0</a:DisplayPreferences>
 <c:Symbols>
 <o:AssociationSymbol Id="o6">
 <a:CreationDate>1500894401</a:CreationDate>
-<a:ModificationDate>1500896645</a:ModificationDate>
-<a:Rect>((10732,-16521), (14780,15623))</a:Rect>
-<a:ListOfPoints>((12756,15623),(12756,-16521))</a:ListOfPoints>
+<a:ModificationDate>1500897151</a:ModificationDate>
+<a:Rect>((9538,-12713), (13586,22912))</a:Rect>
+<a:ListOfPoints>((11562,22912),(11562,-12713))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -1416,9 +1416,9 @@ MULA 0 Arial,8,N</a:FontList>
 </o:AssociationSymbol>
 <o:AssociationSymbol Id="o10">
 <a:CreationDate>1500894617</a:CreationDate>
-<a:ModificationDate>1500896645</a:ModificationDate>
-<a:Rect>((-15746,-3213), (-11998,20100))</a:Rect>
-<a:ListOfPoints>((-13872,20100),(-13872,-3213))</a:ListOfPoints>
+<a:ModificationDate>1500897151</a:ModificationDate>
+<a:Rect>((-14171,-126), (-10423,22912))</a:Rect>
+<a:ListOfPoints>((-12297,22912),(-12297,-126))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -1437,9 +1437,9 @@ MULA 0 Arial,8,N</a:FontList>
 </o:AssociationSymbol>
 <o:AssociationSymbol Id="o14">
 <a:CreationDate>1500896545</a:CreationDate>
-<a:ModificationDate>1500896636</a:ModificationDate>
-<a:Rect>((-13872,18926), (12753,21274))</a:Rect>
-<a:ListOfPoints>((-13872,20100),(12753,20100))</a:ListOfPoints>
+<a:ModificationDate>1500897148</a:ModificationDate>
+<a:Rect>((-12297,21738), (11562,24086))</a:Rect>
+<a:ListOfPoints>((-12297,22912),(11562,22912))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -1458,9 +1458,9 @@ MULA 0 Arial,8,N</a:FontList>
 </o:AssociationSymbol>
 <o:ClassSymbol Id="o11">
 <a:CreationDate>1500894050</a:CreationDate>
-<a:ModificationDate>1500896636</a:ModificationDate>
+<a:ModificationDate>1500897145</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-19343,13245), (-8401,26955))</a:Rect>
+<a:Rect>((-17768,16057), (-6826,29767))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1481,9 +1481,9 @@ LABL 0 Arial,8,N</a:FontList>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o7">
 <a:CreationDate>1500894090</a:CreationDate>
-<a:ModificationDate>1500896636</a:ModificationDate>
+<a:ModificationDate>1500897148</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((6162,13245), (19344,26955))</a:Rect>
+<a:Rect>((4971,16057), (18153,29767))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1504,9 +1504,9 @@ LABL 0 Arial,8,N</a:FontList>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o12">
 <a:CreationDate>1500894099</a:CreationDate>
-<a:ModificationDate>1500896645</a:ModificationDate>
+<a:ModificationDate>1500897151</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-21158,-9094), (-6586,2668))</a:Rect>
+<a:Rect>((-19583,-6007), (-5011,5755))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1527,9 +1527,9 @@ LABL 0 Arial,8,N</a:FontList>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o8">
 <a:CreationDate>1500894319</a:CreationDate>
-<a:ModificationDate>1500896645</a:ModificationDate>
+<a:ModificationDate>1500897151</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((7187,-34268), (19363,2668))</a:Rect>
+<a:Rect>((5474,-31181), (17650,5755))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
