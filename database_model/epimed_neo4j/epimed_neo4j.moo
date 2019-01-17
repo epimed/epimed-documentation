@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{61059A86-6A07-4D03-9127-6CFE2618EFB2}" Label="" LastModificationDate="1518773419" Name="epimed_neo4j" Objects="232" Symbols="31" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{61059A86-6A07-4D03-9127-6CFE2618EFB2}" Label="" LastModificationDate="1547734803" Name="epimed_neo4j" Objects="234" Symbols="28" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>epimed_neo4j</a:Code>
 <a:CreationDate>1498814234</a:CreationDate>
 <a:Creator>Sophie</a:Creator>
-<a:ModificationDate>1516370527</a:ModificationDate>
+<a:ModificationDate>1518773587</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -982,7 +982,7 @@ NameToCode=No</a:ModelOptionsText>
 <a:Code>epimed_neo4j</a:Code>
 <a:CreationDate>1498814234</a:CreationDate>
 <a:Creator>Sophie</a:Creator>
-<a:ModificationDate>1516370527</a:ModificationDate>
+<a:ModificationDate>1518773587</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -1390,7 +1390,7 @@ Pen=1 0 0 0 255
 Shadow color=192 192 192
 Shadow=0</a:DisplayPreferences>
 <a:PaperSize>(8268, 11693)</a:PaperSize>
-<a:PageMargins>((354,433), (354,315))</a:PageMargins>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
 <a:PageOrientation>1</a:PageOrientation>
 <a:PaperSource>7</a:PaperSource>
 <a:PageHeaderTemplate>%MODEL% %DATE% %TIME%</a:PageHeaderTemplate>
@@ -1484,8 +1484,8 @@ MULA 0 Arial,10,N</a:FontList>
 <o:AssociationSymbol Id="o17">
 <a:CreationDate>1502185425</a:CreationDate>
 <a:ModificationDate>1513081984</a:ModificationDate>
-<a:Rect>((-14238,-10118), (-7789,24850))</a:Rect>
-<a:ListOfPoints>((-10676,-10118),(-10676,24850))</a:ListOfPoints>
+<a:Rect>((-14426,-10128), (-7602,24850))</a:Rect>
+<a:ListOfPoints>((-10676,-10128),(-10676,24850))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -1631,9 +1631,9 @@ MULA 0 Arial,10,N</a:FontList>
 </o:AssociationSymbol>
 <o:AssociationSymbol Id="o37">
 <a:CreationDate>1507545736</a:CreationDate>
-<a:ModificationDate>1518773419</a:ModificationDate>
-<a:Rect>((-23415,36735), (48,51409))</a:Rect>
-<a:ListOfPoints>((-15915,36735),(-15915,51409),(48,51409))</a:ListOfPoints>
+<a:ModificationDate>1547734803</a:ModificationDate>
+<a:Rect>((-23415,36735), (-1099,53105))</a:Rect>
+<a:ListOfPoints>((-15915,36735),(-15915,53105),(-1099,53105))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -1652,9 +1652,9 @@ MULA 0 Arial,10,N</a:FontList>
 </o:AssociationSymbol>
 <o:AssociationSymbol Id="o40">
 <a:CreationDate>1507546097</a:CreationDate>
-<a:ModificationDate>1518773419</a:ModificationDate>
-<a:Rect>((15841,28800), (28647,51050))</a:Rect>
-<a:ListOfPoints>((28647,28800),(28647,51050),(15841,51050))</a:ListOfPoints>
+<a:ModificationDate>1547734803</a:ModificationDate>
+<a:Rect>((17378,28800), (28647,52650))</a:Rect>
+<a:ListOfPoints>((28647,28800),(28647,52650),(17378,52650))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -1693,72 +1693,6 @@ MULA 0 Arial,10,N</a:FontList>
 </c:Object>
 </o:AssociationSymbol>
 <o:AssociationSymbol Id="o45">
-<a:CreationDate>1516370115</a:CreationDate>
-<a:ModificationDate>1516370571</a:ModificationDate>
-<a:SourceTextOffset>(-3375, 1950)</a:SourceTextOffset>
-<a:Rect>((50791,-23600), (62266,-17052))</a:Rect>
-<a:ListOfPoints>((60016,-23450),(60016,-18875),(50791,-18875),(50791,-23600))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>8</a:ArrowStyle>
-<a:LineColor>16744448</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,10,N
-MULA 0 Arial,10,N</a:FontList>
-<c:SourceSymbol>
-<o:ClassSymbol Ref="o46"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:ClassSymbol Ref="o46"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Association Ref="o47"/>
-</c:Object>
-</o:AssociationSymbol>
-<o:AssociationSymbol Id="o48">
-<a:CreationDate>1516370184</a:CreationDate>
-<a:ModificationDate>1516370571</a:ModificationDate>
-<a:SourceTextOffset>(-3525, -1575)</a:SourceTextOffset>
-<a:Rect>((51391,-37273), (61666,-30950))</a:Rect>
-<a:ListOfPoints>((60391,-30950),(60391,-35675),(51391,-35675),(51391,-31550))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>8</a:ArrowStyle>
-<a:LineColor>16744448</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,10,N
-MULA 0 Arial,10,N</a:FontList>
-<c:SourceSymbol>
-<o:ClassSymbol Ref="o46"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:ClassSymbol Ref="o46"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Association Ref="o49"/>
-</c:Object>
-</o:AssociationSymbol>
-<o:AssociationSymbol Id="o50">
-<a:CreationDate>1516370268</a:CreationDate>
-<a:ModificationDate>1516370580</a:ModificationDate>
-<a:SourceTextOffset>(4575, -1575)</a:SourceTextOffset>
-<a:Rect>((62604,-37273), (74941,-30125))</a:Rect>
-<a:ListOfPoints>((63841,-33050),(63841,-35675),(74941,-35675),(74941,-30125))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>8</a:ArrowStyle>
-<a:LineColor>16744448</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,10,N
-MULA 0 Arial,10,N</a:FontList>
-<c:SourceSymbol>
-<o:ClassSymbol Ref="o46"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:ClassSymbol Ref="o46"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Association Ref="o51"/>
-</c:Object>
-</o:AssociationSymbol>
-<o:AssociationSymbol Id="o52">
 <a:CreationDate>1516370527</a:CreationDate>
 <a:ModificationDate>1516370571</a:ModificationDate>
 <a:SourceTextOffset>(3450, 1800)</a:SourceTextOffset>
@@ -1777,7 +1711,7 @@ MULA 0 Arial,10,N</a:FontList>
 <o:ClassSymbol Ref="o46"/>
 </c:DestinationSymbol>
 <c:Object>
-<o:Association Ref="o53"/>
+<o:Association Ref="o47"/>
 </c:Object>
 </o:AssociationSymbol>
 <o:ClassSymbol Id="o7">
@@ -1800,7 +1734,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o10">
@@ -1823,7 +1757,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o55"/>
+<o:Class Ref="o49"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o33">
@@ -1846,7 +1780,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o56"/>
+<o:Class Ref="o50"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o30">
@@ -1869,10 +1803,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o57"/>
+<o:Class Ref="o51"/>
 </c:Object>
 </o:ClassSymbol>
-<o:ClassSymbol Id="o58">
+<o:ClassSymbol Id="o52">
 <a:CreationDate>1502181547</a:CreationDate>
 <a:ModificationDate>1508765160</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
@@ -1892,7 +1826,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o59"/>
+<o:Class Ref="o53"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o13">
@@ -1915,14 +1849,14 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o60"/>
+<o:Class Ref="o54"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o18">
 <a:CreationDate>1502184664</a:CreationDate>
 <a:ModificationDate>1513081984</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-25829,-24206), (9651,4440))</a:Rect>
+<a:Rect>((-25829,-24806), (9651,5040))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1938,7 +1872,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o61"/>
+<o:Class Ref="o55"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o21">
@@ -1961,7 +1895,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o62"/>
+<o:Class Ref="o56"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o24">
@@ -1984,7 +1918,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o63"/>
+<o:Class Ref="o57"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o27">
@@ -2007,14 +1941,14 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o64"/>
+<o:Class Ref="o58"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o38">
 <a:CreationDate>1507545707</a:CreationDate>
-<a:ModificationDate>1518773419</a:ModificationDate>
+<a:ModificationDate>1547734803</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-8433,42127), (22027,59973))</a:Rect>
+<a:Rect>((-11021,41327), (24615,63973))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -2030,7 +1964,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o65"/>
+<o:Class Ref="o59"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o43">
@@ -2053,7 +1987,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o66"/>
+<o:Class Ref="o60"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o46">
@@ -2076,7 +2010,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o67"/>
+<o:Class Ref="o61"/>
 </c:Object>
 </o:ClassSymbol>
 </c:Symbols>
@@ -2086,7 +2020,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ClassDiagram Ref="o5"/>
 </c:DefaultDiagram>
 <c:Classes>
-<o:Class Id="o54">
+<o:Class Id="o48">
 <a:ObjectID>A10CF9D6-8805-47C5-965D-A5C9955F2F9B</a:ObjectID>
 <a:Name>Gene</a:Name>
 <a:Code>Gene</a:Code>
@@ -2108,7 +2042,7 @@ import org.springframework.data.annotation.Id;
 import epimed_database.entity.pojo.GeneStatus;
 </a:Imports>
 <c:Attributes>
-<o:Attribute Id="o68">
+<o:Attribute Id="o62">
 <a:ObjectID>CE790C47-3AB5-46C3-97D5-5EC8A05EC945</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -2119,7 +2053,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o69">
+<o:Annotation Id="o63">
 <a:ObjectID>EB91F827-6114-4D48-AB59-FBA742130AD3</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2129,7 +2063,7 @@ import epimed_database.entity.pojo.GeneStatus;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o70">
+<o:Attribute Id="o64">
 <a:ObjectID>42ED7592-C670-49AC-ADB0-B99CD74CD720</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
@@ -2140,7 +2074,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o71">
+<o:Annotation Id="o65">
 <a:ObjectID>3A9BDD42-6E68-48C5-A7D5-518318D6F3EE</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2148,7 +2082,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:Modifier>fline</a:Modifier>
 <a:Annotation.Name>Id</a:Annotation.Name>
 </o:Annotation>
-<o:Annotation Id="o72">
+<o:Annotation Id="o66">
 <a:ObjectID>9759E72D-4626-4CFE-9613-A8399CD0D4B3</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2158,7 +2092,7 @@ import epimed_database.entity.pojo.GeneStatus;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o73">
+<o:Attribute Id="o67">
 <a:ObjectID>6A3D786F-A03B-4D58-A394-C7FAD8D874F0</a:ObjectID>
 <a:Name>geneSymbol</a:Name>
 <a:Code>geneSymbol</a:Code>
@@ -2169,7 +2103,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o74">
+<o:Annotation Id="o68">
 <a:ObjectID>28B0653F-65D7-4331-8213-7B7F348DF5EF</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2180,7 +2114,7 @@ import epimed_database.entity.pojo.GeneStatus;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o75">
+<o:Attribute Id="o69">
 <a:ObjectID>6E79F803-E45D-4E08-9031-489913173163</a:ObjectID>
 <a:Name>title</a:Name>
 <a:Code>title</a:Code>
@@ -2191,7 +2125,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o76">
+<o:Attribute Id="o70">
 <a:ObjectID>26644FCA-C595-4AA7-805C-456CF9B2A38C</a:ObjectID>
 <a:Name>chrom</a:Name>
 <a:Code>chrom</a:Code>
@@ -2202,7 +2136,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o77">
+<o:Attribute Id="o71">
 <a:ObjectID>52A26BD5-E7B0-450B-80DF-0C82CCDC9D42</a:ObjectID>
 <a:Name>location</a:Name>
 <a:Code>location</a:Code>
@@ -2213,7 +2147,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o78">
+<o:Attribute Id="o72">
 <a:ObjectID>E8FC81A8-53F1-4E53-8CBD-8FF4688E21B3</a:ObjectID>
 <a:Name>type</a:Name>
 <a:Code>type</a:Code>
@@ -2224,7 +2158,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o79">
+<o:Attribute Id="o73">
 <a:ObjectID>2FF43A5F-9036-40D5-ABBD-EC26AA3F7F06</a:ObjectID>
 <a:Name>status</a:Name>
 <a:Code>status</a:Code>
@@ -2236,10 +2170,10 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>GeneStatus.unknown</a:InitialValue>
 <c:ObjectDataType>
-<o:Class Ref="o60"/>
+<o:Class Ref="o54"/>
 </c:ObjectDataType>
 </o:Attribute>
-<o:Attribute Id="o80">
+<o:Attribute Id="o74">
 <a:ObjectID>9C917019-92AF-4891-8257-E207907D9D6E</a:ObjectID>
 <a:Name>taxId</a:Name>
 <a:Code>taxId</a:Code>
@@ -2250,7 +2184,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o81">
+<o:Annotation Id="o75">
 <a:ObjectID>431420FC-DA70-47B5-9E75-B7EBDDC1CF85</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2261,7 +2195,7 @@ import epimed_database.entity.pojo.GeneStatus;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o82">
+<o:Attribute Id="o76">
 <a:ObjectID>03481B00-A46C-4838-BDA2-D398895090DF</a:ObjectID>
 <a:Name>idEnsembl</a:Name>
 <a:Code>idEnsembl</a:Code>
@@ -2272,7 +2206,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o83">
+<o:Attribute Id="o77">
 <a:ObjectID>AB5D3A5B-A30D-415E-9F0A-A3BC4EC8E49C</a:ObjectID>
 <a:Name>aliases</a:Name>
 <a:Code>aliases</a:Code>
@@ -2284,7 +2218,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>new HashSet&lt;String&gt;()</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o84">
+<o:Attribute Id="o78">
 <a:ObjectID>97326A4F-4BC9-45B1-8165-8F6C16F7DC41</a:ObjectID>
 <a:Name>replacedBy</a:Name>
 <a:Code>replacedBy</a:Code>
@@ -2295,7 +2229,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o85">
+<o:Annotation Id="o79">
 <a:ObjectID>244EA772-E825-413A-8960-4D48AD38696C</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2306,7 +2240,7 @@ import epimed_database.entity.pojo.GeneStatus;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o86">
+<o:Attribute Id="o80">
 <a:ObjectID>9AFC1F21-F35E-4AB7-8FB7-385934BF2AC8</a:ObjectID>
 <a:Name>currentGene</a:Name>
 <a:Code>currentGene</a:Code>
@@ -2317,10 +2251,10 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>Gene</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:ObjectDataType>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:ObjectDataType>
 <c:Annotations>
-<o:Annotation Id="o87">
+<o:Annotation Id="o81">
 <a:ObjectID>63775237-CACF-4848-BB33-180E02560C85</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2331,7 +2265,7 @@ import epimed_database.entity.pojo.GeneStatus;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o88">
+<o:Attribute Id="o82">
 <a:ObjectID>B3D46A26-8B30-45B5-8FC9-46EF8E3E1F7D</a:ObjectID>
 <a:Name>feature</a:Name>
 <a:Code>feature</a:Code>
@@ -2342,7 +2276,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o89">
+<o:Attribute Id="o83">
 <a:ObjectID>831D9B1B-BC08-4FA6-B931-4DF9BBDC0397</a:ObjectID>
 <a:Name>modificationDate</a:Name>
 <a:Code>modificationDate</a:Code>
@@ -2353,7 +2287,7 @@ import epimed_database.entity.pojo.GeneStatus;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o90">
+<o:Attribute Id="o84">
 <a:ObjectID>6D014A65-9BC9-4968-A38F-4FFFDC46E825</a:ObjectID>
 <a:Name>lastUpdate</a:Name>
 <a:Code>lastUpdate</a:Code>
@@ -2366,7 +2300,7 @@ import epimed_database.entity.pojo.GeneStatus;
 </o:Attribute>
 </c:Attributes>
 <c:Annotations>
-<o:Annotation Id="o91">
+<o:Annotation Id="o85">
 <a:ObjectID>13EFD352-E31B-45B5-89D3-9EE12CA76AD0</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2376,7 +2310,7 @@ import epimed_database.entity.pojo.GeneStatus;
 </o:Annotation>
 </c:Annotations>
 </o:Class>
-<o:Class Id="o55">
+<o:Class Id="o49">
 <a:ObjectID>C43F86DE-FDDB-4F68-9130-39C50F7A0087</a:ObjectID>
 <a:Name>Nucleotide</a:Name>
 <a:Code>Nucleotide</a:Code>
@@ -2397,7 +2331,7 @@ import org.springframework.data.annotation.Id;
 import epimed_database.entity.pojo.DataSource;
 </a:Imports>
 <c:Attributes>
-<o:Attribute Id="o92">
+<o:Attribute Id="o86">
 <a:ObjectID>7AA3E136-DC8C-45C4-B189-509635104FC0</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -2408,7 +2342,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o93">
+<o:Annotation Id="o87">
 <a:ObjectID>BDB6E928-ED84-43DE-98B3-98C646A08F45</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2418,7 +2352,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o94">
+<o:Attribute Id="o88">
 <a:ObjectID>397715EA-A0C2-4978-8692-F542D3D49B10</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
@@ -2429,7 +2363,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o95">
+<o:Annotation Id="o89">
 <a:ObjectID>FA378B67-D26F-4360-ABF6-A4BDD20FD35D</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2437,7 +2371,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:Annotation.Name>Id</a:Annotation.Name>
 </o:Annotation>
-<o:Annotation Id="o96">
+<o:Annotation Id="o90">
 <a:ObjectID>83243CFA-2CEF-4CFE-9612-6EF704E2030C</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2447,7 +2381,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o97">
+<o:Attribute Id="o91">
 <a:ObjectID>DAEABE68-6B5B-4257-9DDF-B203753263D8</a:ObjectID>
 <a:Name>source</a:Name>
 <a:Code>source</a:Code>
@@ -2459,10 +2393,10 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>DataSource.unknown</a:InitialValue>
 <c:ObjectDataType>
-<o:Class Ref="o59"/>
+<o:Class Ref="o53"/>
 </c:ObjectDataType>
 </o:Attribute>
-<o:Attribute Id="o98">
+<o:Attribute Id="o92">
 <a:ObjectID>50E0B6AE-6FE9-41FA-AAD3-42F039CC859D</a:ObjectID>
 <a:Name>genes</a:Name>
 <a:Code>genes</a:Code>
@@ -2474,7 +2408,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>new HashSet&lt;Gene&gt;()</a:InitialValue>
 <c:Annotations>
-<o:Annotation Id="o99">
+<o:Annotation Id="o93">
 <a:ObjectID>771C7727-B5B9-4F23-A57B-940D5DF9003D</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2485,7 +2419,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o100">
+<o:Attribute Id="o94">
 <a:ObjectID>9837EA00-CBF6-483B-835D-ED95453B753C</a:ObjectID>
 <a:Name>nucleotides</a:Name>
 <a:Code>nucleotides</a:Code>
@@ -2497,7 +2431,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>new HashSet&lt;Nucleotide&gt;()</a:InitialValue>
 <c:Annotations>
-<o:Annotation Id="o101">
+<o:Annotation Id="o95">
 <a:ObjectID>34C73679-5C9C-45D6-AA14-517AB766B0D9</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2510,7 +2444,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Attribute>
 </c:Attributes>
 <c:Annotations>
-<o:Annotation Id="o102">
+<o:Annotation Id="o96">
 <a:ObjectID>D093C430-4BB9-4E1F-877F-F7067376779C</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2520,7 +2454,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Class>
-<o:Class Id="o56">
+<o:Class Id="o50">
 <a:ObjectID>3B5D06B7-CCDB-4EF5-BC4A-13FF65C3E0BB</a:ObjectID>
 <a:Name>Platform</a:Name>
 <a:Code>Platform</a:Code>
@@ -2538,7 +2472,7 @@ import org.neo4j.ogm.annotation.Property;
 import org.springframework.data.annotation.Id;
 </a:Imports>
 <c:Attributes>
-<o:Attribute Id="o103">
+<o:Attribute Id="o97">
 <a:ObjectID>ECDF7D39-5E0B-48F4-8C4C-8F7AD14C042C</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -2549,7 +2483,7 @@ import org.springframework.data.annotation.Id;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o104">
+<o:Annotation Id="o98">
 <a:ObjectID>E4519EF1-68DE-4A42-AEFC-E20193317E3E</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2559,7 +2493,7 @@ import org.springframework.data.annotation.Id;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o105">
+<o:Attribute Id="o99">
 <a:ObjectID>B03A7505-C2C5-4F1B-8FC1-21EE7A0B1BE4</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
@@ -2570,7 +2504,7 @@ import org.springframework.data.annotation.Id;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o106">
+<o:Annotation Id="o100">
 <a:ObjectID>0FC1E8D9-1AC8-490E-9342-161A75723E7E</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2578,7 +2512,7 @@ import org.springframework.data.annotation.Id;
 <a:Modifier>fline</a:Modifier>
 <a:Annotation.Name>Id</a:Annotation.Name>
 </o:Annotation>
-<o:Annotation Id="o107">
+<o:Annotation Id="o101">
 <a:ObjectID>B8D26DC9-1333-4B05-A04D-52690C2C0D4B</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2588,7 +2522,7 @@ import org.springframework.data.annotation.Id;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o108">
+<o:Attribute Id="o102">
 <a:ObjectID>540732C2-7EA6-405B-96E3-039A27B6028C</a:ObjectID>
 <a:Name>title</a:Name>
 <a:Code>title</a:Code>
@@ -2599,7 +2533,7 @@ import org.springframework.data.annotation.Id;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o109">
+<o:Attribute Id="o103">
 <a:ObjectID>FE5C84E5-950A-4CE1-8863-656DF86FF0C3</a:ObjectID>
 <a:Name>manufacturer</a:Name>
 <a:Code>manufacturer</a:Code>
@@ -2610,7 +2544,7 @@ import org.springframework.data.annotation.Id;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o110">
+<o:Attribute Id="o104">
 <a:ObjectID>63CB1449-A7FE-4112-8549-ABDDCB8EDA6A</a:ObjectID>
 <a:Name>taxId</a:Name>
 <a:Code>taxId</a:Code>
@@ -2621,7 +2555,7 @@ import org.springframework.data.annotation.Id;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o111">
+<o:Annotation Id="o105">
 <a:ObjectID>DCA7AB05-E052-4442-A731-2ECC438E2898</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2632,7 +2566,7 @@ import org.springframework.data.annotation.Id;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o112">
+<o:Attribute Id="o106">
 <a:ObjectID>AE4B2D2F-EACA-4819-B326-0BEC65AC40C7</a:ObjectID>
 <a:Name>technology</a:Name>
 <a:Code>technology</a:Code>
@@ -2643,7 +2577,7 @@ import org.springframework.data.annotation.Id;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o113">
+<o:Attribute Id="o107">
 <a:ObjectID>0A1CFE70-96B5-4E38-AEE6-3A7A82A08A74</a:ObjectID>
 <a:Name>type</a:Name>
 <a:Code>type</a:Code>
@@ -2654,7 +2588,7 @@ import org.springframework.data.annotation.Id;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o114">
+<o:Attribute Id="o108">
 <a:ObjectID>BDB09D19-44F8-4718-A868-26621DD231FA</a:ObjectID>
 <a:Name>enabled</a:Name>
 <a:Code>enabled</a:Code>
@@ -2668,7 +2602,7 @@ import org.springframework.data.annotation.Id;
 </o:Attribute>
 </c:Attributes>
 <c:Annotations>
-<o:Annotation Id="o115">
+<o:Annotation Id="o109">
 <a:ObjectID>34D652DF-1800-4790-A590-93DE00E365EF</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2678,7 +2612,7 @@ import org.springframework.data.annotation.Id;
 </o:Annotation>
 </c:Annotations>
 </o:Class>
-<o:Class Id="o57">
+<o:Class Id="o51">
 <a:ObjectID>EEA3CC8D-1BD2-43E0-96A2-0AB8ECFCA4A7</a:ObjectID>
 <a:Name>Probeset</a:Name>
 <a:Code>Probeset</a:Code>
@@ -2700,7 +2634,7 @@ import org.springframework.data.annotation.Id;
 import epimed_database.entity.pojo.DataSource;
 </a:Imports>
 <c:Attributes>
-<o:Attribute Id="o116">
+<o:Attribute Id="o110">
 <a:ObjectID>5540B768-B603-4689-A299-39551DECE9F6</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -2711,7 +2645,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o117">
+<o:Annotation Id="o111">
 <a:ObjectID>2A5EBB22-308A-4101-A46D-6EE191FDC816</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2721,7 +2655,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o118">
+<o:Attribute Id="o112">
 <a:ObjectID>024EB3E4-588C-4BE9-86AD-B00BE3D6896B</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
@@ -2732,7 +2666,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o119">
+<o:Annotation Id="o113">
 <a:ObjectID>89F3C085-9F1E-41E3-B2D5-24C6A2B31F0D</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2740,7 +2674,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:Annotation.Name>Id</a:Annotation.Name>
 </o:Annotation>
-<o:Annotation Id="o120">
+<o:Annotation Id="o114">
 <a:ObjectID>1F069D30-41A7-403A-85D4-CD73F673E556</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2750,7 +2684,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o121">
+<o:Attribute Id="o115">
 <a:ObjectID>BFB81071-DA4A-4E67-B956-B8A50441FD5B</a:ObjectID>
 <a:Name>source</a:Name>
 <a:Code>source</a:Code>
@@ -2762,10 +2696,10 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>DataSource.probeset</a:InitialValue>
 <c:ObjectDataType>
-<o:Class Ref="o59"/>
+<o:Class Ref="o53"/>
 </c:ObjectDataType>
 </o:Attribute>
-<o:Attribute Id="o122">
+<o:Attribute Id="o116">
 <a:ObjectID>F7985D34-0D3A-4FD0-89FE-E5B7DDE07E79</a:ObjectID>
 <a:Name>idPlatforms</a:Name>
 <a:Code>idPlatforms</a:Code>
@@ -2777,7 +2711,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>new HashSet&lt;String&gt;()</a:InitialValue>
 <c:Annotations>
-<o:Annotation Id="o123">
+<o:Annotation Id="o117">
 <a:ObjectID>43850D30-4F2B-420C-B5CA-C0149F80C67D</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2788,7 +2722,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o124">
+<o:Attribute Id="o118">
 <a:ObjectID>B29FF7BE-50B6-48F8-BAC0-777E4FEE1604</a:ObjectID>
 <a:Name>genomeBuild</a:Name>
 <a:Code>genomeBuild</a:Code>
@@ -2799,7 +2733,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o125">
+<o:Annotation Id="o119">
 <a:ObjectID>1DBFD36E-72A7-4C95-A29F-18B13614E3CF</a:ObjectID>
 <a:CreationDate>1502268402</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2810,7 +2744,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o126">
+<o:Attribute Id="o120">
 <a:ObjectID>D3B89EE2-8046-4BD7-9CE2-D99DA64E8BB2</a:ObjectID>
 <a:Name>chrom</a:Name>
 <a:Code>chrom</a:Code>
@@ -2821,7 +2755,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o127">
+<o:Attribute Id="o121">
 <a:ObjectID>89AB7A61-A462-4B01-9321-E6CBCDB27187</a:ObjectID>
 <a:Name>mapinfo</a:Name>
 <a:Code>mapinfo</a:Code>
@@ -2832,7 +2766,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o128">
+<o:Attribute Id="o122">
 <a:ObjectID>67A783E9-DE0E-472E-95AB-D19ED1F86264</a:ObjectID>
 <a:Name>sourceSeq</a:Name>
 <a:Code>sourceSeq</a:Code>
@@ -2843,7 +2777,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o129">
+<o:Annotation Id="o123">
 <a:ObjectID>BC654188-F967-4AE3-8B93-C07C703DE615</a:ObjectID>
 <a:CreationDate>1502268402</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2854,7 +2788,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o130">
+<o:Attribute Id="o124">
 <a:ObjectID>0CECA5E0-6FC5-4411-958A-48016701B33D</a:ObjectID>
 <a:Name>strand</a:Name>
 <a:Code>strand</a:Code>
@@ -2865,7 +2799,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o131">
+<o:Attribute Id="o125">
 <a:ObjectID>EED327B9-4B6F-430A-8182-20F566BFC142</a:ObjectID>
 <a:Name>idGenes</a:Name>
 <a:Code>idGenes</a:Code>
@@ -2876,7 +2810,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Set&lt;Long&gt;</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o132">
+<o:Attribute Id="o126">
 <a:ObjectID>DE38E4AC-07C7-40BB-8852-DE0D249084CB</a:ObjectID>
 <a:Name>geneSymbols</a:Name>
 <a:Code>geneSymbols</a:Code>
@@ -2887,7 +2821,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Set&lt;String&gt;</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o133">
+<o:Annotation Id="o127">
 <a:ObjectID>70719097-D8F5-4CF9-B534-AF543460A1B9</a:ObjectID>
 <a:CreationDate>1502268402</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2898,7 +2832,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o134">
+<o:Attribute Id="o128">
 <a:ObjectID>E1DC6F23-A939-4DC0-BC30-8156632C91DA</a:ObjectID>
 <a:Name>idNucleotides</a:Name>
 <a:Code>idNucleotides</a:Code>
@@ -2909,7 +2843,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Set&lt;String&gt;</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o135">
+<o:Annotation Id="o129">
 <a:ObjectID>C76BB6B1-587A-4EAC-B1D6-8D03779E2209</a:ObjectID>
 <a:CreationDate>1502268402</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2920,7 +2854,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o136">
+<o:Attribute Id="o130">
 <a:ObjectID>18F7CAFD-94B9-4352-829C-B646F52E2967</a:ObjectID>
 <a:Name>geneGroups</a:Name>
 <a:Code>geneGroups</a:Code>
@@ -2931,7 +2865,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Set&lt;String&gt;</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o137">
+<o:Annotation Id="o131">
 <a:ObjectID>3F95ABA3-349E-4174-BFC7-1560089D2C33</a:ObjectID>
 <a:CreationDate>1502268402</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2942,7 +2876,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o138">
+<o:Attribute Id="o132">
 <a:ObjectID>B3CC5826-5942-474C-B14C-9AE657D05F90</a:ObjectID>
 <a:Name>cpgIslandLocation</a:Name>
 <a:Code>cpgIslandLocation</a:Code>
@@ -2953,7 +2887,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o139">
+<o:Annotation Id="o133">
 <a:ObjectID>CD67B435-51BC-4C8E-97BF-B6C424E10035</a:ObjectID>
 <a:CreationDate>1502268402</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2964,7 +2898,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o140">
+<o:Attribute Id="o134">
 <a:ObjectID>9EB755D0-1A11-4D3F-B863-BA368D05F17A</a:ObjectID>
 <a:Name>relationToCpgIsland</a:Name>
 <a:Code>relationToCpgIsland</a:Code>
@@ -2975,7 +2909,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o141">
+<o:Annotation Id="o135">
 <a:ObjectID>62024DA0-E983-4382-B891-D933984F72E3</a:ObjectID>
 <a:CreationDate>1502268402</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -2986,7 +2920,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o142">
+<o:Attribute Id="o136">
 <a:ObjectID>42832889-C85B-45A2-AA13-9E5AD7E00C55</a:ObjectID>
 <a:Name>dmr</a:Name>
 <a:Code>dmr</a:Code>
@@ -2997,7 +2931,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o143">
+<o:Attribute Id="o137">
 <a:ObjectID>F4BE0982-1273-4DE0-A9B4-2F04F1395AC3</a:ObjectID>
 <a:Name>enhancer</a:Name>
 <a:Code>enhancer</a:Code>
@@ -3008,7 +2942,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o144">
+<o:Attribute Id="o138">
 <a:ObjectID>E3638608-BEEC-43B8-A4DB-66E36F9E6759</a:ObjectID>
 <a:Name>genes</a:Name>
 <a:Code>genes</a:Code>
@@ -3021,7 +2955,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>new HashSet&lt;Gene&gt;()</a:InitialValue>
 <c:Annotations>
-<o:Annotation Id="o145">
+<o:Annotation Id="o139">
 <a:ObjectID>749A389C-BFCA-4A07-B9BF-ED64A7C918BC</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3032,7 +2966,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o146">
+<o:Attribute Id="o140">
 <a:ObjectID>45BB6084-C9C7-42A8-9F85-628C05D6BE18</a:ObjectID>
 <a:Name>nucleotides</a:Name>
 <a:Code>nucleotides</a:Code>
@@ -3044,7 +2978,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>new HashSet&lt;Nucleotide&gt;()</a:InitialValue>
 <c:Annotations>
-<o:Annotation Id="o147">
+<o:Annotation Id="o141">
 <a:ObjectID>1F120726-1A7E-4289-B4C3-4B75B36CEA57</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3055,7 +2989,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o148">
+<o:Attribute Id="o142">
 <a:ObjectID>16ECEC78-49BF-4EBE-ACD8-FA37F25372AB</a:ObjectID>
 <a:Name>platforms</a:Name>
 <a:Code>platforms</a:Code>
@@ -3067,7 +3001,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>new HashSet&lt;Platform&gt;()</a:InitialValue>
 <c:Annotations>
-<o:Annotation Id="o149">
+<o:Annotation Id="o143">
 <a:ObjectID>007D5D81-E178-4766-A2A1-744C03EF5282</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3080,7 +3014,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Attribute>
 </c:Attributes>
 <c:Annotations>
-<o:Annotation Id="o150">
+<o:Annotation Id="o144">
 <a:ObjectID>DE399099-B15B-402E-84EE-920CC2576897</a:ObjectID>
 <a:CreationDate>1502181241</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3090,7 +3024,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Class>
-<o:Class Id="o59">
+<o:Class Id="o53">
 <a:ObjectID>13E77C27-D9BB-4E65-9A09-7126E04184ED</a:ObjectID>
 <a:Name>DataSource</a:Name>
 <a:Code>DataSource</a:Code>
@@ -3103,7 +3037,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Classifier.Header> </a:Classifier.Header>
 <a:Imports> </a:Imports>
 <c:Attributes>
-<o:Attribute Id="o151">
+<o:Attribute Id="o145">
 <a:ObjectID>F62AFF12-4E5D-4E10-9E84-7236CFD4D0EC</a:ObjectID>
 <a:Name>unigene</a:Name>
 <a:Code>unigene</a:Code>
@@ -3115,7 +3049,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Static>1</a:Static>
 <a:Frozen>F</a:Frozen>
 </o:Attribute>
-<o:Attribute Id="o152">
+<o:Attribute Id="o146">
 <a:ObjectID>A394FD48-18DB-45F1-8689-F5B92ACF2E5B</a:ObjectID>
 <a:Name>genbank</a:Name>
 <a:Code>genbank</a:Code>
@@ -3127,7 +3061,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Static>1</a:Static>
 <a:Frozen>F</a:Frozen>
 </o:Attribute>
-<o:Attribute Id="o153">
+<o:Attribute Id="o147">
 <a:ObjectID>068CEC9A-C7E2-4DAF-9C0A-90CE6835E34C</a:ObjectID>
 <a:Name>refsec</a:Name>
 <a:Code>refsec</a:Code>
@@ -3139,7 +3073,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Static>1</a:Static>
 <a:Frozen>F</a:Frozen>
 </o:Attribute>
-<o:Attribute Id="o154">
+<o:Attribute Id="o148">
 <a:ObjectID>95D9CCDB-D4E9-46B7-A1AD-05A76207377A</a:ObjectID>
 <a:Name>ensembl</a:Name>
 <a:Code>ensembl</a:Code>
@@ -3151,7 +3085,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Static>1</a:Static>
 <a:Frozen>F</a:Frozen>
 </o:Attribute>
-<o:Attribute Id="o155">
+<o:Attribute Id="o149">
 <a:ObjectID>D0F43FE5-D840-4E58-A1A0-3B50A2F7C4DA</a:ObjectID>
 <a:Name>ucsc</a:Name>
 <a:Code>ucsc</a:Code>
@@ -3161,7 +3095,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:DataType>EnumConstant</a:DataType>
 </o:Attribute>
-<o:Attribute Id="o156">
+<o:Attribute Id="o150">
 <a:ObjectID>161A9FD8-4D02-4BF0-8EA1-E9E7554B457F</a:ObjectID>
 <a:Name>uniprot</a:Name>
 <a:Code>uniprot</a:Code>
@@ -3171,7 +3105,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:DataType>EnumConstant</a:DataType>
 </o:Attribute>
-<o:Attribute Id="o157">
+<o:Attribute Id="o151">
 <a:ObjectID>27F6D05B-18D4-486D-A13B-62E1C635D1A2</a:ObjectID>
 <a:Name>probeset</a:Name>
 <a:Code>probeset</a:Code>
@@ -3183,7 +3117,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Static>1</a:Static>
 <a:Frozen>F</a:Frozen>
 </o:Attribute>
-<o:Attribute Id="o158">
+<o:Attribute Id="o152">
 <a:ObjectID>B99CE022-4E7D-4447-A349-68304CA1AD32</a:ObjectID>
 <a:Name>gsea</a:Name>
 <a:Code>gsea</a:Code>
@@ -3193,7 +3127,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:DataType>EnumConstant</a:DataType>
 </o:Attribute>
-<o:Attribute Id="o159">
+<o:Attribute Id="o153">
 <a:ObjectID>F452462F-FA9A-4F03-8F8A-7CAD470F0509</a:ObjectID>
 <a:Name>est</a:Name>
 <a:Code>est</a:Code>
@@ -3203,7 +3137,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:DataType>EnumConstant</a:DataType>
 </o:Attribute>
-<o:Attribute Id="o160">
+<o:Attribute Id="o154">
 <a:ObjectID>973EFD39-53FA-49B9-B909-C2DDA0D88F71</a:ObjectID>
 <a:Name>ct</a:Name>
 <a:Code>ct</a:Code>
@@ -3213,7 +3147,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:DataType>EnumConstant</a:DataType>
 </o:Attribute>
-<o:Attribute Id="o161">
+<o:Attribute Id="o155">
 <a:ObjectID>890789AC-6973-46E6-A836-07B71A348AD1</a:ObjectID>
 <a:Name>rnaseq</a:Name>
 <a:Code>rnaseq</a:Code>
@@ -3223,7 +3157,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:DataType>EnumConstant</a:DataType>
 </o:Attribute>
-<o:Attribute Id="o162">
+<o:Attribute Id="o156">
 <a:ObjectID>329D8209-C6D7-44E5-B52E-0A4C0672E395</a:ObjectID>
 <a:Name>unknown</a:Name>
 <a:Code>unknown</a:Code>
@@ -3237,7 +3171,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Attribute>
 </c:Attributes>
 </o:Class>
-<o:Class Id="o60">
+<o:Class Id="o54">
 <a:ObjectID>37234C32-95E9-4B9C-B878-017C3ECC4AFA</a:ObjectID>
 <a:Name>GeneStatus</a:Name>
 <a:Code>GeneStatus</a:Code>
@@ -3250,7 +3184,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Classifier.Header> </a:Classifier.Header>
 <a:Imports> </a:Imports>
 <c:Attributes>
-<o:Attribute Id="o163">
+<o:Attribute Id="o157">
 <a:ObjectID>976214F0-8804-42DA-9766-57170A573F18</a:ObjectID>
 <a:Name>active</a:Name>
 <a:Code>active</a:Code>
@@ -3262,7 +3196,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Static>1</a:Static>
 <a:Frozen>F</a:Frozen>
 </o:Attribute>
-<o:Attribute Id="o164">
+<o:Attribute Id="o158">
 <a:ObjectID>14C6988F-4CDD-4FBA-A0F5-47758C722386</a:ObjectID>
 <a:Name>replaced</a:Name>
 <a:Code>replaced</a:Code>
@@ -3274,7 +3208,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Static>1</a:Static>
 <a:Frozen>F</a:Frozen>
 </o:Attribute>
-<o:Attribute Id="o165">
+<o:Attribute Id="o159">
 <a:ObjectID>BB6C474F-A08C-4A32-9FB8-CC3907E78785</a:ObjectID>
 <a:Name>removed</a:Name>
 <a:Code>removed</a:Code>
@@ -3286,7 +3220,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Static>1</a:Static>
 <a:Frozen>F</a:Frozen>
 </o:Attribute>
-<o:Attribute Id="o166">
+<o:Attribute Id="o160">
 <a:ObjectID>F161133F-66A8-479C-B40B-37B50F318318</a:ObjectID>
 <a:Name>unknown</a:Name>
 <a:Code>unknown</a:Code>
@@ -3300,18 +3234,18 @@ import epimed_database.entity.pojo.DataSource;
 </o:Attribute>
 </c:Attributes>
 </o:Class>
-<o:Class Id="o61">
+<o:Class Id="o55">
 <a:ObjectID>D8700543-5933-4DAD-B21D-3D5762A2658D</a:ObjectID>
 <a:Name>Position</a:Name>
 <a:Code>Position</a:Code>
 <a:CreationDate>1502184664</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1512998089</a:ModificationDate>
+<a:ModificationDate>1547734498</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:Stereotype>NodeEntity</a:Stereotype>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o167">
+<o:Attribute Id="o161">
 <a:ObjectID>71FF6B7B-5BAF-4202-8E5F-8CE04A4337FC</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -3322,7 +3256,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o168">
+<o:Annotation Id="o162">
 <a:ObjectID>9B3F8269-89A9-4236-B7D0-F7D60E381300</a:ObjectID>
 <a:CreationDate>1502185425</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3332,7 +3266,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o169">
+<o:Attribute Id="o163">
 <a:ObjectID>71737D3D-8274-4638-918C-946A407421F0</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
@@ -3344,7 +3278,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>idUcsc.taxid, idEnsembl</a:InitialValue>
 <c:Annotations>
-<o:Annotation Id="o170">
+<o:Annotation Id="o164">
 <a:ObjectID>9B84EF76-F514-4C0F-AD49-E44BDF04AC52</a:ObjectID>
 <a:CreationDate>1502185425</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3352,7 +3286,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:Annotation.Name>Id</a:Annotation.Name>
 </o:Annotation>
-<o:Annotation Id="o171">
+<o:Annotation Id="o165">
 <a:ObjectID>8D4B7787-689D-4A6D-9A50-1E68F14E5078</a:ObjectID>
 <a:CreationDate>1502185425</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3362,7 +3296,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o172">
+<o:Attribute Id="o166">
 <a:ObjectID>F3DDCB11-3B64-4D4A-A2AE-8E856B531EE9</a:ObjectID>
 <a:Name>idPosition</a:Name>
 <a:Code>idPosition</a:Code>
@@ -3374,7 +3308,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>idUcsc, idEnsembl</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o173">
+<o:Attribute Id="o167">
 <a:ObjectID>F97D3D4F-BE63-487D-8134-FD8372D34C46</a:ObjectID>
 <a:Name>taxId</a:Name>
 <a:Code>taxId</a:Code>
@@ -3385,7 +3319,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o174">
+<o:Attribute Id="o168">
 <a:ObjectID>93E2E8A1-6535-4F35-B8E6-81F7E4890A98</a:ObjectID>
 <a:Name>idAssemblies</a:Name>
 <a:Code>idAssemblies</a:Code>
@@ -3396,7 +3330,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Set&lt;String&gt;</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o175">
+<o:Annotation Id="o169">
 <a:ObjectID>9446E169-7AF7-497C-AE58-A5B8113140AA</a:ObjectID>
 <a:CreationDate>1502185425</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3407,7 +3341,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o176">
+<o:Attribute Id="o170">
 <a:ObjectID>6905F592-86EF-4668-8473-CDBDDD01AC2C</a:ObjectID>
 <a:Name>idGene</a:Name>
 <a:Code>idGene</a:Code>
@@ -3418,7 +3352,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o177">
+<o:Annotation Id="o171">
 <a:ObjectID>16E36FAC-EEFC-4F05-84EE-2DE3572E31E1</a:ObjectID>
 <a:CreationDate>1502185425</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3429,7 +3363,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o178">
+<o:Attribute Id="o172">
 <a:ObjectID>7676F663-47F0-4288-A4DA-2554C660B6B9</a:ObjectID>
 <a:Name>chrom</a:Name>
 <a:Code>chrom</a:Code>
@@ -3440,7 +3374,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o179">
+<o:Attribute Id="o173">
 <a:ObjectID>34EC7583-5390-4A1E-A90C-5E66E1157914</a:ObjectID>
 <a:Name>strand</a:Name>
 <a:Code>strand</a:Code>
@@ -3451,7 +3385,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o180">
+<o:Attribute Id="o174">
 <a:ObjectID>48A42218-4BFD-4547-8863-2E1B373163F2</a:ObjectID>
 <a:Name>txStart</a:Name>
 <a:Code>txStart</a:Code>
@@ -3462,7 +3396,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o181">
+<o:Annotation Id="o175">
 <a:ObjectID>A3F7B9E6-67DA-4E59-9A0C-F3F81E95CB8E</a:ObjectID>
 <a:CreationDate>1502185425</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3473,7 +3407,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o182">
+<o:Attribute Id="o176">
 <a:ObjectID>80087118-FCF3-4C6B-9DB9-76F1E0CA3F52</a:ObjectID>
 <a:Name>txEnd</a:Name>
 <a:Code>txEnd</a:Code>
@@ -3484,7 +3418,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o183">
+<o:Annotation Id="o177">
 <a:ObjectID>854A532A-9DB8-4264-9559-7C1CAD64A010</a:ObjectID>
 <a:CreationDate>1502185425</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3495,7 +3429,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o184">
+<o:Attribute Id="o178">
 <a:ObjectID>3A98458B-73D9-4770-AE28-740C2CF0C0C8</a:ObjectID>
 <a:Name>cdsStart</a:Name>
 <a:Code>cdsStart</a:Code>
@@ -3506,7 +3440,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o185">
+<o:Annotation Id="o179">
 <a:ObjectID>2B4450F8-BA9F-4790-A39F-91FACE32ADD0</a:ObjectID>
 <a:CreationDate>1502185425</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3517,7 +3451,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o186">
+<o:Attribute Id="o180">
 <a:ObjectID>52A7D1D1-A894-4773-B16E-53E28A9E871F</a:ObjectID>
 <a:Name>cdsEnd</a:Name>
 <a:Code>cdsEnd</a:Code>
@@ -3528,7 +3462,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o187">
+<o:Annotation Id="o181">
 <a:ObjectID>4A86345A-94F8-4648-AF7B-EE7DCF96A1E7</a:ObjectID>
 <a:CreationDate>1502185425</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3539,7 +3473,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o188">
+<o:Attribute Id="o182">
 <a:ObjectID>BBA5CAFF-F723-4010-BD74-AC267563AA8B</a:ObjectID>
 <a:Name>exonCount</a:Name>
 <a:Code>exonCount</a:Code>
@@ -3550,7 +3484,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o189">
+<o:Annotation Id="o183">
 <a:ObjectID>C990639F-4F9A-4B83-8EFB-A788A3E8DC8A</a:ObjectID>
 <a:CreationDate>1502185425</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3561,7 +3495,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o190">
+<o:Attribute Id="o184">
 <a:ObjectID>6ED14BA9-C700-4E68-B87B-30B8D5960085</a:ObjectID>
 <a:Name>exonStarts</a:Name>
 <a:Code>exonStarts</a:Code>
@@ -3572,7 +3506,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>List&lt;Long&gt;</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o191">
+<o:Attribute Id="o185">
 <a:ObjectID>9AA4BECA-6D0E-4F5D-85E7-59B279372A5E</a:ObjectID>
 <a:Name>exonEnds</a:Name>
 <a:Code>exonEnds</a:Code>
@@ -3583,7 +3517,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>List&lt;Long&gt;</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o192">
+<o:Attribute Id="o186">
 <a:ObjectID>F286F360-126C-4FE3-A4D7-49B3ABC2ADBB</a:ObjectID>
 <a:Name>idEnsembl</a:Name>
 <a:Code>idEnsembl</a:Code>
@@ -3594,7 +3528,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o193">
+<o:Attribute Id="o187">
 <a:ObjectID>6E0863B8-6D50-4865-A0A8-5A439C156945</a:ObjectID>
 <a:Name>canonical</a:Name>
 <a:Code>canonical</a:Code>
@@ -3606,7 +3540,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>false</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o194">
+<o:Attribute Id="o188">
 <a:ObjectID>35EB3873-9E43-4730-84F2-4C42A36FDE7E</a:ObjectID>
 <a:Name>source</a:Name>
 <a:Code>source</a:Code>
@@ -3618,10 +3552,10 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>DataSource.ucsc, DataSource.ensembl</a:InitialValue>
 <c:ObjectDataType>
-<o:Class Ref="o59"/>
+<o:Class Ref="o53"/>
 </c:ObjectDataType>
 </o:Attribute>
-<o:Attribute Id="o195">
+<o:Attribute Id="o189">
 <a:ObjectID>51CFB60D-B567-4618-BA1E-21F1BEA67F2F</a:ObjectID>
 <a:Name>gene</a:Name>
 <a:Code>gene</a:Code>
@@ -3632,10 +3566,10 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Gene</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:ObjectDataType>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:ObjectDataType>
 <c:Annotations>
-<o:Annotation Id="o196">
+<o:Annotation Id="o190">
 <a:ObjectID>0553B0B1-DEC0-4D0A-A9E6-2EEC5BC34C72</a:ObjectID>
 <a:CreationDate>1502186807</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3646,7 +3580,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o197">
+<o:Attribute Id="o191">
 <a:ObjectID>569B4BEA-8B79-4364-9943-85C4D9887FB9</a:ObjectID>
 <a:Name>assemblies</a:Name>
 <a:Code>assemblies</a:Code>
@@ -3657,7 +3591,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>List&lt;Assembly&gt;</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o198">
+<o:Annotation Id="o192">
 <a:ObjectID>5A3DEC68-B3DF-4BA9-85BE-FAED4126A224</a:ObjectID>
 <a:CreationDate>1502185879</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3668,9 +3602,20 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
+<o:Attribute Id="o193">
+<a:ObjectID>E43A2C0D-24C4-4DFF-8C59-D89F0239BEA7</a:ObjectID>
+<a:Name>lastUpdate</a:Name>
+<a:Code>lastUpdate</a:Code>
+<a:CreationDate>1547734485</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1547734498</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>String</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+</o:Attribute>
 </c:Attributes>
 </o:Class>
-<o:Class Id="o62">
+<o:Class Id="o56">
 <a:ObjectID>AB8FF290-7424-4C05-BBF8-E34FB262589A</a:ObjectID>
 <a:Name>Assembly</a:Name>
 <a:Code>Assembly</a:Code>
@@ -3681,7 +3626,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Stereotype>NodeEntity</a:Stereotype>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o199">
+<o:Attribute Id="o194">
 <a:ObjectID>093B9D8D-129F-47FF-9E9A-004833CF4ABC</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -3692,7 +3637,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o200">
+<o:Annotation Id="o195">
 <a:ObjectID>1CD93112-0FE3-4814-9C8B-F260F1CD5F26</a:ObjectID>
 <a:CreationDate>1502185672</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3702,7 +3647,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o201">
+<o:Attribute Id="o196">
 <a:ObjectID>81B193A8-0DE3-4058-BAAF-26D325812E96</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
@@ -3713,7 +3658,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o202">
+<o:Annotation Id="o197">
 <a:ObjectID>AC472ED1-2D75-4B1F-9BD1-D6B165421DFF</a:ObjectID>
 <a:CreationDate>1502185672</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3721,7 +3666,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:Annotation.Name>Id</a:Annotation.Name>
 </o:Annotation>
-<o:Annotation Id="o203">
+<o:Annotation Id="o198">
 <a:ObjectID>D19CDA0D-879C-4763-9000-8A266A49C22E</a:ObjectID>
 <a:CreationDate>1502185672</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3731,7 +3676,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o204">
+<o:Attribute Id="o199">
 <a:ObjectID>DFB2DCF0-E3D0-4DC8-AD29-3BEBC1EA2B98</a:ObjectID>
 <a:Name>ucscCode</a:Name>
 <a:Code>ucscCode</a:Code>
@@ -3742,7 +3687,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o205">
+<o:Annotation Id="o200">
 <a:ObjectID>FEF27BF4-7BF1-429D-99F6-F03BDE21E1B1</a:ObjectID>
 <a:CreationDate>1502185672</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3753,7 +3698,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o206">
+<o:Attribute Id="o201">
 <a:ObjectID>66487903-77A7-4878-9194-D4C1EF5DC054</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>name</a:Code>
@@ -3764,7 +3709,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o207">
+<o:Attribute Id="o202">
 <a:ObjectID>361287DF-D94F-46A4-ADF6-C727E4FC204C</a:ObjectID>
 <a:Name>taxId</a:Name>
 <a:Code>taxId</a:Code>
@@ -3775,7 +3720,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o208">
+<o:Annotation Id="o203">
 <a:ObjectID>999B9BD8-8382-42D6-97FD-E21DBEFA9D53</a:ObjectID>
 <a:CreationDate>1502185842</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3788,7 +3733,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Attribute>
 </c:Attributes>
 </o:Class>
-<o:Class Id="o63">
+<o:Class Id="o57">
 <a:ObjectID>D7B875B3-C89C-4306-981A-C0EA3B8E0927</a:ObjectID>
 <a:Name>Protein</a:Name>
 <a:Code>Protein</a:Code>
@@ -3799,7 +3744,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Stereotype>NodeEntity</a:Stereotype>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o209">
+<o:Attribute Id="o204">
 <a:ObjectID>F86E2F86-D9CD-4AE7-A477-B123BF1DD713</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -3810,7 +3755,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o210">
+<o:Annotation Id="o205">
 <a:ObjectID>B1D76F8D-FF30-4BCF-B4E3-447AC4F6D3D1</a:ObjectID>
 <a:CreationDate>1502198846</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3820,7 +3765,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o211">
+<o:Attribute Id="o206">
 <a:ObjectID>7B35FD0C-BC5D-469B-85A7-8715309BA23B</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
@@ -3831,7 +3776,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o212">
+<o:Annotation Id="o207">
 <a:ObjectID>B584C607-1105-437F-BA58-7AA3AF951CC4</a:ObjectID>
 <a:CreationDate>1502198846</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3839,7 +3784,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:Annotation.Name>Id</a:Annotation.Name>
 </o:Annotation>
-<o:Annotation Id="o213">
+<o:Annotation Id="o208">
 <a:ObjectID>96E9DDF3-EB06-4B7A-A3FF-D1D2C3F05533</a:ObjectID>
 <a:CreationDate>1502198846</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3849,7 +3794,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o214">
+<o:Attribute Id="o209">
 <a:ObjectID>7740D28A-AF0D-4B99-9421-C64C251FBC6D</a:ObjectID>
 <a:Name>source</a:Name>
 <a:Code>source</a:Code>
@@ -3861,10 +3806,10 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>DataSource.uniprot</a:InitialValue>
 <c:ObjectDataType>
-<o:Class Ref="o59"/>
+<o:Class Ref="o53"/>
 </c:ObjectDataType>
 </o:Attribute>
-<o:Attribute Id="o215">
+<o:Attribute Id="o210">
 <a:ObjectID>5DE69913-5B13-4DFE-B4F7-C9A6926B66F1</a:ObjectID>
 <a:Name>genes</a:Name>
 <a:Code>genes</a:Code>
@@ -3876,7 +3821,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>new HashSet&lt;Gene&gt;()</a:InitialValue>
 <c:Annotations>
-<o:Annotation Id="o216">
+<o:Annotation Id="o211">
 <a:ObjectID>FEDBA7E8-B6C5-4D3F-9F43-241E73321321</a:ObjectID>
 <a:CreationDate>1502198846</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3889,7 +3834,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Attribute>
 </c:Attributes>
 </o:Class>
-<o:Class Id="o64">
+<o:Class Id="o58">
 <a:ObjectID>5B495061-33EC-4615-9D2D-606C06A266B5</a:ObjectID>
 <a:Name>ProteinSequence</a:Name>
 <a:Code>ProteinSequence</a:Code>
@@ -3900,7 +3845,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Stereotype>NodeEntity</a:Stereotype>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o217">
+<o:Attribute Id="o212">
 <a:ObjectID>2BDD375A-E8E2-488C-AA03-8C3E57B18173</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -3911,7 +3856,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o218">
+<o:Annotation Id="o213">
 <a:ObjectID>E87773A4-95A1-44EE-A8C4-5E16A2688717</a:ObjectID>
 <a:CreationDate>1502198903</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3921,7 +3866,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o219">
+<o:Attribute Id="o214">
 <a:ObjectID>1708DE4F-E8B9-4E13-9918-3E89389A8F4C</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
@@ -3932,7 +3877,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o220">
+<o:Annotation Id="o215">
 <a:ObjectID>1B93B4CF-4D26-42F3-9FB9-7FED93E9B3A0</a:ObjectID>
 <a:CreationDate>1502198903</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3940,7 +3885,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Modifier>fline</a:Modifier>
 <a:Annotation.Name>Id</a:Annotation.Name>
 </o:Annotation>
-<o:Annotation Id="o221">
+<o:Annotation Id="o216">
 <a:ObjectID>D31C5B78-57BA-49A2-9833-FE09DD3E3FDF</a:ObjectID>
 <a:CreationDate>1502198903</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3950,7 +3895,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o222">
+<o:Attribute Id="o217">
 <a:ObjectID>02831072-08A4-4A74-AAC6-486896FD0DA2</a:ObjectID>
 <a:Name>idProtein</a:Name>
 <a:Code>idProtein</a:Code>
@@ -3961,7 +3906,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o223">
+<o:Annotation Id="o218">
 <a:ObjectID>07F3395F-5A31-427E-A5BE-CEF2C2D5BD89</a:ObjectID>
 <a:CreationDate>1502198903</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -3972,7 +3917,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o224">
+<o:Attribute Id="o219">
 <a:ObjectID>4F6FF1F6-07B9-446C-898A-DF4770F529FA</a:ObjectID>
 <a:Name>meta</a:Name>
 <a:Code>meta</a:Code>
@@ -3983,7 +3928,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o225">
+<o:Attribute Id="o220">
 <a:ObjectID>2BBC4E8C-ECD4-4585-A8C4-B11211CEB32A</a:ObjectID>
 <a:Name>length</a:Name>
 <a:Code>length</a:Code>
@@ -3994,7 +3939,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o226">
+<o:Attribute Id="o221">
 <a:ObjectID>023B645B-338E-4F57-82CE-7A9374BC30EA</a:ObjectID>
 <a:Name>pi</a:Name>
 <a:Code>pi</a:Code>
@@ -4005,7 +3950,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Double</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o227">
+<o:Attribute Id="o222">
 <a:ObjectID>9588151B-E526-492B-8531-CE88459A06EF</a:ObjectID>
 <a:Name>averageMass</a:Name>
 <a:Code>averageMass</a:Code>
@@ -4016,7 +3961,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Double</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o228">
+<o:Annotation Id="o223">
 <a:ObjectID>8971FC22-7B2C-40AB-9074-A8ED464A2CA6</a:ObjectID>
 <a:CreationDate>1502198903</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -4027,7 +3972,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o229">
+<o:Attribute Id="o224">
 <a:ObjectID>B38FEF64-7805-469C-AD5F-039A441FAB00</a:ObjectID>
 <a:Name>monoisotopicMass</a:Name>
 <a:Code>monoisotopicMass</a:Code>
@@ -4038,7 +3983,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Double</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:Annotations>
-<o:Annotation Id="o230">
+<o:Annotation Id="o225">
 <a:ObjectID>A2A8BDE7-B6D1-42CD-ACD6-BEEC80624C18</a:ObjectID>
 <a:CreationDate>1502198903</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -4049,7 +3994,7 @@ import epimed_database.entity.pojo.DataSource;
 </o:Annotation>
 </c:Annotations>
 </o:Attribute>
-<o:Attribute Id="o231">
+<o:Attribute Id="o226">
 <a:ObjectID>C7171087-5082-4A49-B585-DF8410377C30</a:ObjectID>
 <a:Name>canonical</a:Name>
 <a:Code>canonical</a:Code>
@@ -4060,7 +4005,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>boolean</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o232">
+<o:Attribute Id="o227">
 <a:ObjectID>419C85AB-E18A-4887-BA1D-438629323D9D</a:ObjectID>
 <a:Name>sequence</a:Name>
 <a:Code>sequence</a:Code>
@@ -4071,7 +4016,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o233">
+<o:Attribute Id="o228">
 <a:ObjectID>336FC2BB-5103-44C4-8029-AF22861C1CD2</a:ObjectID>
 <a:Name>protein</a:Name>
 <a:Code>protein</a:Code>
@@ -4082,10 +4027,10 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Protein</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <c:ObjectDataType>
-<o:Class Ref="o63"/>
+<o:Class Ref="o57"/>
 </c:ObjectDataType>
 <c:Annotations>
-<o:Annotation Id="o234">
+<o:Annotation Id="o229">
 <a:ObjectID>D034B37C-26BF-4812-AEEA-66EABDEF5513</a:ObjectID>
 <a:CreationDate>1502198976</a:CreationDate>
 <a:Creator>fline</a:Creator>
@@ -4098,18 +4043,18 @@ import epimed_database.entity.pojo.DataSource;
 </o:Attribute>
 </c:Attributes>
 </o:Class>
-<o:Class Id="o65">
+<o:Class Id="o59">
 <a:ObjectID>C45273B6-DF2B-440C-A99E-18AE9189D9C6</a:ObjectID>
 <a:Name>Annotation</a:Name>
 <a:Code>Annotation</a:Code>
 <a:CreationDate>1507545707</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1518773394</a:ModificationDate>
+<a:ModificationDate>1547734794</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:Stereotype>NodeEntity</a:Stereotype>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o235">
+<o:Attribute Id="o230">
 <a:ObjectID>B73BCE81-7A5B-4423-AD78-39E1FC0F7500</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -4120,34 +4065,46 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o236">
+<o:Attribute Id="o231">
 <a:ObjectID>C3B4A024-06DB-45B0-B098-9AB762D1E160</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
 <a:CreationDate>1507545709</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1518772443</a:ModificationDate>
+<a:ModificationDate>1547734574</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
-<a:InitialValue>GTEX_restricted_fetal_lung</a:InitialValue>
+<a:InitialValue>epimed_tsg2_restricted_1_testis_adult</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o237">
+<o:Attribute Id="o232">
 <a:ObjectID>32FCBF70-2D2C-4340-8B26-EB17E1E2AB0D</a:ObjectID>
 <a:Name>source</a:Name>
 <a:Code>source</a:Code>
 <a:CreationDate>1507545803</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1518772461</a:ModificationDate>
+<a:ModificationDate>1547734671</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>DataSource</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
-<a:InitialValue>gtex</a:InitialValue>
+<a:InitialValue>epimed</a:InitialValue>
 <c:ObjectDataType>
-<o:Class Ref="o59"/>
+<o:Class Ref="o53"/>
 </c:ObjectDataType>
 </o:Attribute>
-<o:Attribute Id="o238">
+<o:Attribute Id="o233">
+<a:ObjectID>174B2991-1F57-4291-A753-D6795B84394E</a:ObjectID>
+<a:Name>dataset</a:Name>
+<a:Code>dataset</a:Code>
+<a:CreationDate>1547734585</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1547734671</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>String</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+<a:InitialValue>tsg2</a:InitialValue>
+</o:Attribute>
+<o:Attribute Id="o234">
 <a:ObjectID>83F7FD8A-05C9-4F0F-890D-635DF912AECA</a:ObjectID>
 <a:Name>type</a:Name>
 <a:Code>type</a:Code>
@@ -4159,30 +4116,55 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>tissue-specific</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o239">
+<o:Attribute Id="o235">
+<a:ObjectID>127F853D-FB0F-4D49-A3F6-E162D27F6529</a:ObjectID>
+<a:Name>subtype</a:Name>
+<a:Code>subtype</a:Code>
+<a:CreationDate>1547734585</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1547734671</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>String</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+<a:InitialValue>specific, predominant, restricted</a:InitialValue>
+</o:Attribute>
+<o:Attribute Id="o236">
+<a:ObjectID>37FD86DF-444F-4D2B-BA15-80E15430F85D</a:ObjectID>
+<a:Name>level</a:Name>
+<a:Code>level</a:Code>
+<a:CreationDate>1547734776</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1547734794</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>Integer</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+<a:InitialValue>1</a:InitialValue>
+</o:Attribute>
+<o:Attribute Id="o237">
+<a:ObjectID>E7402CEC-807B-474D-8EFA-A5EEC4AD8854</a:ObjectID>
+<a:Name>tissue</a:Name>
+<a:Code>tissue</a:Code>
+<a:CreationDate>1547734742</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1547734776</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>String</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+<a:InitialValue>testis</a:InitialValue>
+</o:Attribute>
+<o:Attribute Id="o238">
 <a:ObjectID>BC9EB1EF-587A-4607-87D6-0B682FA2FD78</a:ObjectID>
 <a:Name>parameter</a:Name>
 <a:Code>parameter</a:Code>
 <a:CreationDate>1507545763</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1518772443</a:ModificationDate>
+<a:ModificationDate>1547734742</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
-<a:InitialValue>fetal_lung</a:InitialValue>
+<a:InitialValue>adult_testis</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o240">
-<a:ObjectID>86FA1F4C-0127-4A65-B67C-A4D266D9D7F3</a:ObjectID>
-<a:Name>description</a:Name>
-<a:Code>description</a:Code>
-<a:CreationDate>1507548137</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1507548146</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:DataType>String</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o241">
+<o:Attribute Id="o239">
 <a:ObjectID>726D99A1-8219-48E3-831E-4DDFC4D160A4</a:ObjectID>
 <a:Name>tissue_status</a:Name>
 <a:Code>tissueStatus</a:Code>
@@ -4194,57 +4176,68 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>normal</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o242">
+<o:Attribute Id="o240">
 <a:ObjectID>EFAB6CCC-449D-4E47-8E6A-A9EFB59D48B8</a:ObjectID>
 <a:Name>tissue_stage</a:Name>
 <a:Code>tissueStage</a:Code>
 <a:CreationDate>1518772309</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1518772443</a:ModificationDate>
+<a:ModificationDate>1547734742</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
-<a:InitialValue>fetal</a:InitialValue>
+<a:InitialValue>adult</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o243">
+<o:Attribute Id="o241">
 <a:ObjectID>AE3ECC06-E762-4A5C-B93E-C26A069CAB21</a:ObjectID>
 <a:Name>tissue_group_level1</a:Name>
 <a:Code>tissueGroupLevel1</a:Code>
 <a:CreationDate>1518772309</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1518773415</a:ModificationDate>
+<a:ModificationDate>1547734742</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
-<a:InitialValue>bronchus_lung</a:InitialValue>
+<a:InitialValue>testis</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o244">
+<o:Attribute Id="o242">
 <a:ObjectID>F5AD5C27-A72F-44D1-85AE-F4BD98387C09</a:ObjectID>
 <a:Name>tissue_group_level2</a:Name>
 <a:Code>tissueGroupLevel2</a:Code>
 <a:CreationDate>1518772309</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1518773394</a:ModificationDate>
+<a:ModificationDate>1547734742</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
-<a:InitialValue>tracheo_broncho_lung</a:InitialValue>
+<a:InitialValue>male_germinal</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o245">
+<o:Attribute Id="o243">
 <a:ObjectID>E8B6FBE6-7C35-4AB3-B0EA-139E0343554C</a:ObjectID>
 <a:Name>tissue_group_level3</a:Name>
 <a:Code>tissueGroupLevel3</a:Code>
 <a:CreationDate>1518772309</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1518773415</a:ModificationDate>
+<a:ModificationDate>1547734742</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
-<a:InitialValue>soma</a:InitialValue>
+<a:InitialValue>germinal</a:InitialValue>
+</o:Attribute>
+<o:Attribute Id="o244">
+<a:ObjectID>86FA1F4C-0127-4A65-B67C-A4D266D9D7F3</a:ObjectID>
+<a:Name>description</a:Name>
+<a:Code>description</a:Code>
+<a:CreationDate>1507548137</a:CreationDate>
+<a:Creator>fline</a:Creator>
+<a:ModificationDate>1507548146</a:ModificationDate>
+<a:Modifier>fline</a:Modifier>
+<a:DataType>String</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
 </c:Attributes>
 </o:Class>
-<o:Class Id="o66">
+<o:Class Id="o60">
 <a:ObjectID>63602E32-80E0-4DE8-A404-9BBCAE50458D</a:ObjectID>
 <a:Name>GoTerm</a:Name>
 <a:Code>GoTerm</a:Code>
@@ -4255,7 +4248,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Stereotype>NodeEntity</a:Stereotype>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o246">
+<o:Attribute Id="o245">
 <a:ObjectID>1FCBDACC-2986-48D3-A960-8254317A6F6A</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -4266,7 +4259,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o247">
+<o:Attribute Id="o246">
 <a:ObjectID>64F66C6E-1BE1-4C7B-892E-84A1CC107FD0</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
@@ -4277,7 +4270,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o248">
+<o:Attribute Id="o247">
 <a:ObjectID>683DD03A-33FB-4D8E-B508-699CDD614B0D</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>name</a:Code>
@@ -4288,7 +4281,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o249">
+<o:Attribute Id="o248">
 <a:ObjectID>0ED8AB50-84E9-41E3-83FB-A567B7937FA7</a:ObjectID>
 <a:Name>aspect</a:Name>
 <a:Code>aspect</a:Code>
@@ -4299,7 +4292,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o250">
+<o:Attribute Id="o249">
 <a:ObjectID>22736249-3D81-4191-BC6F-678BB16AEA7C</a:ObjectID>
 <a:Name>description</a:Name>
 <a:Code>description</a:Code>
@@ -4312,17 +4305,17 @@ import epimed_database.entity.pojo.DataSource;
 </o:Attribute>
 </c:Attributes>
 </o:Class>
-<o:Class Id="o67">
+<o:Class Id="o61">
 <a:ObjectID>B88D838C-7CFA-4244-897E-F3405D0ABAD1</a:ObjectID>
 <a:Name>StringProtein</a:Name>
 <a:Code>StringProtein</a:Code>
 <a:CreationDate>1516369779</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1516370554</a:ModificationDate>
+<a:ModificationDate>1518773620</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o251">
+<o:Attribute Id="o250">
 <a:ObjectID>F7875FBE-5062-4EF1-BA5A-AB062117A4C7</a:ObjectID>
 <a:Name>graphId</a:Name>
 <a:Code>graphId</a:Code>
@@ -4333,7 +4326,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o252">
+<o:Attribute Id="o251">
 <a:ObjectID>5B3ECA3B-B14E-4F37-8E0A-06A892230840</a:ObjectID>
 <a:Name>uid</a:Name>
 <a:Code>uid</a:Code>
@@ -4345,7 +4338,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:InitialValue>taxid.idEnsemblProtein</a:InitialValue>
 </o:Attribute>
-<o:Attribute Id="o253">
+<o:Attribute Id="o252">
 <a:ObjectID>90EA3147-C54F-4B93-857B-F45EA1AE5813</a:ObjectID>
 <a:Name>taxId</a:Name>
 <a:Code>taxId</a:Code>
@@ -4356,7 +4349,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Integer</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o254">
+<o:Attribute Id="o253">
 <a:ObjectID>E25D266F-2AFE-4DCE-BD4E-1CE0E04D7CB2</a:ObjectID>
 <a:Name>idEnsemblProtein</a:Name>
 <a:Code>idEnsemblProtein</a:Code>
@@ -4367,7 +4360,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o255">
+<o:Attribute Id="o254">
 <a:ObjectID>FF8D9624-13E7-47EF-AF7C-A2AAA198744F</a:ObjectID>
 <a:Name>idEnsemblTranscript</a:Name>
 <a:Code>idEnsemblTranscript</a:Code>
@@ -4378,7 +4371,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o256">
+<o:Attribute Id="o255">
 <a:ObjectID>D7BE5A05-6FB5-4B11-9B41-5D22D7520CA1</a:ObjectID>
 <a:Name>idEnsemblGene</a:Name>
 <a:Code>idEnsemblGene</a:Code>
@@ -4389,7 +4382,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o257">
+<o:Attribute Id="o256">
 <a:ObjectID>4E1CC6F0-1EAC-48A1-9DE9-192B477C82E9</a:ObjectID>
 <a:Name>idGene</a:Name>
 <a:Code>idGene</a:Code>
@@ -4400,7 +4393,7 @@ import epimed_database.entity.pojo.DataSource;
 <a:DataType>Long</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o258">
+<o:Attribute Id="o257">
 <a:ObjectID>2EF01968-22D3-436D-9030-F1ECD155BF09</a:ObjectID>
 <a:Name>geneSymbol</a:Name>
 <a:Code>geneSymbol</a:Code>
@@ -4433,13 +4426,13 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:Object2>
 <c:RoleBMigratedAttribute>
-<o:Attribute Ref="o86"/>
+<o:Attribute Ref="o80"/>
 </c:RoleBMigratedAttribute>
 </o:Association>
 <o:Association Id="o11">
@@ -4459,13 +4452,13 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o55"/>
+<o:Class Ref="o49"/>
 </c:Object2>
 </o:Association>
-<o:Association Id="o259">
+<o:Association Id="o258">
 <a:ObjectID>D459ECE5-2C2A-4900-B225-B9665638053B</a:ObjectID>
 <a:Name>Association_4</a:Name>
 <a:Code>association4</a:Code>
@@ -4481,10 +4474,10 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o59"/>
+<o:Class Ref="o53"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o55"/>
+<o:Class Ref="o49"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o14">
@@ -4503,10 +4496,10 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o60"/>
+<o:Class Ref="o54"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o16">
@@ -4526,10 +4519,10 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o55"/>
+<o:Class Ref="o49"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o55"/>
+<o:Class Ref="o49"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o19">
@@ -4551,13 +4544,13 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o61"/>
+<o:Class Ref="o55"/>
 </c:Object2>
 <c:RoleBMigratedAttribute>
-<o:Attribute Ref="o195"/>
+<o:Attribute Ref="o189"/>
 </c:RoleBMigratedAttribute>
 </o:Association>
 <o:Association Id="o22">
@@ -4578,16 +4571,16 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o62"/>
+<o:Class Ref="o56"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o61"/>
+<o:Class Ref="o55"/>
 </c:Object2>
 <c:RoleBMigratedAttribute>
-<o:Attribute Ref="o197"/>
+<o:Attribute Ref="o191"/>
 </c:RoleBMigratedAttribute>
 </o:Association>
-<o:Association Id="o260">
+<o:Association Id="o259">
 <a:ObjectID>4AE3E22A-9DD1-4D45-AD00-7DF5A85BEEDC</a:ObjectID>
 <a:Name>Association_13</a:Name>
 <a:Code>association13</a:Code>
@@ -4605,16 +4598,16 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o59"/>
+<o:Class Ref="o53"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o61"/>
+<o:Class Ref="o55"/>
 </c:Object2>
 <c:RoleBMigratedAttribute>
-<o:Attribute Ref="o194"/>
+<o:Attribute Ref="o188"/>
 </c:RoleBMigratedAttribute>
 </o:Association>
-<o:Association Id="o261">
+<o:Association Id="o260">
 <a:ObjectID>E185DC3B-F6AA-481F-93E3-3A1B27EA3C31</a:ObjectID>
 <a:Name>Association_14</a:Name>
 <a:Code>association14</a:Code>
@@ -4632,13 +4625,13 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o59"/>
+<o:Class Ref="o53"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o63"/>
+<o:Class Ref="o57"/>
 </c:Object2>
 <c:RoleBMigratedAttribute>
-<o:Attribute Ref="o214"/>
+<o:Attribute Ref="o209"/>
 </c:RoleBMigratedAttribute>
 </o:Association>
 <o:Association Id="o25">
@@ -4658,10 +4651,10 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o63"/>
+<o:Class Ref="o57"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o28">
@@ -4682,16 +4675,16 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o63"/>
+<o:Class Ref="o57"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o64"/>
+<o:Class Ref="o58"/>
 </c:Object2>
 <c:RoleBMigratedAttribute>
-<o:Attribute Ref="o233"/>
+<o:Attribute Ref="o228"/>
 </c:RoleBMigratedAttribute>
 </o:Association>
-<o:Association Id="o262">
+<o:Association Id="o261">
 <a:ObjectID>1EF4A74B-A29F-49D0-B155-F1CDB7A42D3D</a:ObjectID>
 <a:Name>Association_16</a:Name>
 <a:Code>association16</a:Code>
@@ -4709,13 +4702,13 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o59"/>
+<o:Class Ref="o53"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o57"/>
+<o:Class Ref="o51"/>
 </c:Object2>
 <c:RoleBMigratedAttribute>
-<o:Attribute Ref="o121"/>
+<o:Attribute Ref="o115"/>
 </c:RoleBMigratedAttribute>
 </o:Association>
 <o:Association Id="o31">
@@ -4735,10 +4728,10 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o55"/>
+<o:Class Ref="o49"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o57"/>
+<o:Class Ref="o51"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o34">
@@ -4758,10 +4751,10 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o56"/>
+<o:Class Ref="o50"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o57"/>
+<o:Class Ref="o51"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o36">
@@ -4781,10 +4774,10 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o57"/>
+<o:Class Ref="o51"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o39">
@@ -4803,10 +4796,10 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o65"/>
+<o:Class Ref="o59"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o41">
@@ -4825,10 +4818,10 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o65"/>
+<o:Class Ref="o59"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o55"/>
+<o:Class Ref="o49"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o44">
@@ -4847,87 +4840,21 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o66"/>
+<o:Class Ref="o60"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o54"/>
+<o:Class Ref="o48"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o47">
-<a:ObjectID>159CA066-BD6A-4B72-B750-BD9FDCED974E</a:ObjectID>
-<a:Name>Association_24</a:Name>
-<a:Code>association24</a:Code>
-<a:CreationDate>1516370115</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1516370469</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:RoleAName>EXPERIMENTAL[score]</a:RoleAName>
-<a:ExtendedAttributesText>{0DEDDB90-46E2-45A0-886E-411709DA0DC9},Java,276={72FA5C48-5524-4DF7-8187-ABB19AB5AF9E},roleAContainer,6=&lt;None&gt;
-{F6FFC71C-C472-4261-A710-B0BCC0BF4D58},roleAImplementationClass,6=&lt;None&gt;
-{C11C9F66-6453-43A2-8824-6654518CF65A},roleBImplementationClass,6=&lt;None&gt;
-{78C31404-0EE5-4FD0-9038-EE396B305F05},roleBContainer,6=&lt;None&gt;
-
-</a:ExtendedAttributesText>
-<c:Object1>
-<o:Class Ref="o67"/>
-</c:Object1>
-<c:Object2>
-<o:Class Ref="o67"/>
-</c:Object2>
-</o:Association>
-<o:Association Id="o49">
-<a:ObjectID>FFEA566F-F913-4E29-9A0A-95D81C9115C3</a:ObjectID>
-<a:Name>Association_25</a:Name>
-<a:Code>association25</a:Code>
-<a:CreationDate>1516370184</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1516370342</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:RoleAName>TEXTMINING[score]</a:RoleAName>
-<a:ExtendedAttributesText>{0DEDDB90-46E2-45A0-886E-411709DA0DC9},Java,276={72FA5C48-5524-4DF7-8187-ABB19AB5AF9E},roleAContainer,6=&lt;None&gt;
-{F6FFC71C-C472-4261-A710-B0BCC0BF4D58},roleAImplementationClass,6=&lt;None&gt;
-{C11C9F66-6453-43A2-8824-6654518CF65A},roleBImplementationClass,6=&lt;None&gt;
-{78C31404-0EE5-4FD0-9038-EE396B305F05},roleBContainer,6=&lt;None&gt;
-
-</a:ExtendedAttributesText>
-<c:Object1>
-<o:Class Ref="o67"/>
-</c:Object1>
-<c:Object2>
-<o:Class Ref="o67"/>
-</c:Object2>
-</o:Association>
-<o:Association Id="o51">
-<a:ObjectID>B99AD27B-AC94-453F-8930-9171EBCA832D</a:ObjectID>
-<a:Name>Association_26</a:Name>
-<a:Code>association26</a:Code>
-<a:CreationDate>1516370268</a:CreationDate>
-<a:Creator>fline</a:Creator>
-<a:ModificationDate>1516370453</a:ModificationDate>
-<a:Modifier>fline</a:Modifier>
-<a:RoleAName>COEXPRESSION[score]</a:RoleAName>
-<a:ExtendedAttributesText>{0DEDDB90-46E2-45A0-886E-411709DA0DC9},Java,276={72FA5C48-5524-4DF7-8187-ABB19AB5AF9E},roleAContainer,6=&lt;None&gt;
-{F6FFC71C-C472-4261-A710-B0BCC0BF4D58},roleAImplementationClass,6=&lt;None&gt;
-{C11C9F66-6453-43A2-8824-6654518CF65A},roleBImplementationClass,6=&lt;None&gt;
-{78C31404-0EE5-4FD0-9038-EE396B305F05},roleBContainer,6=&lt;None&gt;
-
-</a:ExtendedAttributesText>
-<c:Object1>
-<o:Class Ref="o67"/>
-</c:Object1>
-<c:Object2>
-<o:Class Ref="o67"/>
-</c:Object2>
-</o:Association>
-<o:Association Id="o53">
 <a:ObjectID>82CC2F96-23E8-4E2E-8414-F0F148EF2D8B</a:ObjectID>
 <a:Name>Association_27</a:Name>
 <a:Code>association27</a:Code>
 <a:CreationDate>1516370527</a:CreationDate>
 <a:Creator>fline</a:Creator>
-<a:ModificationDate>1516370554</a:ModificationDate>
+<a:ModificationDate>1518773620</a:ModificationDate>
 <a:Modifier>fline</a:Modifier>
-<a:RoleAName>DATABASE[score]</a:RoleAName>
+<a:RoleAName>LINKS (experimental, database)</a:RoleAName>
 <a:ExtendedAttributesText>{0DEDDB90-46E2-45A0-886E-411709DA0DC9},Java,276={72FA5C48-5524-4DF7-8187-ABB19AB5AF9E},roleAContainer,6=&lt;None&gt;
 {F6FFC71C-C472-4261-A710-B0BCC0BF4D58},roleAImplementationClass,6=&lt;None&gt;
 {C11C9F66-6453-43A2-8824-6654518CF65A},roleBImplementationClass,6=&lt;None&gt;
@@ -4935,15 +4862,15 @@ import epimed_database.entity.pojo.DataSource;
 
 </a:ExtendedAttributesText>
 <c:Object1>
-<o:Class Ref="o67"/>
+<o:Class Ref="o61"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o67"/>
+<o:Class Ref="o61"/>
 </c:Object2>
 </o:Association>
 </c:Associations>
 <c:TargetModels>
-<o:TargetModel Id="o263">
+<o:TargetModel Id="o262">
 <a:ObjectID>E0622FCC-AA98-43D6-BEA4-008DF2268B93</a:ObjectID>
 <a:Name>Java</a:Name>
 <a:Code>Java</a:Code>
@@ -4958,7 +4885,7 @@ import epimed_database.entity.pojo.DataSource;
 <o:Shortcut Ref="o3"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o264">
+<o:TargetModel Id="o263">
 <a:ObjectID>4BB3ECA1-CA7A-4221-8C7D-AF40392E3CDA</a:ObjectID>
 <a:Name>WSDL for Java</a:Name>
 <a:Code>WSDLJava</a:Code>
